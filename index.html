@@ -1,127 +1,239 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <title>allscape</title>
-    <meta name="robots" content="index,follow" />
-    <meta name="author" content="메인 " />
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"
-    />
-    <!-- <link rel="stylesheet" href="./pcms/common/css/common.css" />
-<link rel="stylesheet" href="./pcms/common/pluigs/bootstrap/bootstrap.min.css" /> -->
-    <link rel="stylesheet" href="./css/common.css" />
-    <link rel="stylesheet" href="./css/component.css" />
-    <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/resume.css" />
-    <!-- <script src="./pcms/common/pluigs/jQuery/jquery-3.3.1.min.js"></script>
-<script src="./pcms/common/pluigs/jQuery/jquery-migrate-1.4.1.min.js"></script>
-<script src="./pcms/common/pluigs/jQueryUI/jquery-ui.min.js"></script>
-<script src="./pcms/common/pluigs/bootstrap/bootstrap.min.js"></script>
-<script src="./pcms/common/js/acego.common.js"></script> -->
-    <script
-      type="text/javascript"
-      src="./pcms/common/pluigs/WebFont/webfont.js"
-    ></script>
-    <script type="text/javascript">
-      WebFont.load({
-        custom: {
-          families: ["Noto Sans KR"],
-          urls: ["./pcms/common/font/font_notosanskr.css"],
-        },
-      });
-    </script>
-    <!--[if lt IE 9]>
-      <script src="/pcms/common/pluigs/html5/html5shiv.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <!-- main 영역입니다. -->
-    <div id="body_layout">
-      <div id="container">
-        <div class="cm_wrap clear">
-          <div class="contents">
-            <h1><img src="./images/common/logo.png" alt="" /></h1>
-            <div class="resume_row">
-              <div class="input_title">id</div>
-              <div class="area_period">
-                <div class="resume_input focus">
-                  <label for="" class="bar_title">
-                    <span class="valid_hidden">YYYYMM</span
-                    ><span class="blind">입사년월</span>
-                  </label>
-                  <input
-                    type="text"
-                    id=""
-                    name=""
-                    class="expect_date box_input size_type2"
-                    value=""
-                  />
-                  <button class="btn_calendar" type="button"></button>
-                  <p class="txt_error"></p>
-                </div>
-                <span class="txt_period">~</span>
-                <div class="resume_input focus">
-                  <label for="" class="bar_title end_day"
-                    ><span class="valid_hidden">YYYYMM</span
-                    ><span class="blind">퇴사년월</span></label
-                  >
-                  <input
-                    type="text"
-                    id="career_end_dt_1661143854"
-                    name=""
-                    class="expect_date box_input size_type2"
-                    value=""
-                  />
-                  <button class="btn_calendar" type="button"></button>
-                  <p class="txt_error"></p>
-                </div>
-                <p class="txt_error"></p>
-              </div>
-              <p class="info_period">(6개월)</p>
-            </div>
-          </div>
-          <div id="visual">
-            <div class="visual_wrap">
-              <div class="slide_list">
-                <div class="slide_item visual_01"></div>
-                <div class="slide_item visual_02"></div>
-                <div class="slide_item visual_03"></div>
-              </div>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<title>tmpl_allscape</title>
+<link rel="stylesheet" href="./css/common.css" />
+<link rel="stylesheet" href="./css/layout.css" />
+<link rel="stylesheet" href="./css/component.css" />
+<link rel="stylesheet" href="./css/resume.css" />
+<script type="text/javascript" src="./font/webfont.js"></script>
+<script src="./js/jquery-3.3.1.min.js"></script>
+<script src="./js/jquery-migrate-1.4.1.min.js" defer="defer"></script>
+<script type="text/javascript">
+    WebFont.load({custom: {families: ["Spoqa Han Sans"],urls: ["./font/font_spoqahansans.css"],}, });
+</script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="./js/include.js"></script>
+<!--[if lt IE 9]>
+    <script src="./js/html5/html5shiv.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<!-- content 영역입니다. -->
+<div class="wrapper">
+    <!-- [include] header -->
+    <div id="header"></div>
+    <!-- //[include] header -->
 
-              <div class="slide_control">
-                <div class="dots clear"></div>
-                <button type="button" class="auto pause">
-                  <span class="skip">정지</span>
-                </button>
-                <button type="button" class="auto play">
-                  <span class="skip">재생</span>
-                </button>
-              </div>
-              <div class="visual_text">
-                <p class="main_title">
-                  <span class="small">배움과 나눔을 통해 행복한</span>
-                  <span class="large">평생학습도시 천안</span>
-                </p>
-                <p class="sub_text">
-                  시민 모두가 행복해지는 배움의 힘! <br />
-                  천안 평생학습센터에 오신 것을 환영합니다.
-                </p>
-              </div>
+    <section class="container">
+       <!-- [include] lnb -->
+       <div id="lnb"></div>
+       <!-- //[include] lnb -->
+        <div class="content_wrap">
+            <div id="location" class="title_wrap">
+                <h2 class="page__title">신규등록</h2>
+                <!-- 로케이션 시작 -->
+                <ul class="location_wrap">
+                    <li class="n1 home"><a href="#">HOME</a></li>
+                    <li class="n2"><a href="#">1차메뉴</a></li>
+                    <li class="n3"><a href="#">2차메뉴</a></li>
+                    <li class="n4"><a href="#" class="navi_ov">신규등록</a></li>
+                </ul>
+                <!-- 로케이션 끝 -->
             </div>
-            <button type="button" class="prev">
-              <span class="skip">이전</span>
-            </button>
-            <button type="button" class="next">
-              <span class="skip">다음</span>
-            </button>
-          </div>
+            <div id="txt">
+                <div class="searchbox">
+                    <div class="title_wrap">
+                    <strong>SEARCH</strong>
+                    <p>자재 선정 승인 현황</p>
+                    </div>
+                    
+                    <div class="formwrap">
+                    <form>
+                        <fieldset>
+                        <legend>전체검색</legend>
+                        <div class="row">
+                            <div class="input_row">
+                                <label for="input4_1" class="bar_title">품명</label>
+                                <input type="text" id="input4_1"  class="box_input w200">
+                            </div>
+                            <div class="input_row">
+                                <label for="input4_2" class="bar_title">공종</label>
+                                <input type="text" id="input4_2"  class="box_input w200">
+                            </div>
+                            <div class="input_row">
+                                <label for="input4_3" class="bar_title">작성자</label>
+                                <input type="text" id="input4_3"  class="box_input w80">
+                            </div>
+                            <div class="input_row">
+                                <strong class="bar_title">작성날짜</strong>
+                                <div class="box_period focus">
+                                    <label for="select4_1"><span class="blind">YYYYMM</span><span class="blind">작성날짜 검색조건 시작일</span></label>
+                                    <input type="date" id="select4_1" class="expect_date box_input">
+                                    <button class="btn_calendar" type="button"></button>
+                                </div> 
+                               <span class="space"> - </span>
+                                <div class="box_period focus">
+                                    <label for="select4_2"><span class="blind">YYYYMM</span><span class="blind">작성날짜 검색조건 종료일</span></label>
+                                    <input type="date" id="select4_2" class="expect_date box_input">
+                                    <button class="btn_calendar" type="button"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input_row">
+                                <label for="input4_4" class="bar_title">검토자</label>
+                                <input type="text" id="input4_4"  class="box_input w80">
+                            </div>
+                            <div class="input_row">
+                                <strong class="bar_title">완료날짜</strong>
+                                <div class="box_period focus">
+                                    <label for="select4_3"><span class="blind">YYYYMM</span><span class="blind">완료날짜 검색조건 시작일</span></label>
+                                    <input type="text" id="select4_3" class="expect_date box_input">
+                                    <button class="btn_calendar" type="button"></button>
+                                </div> 
+                               <span class="space"> - </span>
+                                <div class="box_period focus">
+                                    <label for="select4_4"><span class="blind">YYYYMM</span><span class="blind">완료날짜 검색조건 종료일</span></label>
+                                    <input type="text" id="select4_4" class="expect_date box_input">
+                                    <button class="btn_calendar" type="button"></button>
+                                </div>
+                            </div>
+                           
+                            <div class="input_row">
+                                <label for="select4_5" class="bar_title">상태</label>
+                                <select id="input4_5"  class="box_input w100p">
+                                    <optgroup>
+                                        <option>완료</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                            <div class="input_row">
+                                <label for="select4_6" class="bar_title">결과</label>
+                                <select id="input4_6"  class="box_input w100p">
+                                    <optgroup>
+                                        <option>적합</option>
+                                    </optgroup>
+                                </select>
+                            </div>  
+                            <button type="submit" class="btn btn-primary ml_10"><i class="ico bi-search_w mr5"></i>검색</button>
+                        </div>
+                        </fieldset>
+                    </form>
+                    </div>
+                </div>
+                <div class="search_result_tit">
+                    <div class="lcon">
+                        <h3>자재 승인 현황 검색 결과</h3>
+                        <div class="num_total">24</div>
+                    </div>
+                    <button type="submit" class="btn btn-outline-primary"><i class="ico bi-plus mr5"></i>자재승인 작성</button>
+                </div>
+                <h3>datatable</h3>
+                <table class="table datatable">
+                    <caption>자재승인형황 검색결과  목록 - 번호, 제목, 작성자, 파일, 작성일, 조회수 정보 제공</caption>
+                    <colgroup>
+                        <col style="width:10%">
+                        <col>
+                        <col style="width:20%">
+                        <col style="width:10%">
+                        <col style="width:10%">
+                        <col style="width:10%">
+                        <col style="width:10%">
+                        <col style="width:10%">
+                        <col style="width:10%">
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th scope="col" class="first">번호</th>
+                        <th scope="col">제목</th>
+                        <th scope="col">작성자</th>
+                        <th scope="col">파일</th>
+                        <th scope="col">작성일</th>
+                        <th scope="col">작성일</th>
+                        <th scope="col">작성일</th>
+                        <th scope="col">작성일</th>
+                        <th scope="col" class="last">조회수</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td rowspan="2">1</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td><td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <h3>default</h3>
+                <table class="table table-default table-hover">
+                    <caption>자재승인형황 검색결과  목록 - 번호, 제목, 작성자, 파일, 작성일, 조회수 정보 제공</caption>
+                    <colgroup>
+                        <col style="width:10%">
+                        <col>
+                        <col style="width:20%">
+                        <col style="width:10%">
+                        <col style="width:10%">
+                        <col style="width:10%">
+                        <col style="width:10%">
+                        <col style="width:10%">
+                        <col style="width:10%">
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th scope="col" class="first">번호</th>
+                        <th scope="col">제목</th>
+                        <th scope="col">작성자</th>
+                        <th scope="col">파일</th>
+                        <th scope="col">작성일</th>
+                        <th scope="col">작성일</th>
+                        <th scope="col">작성일</th>
+                        <th scope="col">작성일</th>
+                        <th scope="col" class="last">조회수</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="table-danger">
+                        <td>Mark</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td><td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                    </tr>
+                    <tr>
+                        <td>Mark</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td><td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <!-- [include] pagenate -->
+                 <div id="pagenate"></div>
+                 <!-- //[include] pagenate -->
+            </div>
         </div>
-      </div>
-    </div>
-    <!-- main 영역입니다. -->
-    <script src="./pcms/common/pluigs/slick/slick.js"></script>
-    <script src="./js/main.js"></script>
-  </body>
+
+    </section>
+
+    <!-- [include] fooer -->
+    <div id="footer"></div>
+    <!-- //[include] fooer -->
+</div>
+<script type="text/javascript" src="./js/tmpl.js"></script>
+<!-- //content 영역입니다. -->
+</body>
 </html>

@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<title>151 allscape</title>
+<link rel="stylesheet" href="./css/common.css" />
+<link rel="stylesheet" href="./css/layout.css" />
+<link rel="stylesheet" href="./css/component.css" />
+<link rel="stylesheet" href="./css/resume.css" />
+<script type="text/javascript" src="./font/webfont.js"></script>
+<script src="./js/jquery-3.3.1.min.js"></script>
+<script src="./js/jquery-migrate-1.4.1.min.js" defer="defer"></script>
+
+
+<script type="text/javascript">
+    WebFont.load({custom: {families: ["Spoqa Han Sans"],urls: ["./font/font_spoqahansans.css"],}, });
+</script>
+ <!-- include -->
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+ <script src="./js/include.js"></script>
+ <!-- //include -->
+<!--[if lt IE 9]>
+    <script src="/pcms/common/pluigs/html5/html5shiv.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<!-- content 영역입니다. -->
+<div class="wrapper">
+    <!-- [include] header -->
+    <div id="header"></div>
+    <!-- //[include] header -->
+
+    <section class="container">
+        <!-- [include] lnb -->
+        <div id="lnb"></div>
+        <!-- //[include] lnb -->
+        <div class="content_wrap">
+            <div id="location" class="title_wrap">
+                <h2 class="page__title">월간공정보고</h2>
+                <!-- 로케이션 시작 -->
+                <ul class="location_wrap">
+                    <li class="n1 home"><a href="#">HOME</a></li>
+                    <li class="n2"><a href="#">1차메뉴</a></li>
+                    <li class="n3"><a href="#">2차메뉴</a></li>
+                    <li class="n4"><a href="#" class="navi_ov">신규등록</a></li>
+                </ul>
+                <!-- 로케이션 끝 -->
+            </div>
+            <div id="txt">
+                <!-- 테이블 -->
+                <table class="table dataTable center mb_50">
+                    <caption>월간공정보고  목록 - 번호, 제목, 작성자, 파일, 작성일, 조회수 정보 제공</caption>
+                    <colgroup>
+                        <col>
+                        <col style="width:12%">
+                        <col style="width:8%">
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th scope="col" rowspan="3">공종</th>
+                        <th scope="col" rowspan="3">분야</th>
+                        <th scope="col" rowspan="3">금액</th>
+                        <th scope="col" rowspan="3">단위</th>
+                        <th scope="col" rowspan="2" colspan="2">전체계획</th>
+                        <th scope="col" rowspan="2" colspan="2">기시공</th>
+                        <th scope="col" colspan="4">금회(2021.04.01~04.30)</th>
+                        <th scope="col" colspan="4" class="last">금회(2021.04.01~04.30)</th>
+                        <th scope="col" rowspan="3" class="tbnwrap"></th>
+                    </tr>
+                    <tr>
+                        <th scope="col" colspan="2">계획</th>
+                        <th scope="col" colspan="2">시공</th>
+                        <th scope="col" colspan="2">전체</th>
+                        <th scope="col" colspan="2">금회</th>
+                    </tr>
+                    <tr>
+                        <th scope="col">공사량</th>
+                        <th scope="col">공사비</th>
+                        <th scope="col">공사량</th>
+                        <th scope="col">공사비</th>
+                        <th scope="col">공사량</th>
+                        <th scope="col">공사비</th>
+                        <th scope="col">공사량</th>
+                        <th scope="col">공사비</th>
+                        <th scope="col">계획<br>공사량</th>
+                        <th scope="col">실적<br>공사비</th>
+                        <th scope="col">계획<br>공사량</th>
+                        <th scope="col">실적<br>공사비</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td rowspan="12">소방기계</td>
+                        <td class="text-left">소화장비설치공사</td>
+                        <td class="text-right">12,000,000</td>
+                        <td>식</td>
+                        <td>15%</td>
+                        <td>15%</td>
+                        <td>15%</td>
+                        <td>15%</td>
+                        <td>7.5%</td>
+                        <td>7.5%</td>
+                        <td>7.5%</td>
+                        <td>7.5%</td>
+                        <td>7.5%</td>
+                        <td>7.5%</td>
+                        <td>7.5%</td>
+                        <td class="last">7.5%</td>
+                        <td class="tbnwrap"></td>
+                    </tr>
+                    <tr>
+                        <td class="depth2 top_line">배관</td>
+                        <td class="text-right">12,000,000</td>
+                        <td>식</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>50%</td>
+                        <td>50%</td>
+                        <td>50%</td>
+                        <td>50%</td>
+                        <td>50%</td>
+                        <td>50%</td>
+                        <td>50%</td>
+                        <td class="last">50%</td>
+                        <td class="tbnwrap"></td>
+                    </tr>
+                    <tr>
+                        <td class="depth2">배선</td>
+                        <td class="text-right">12,000,000</td>
+                        <td>식</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>50%</td>
+                        <td>50%</td>
+                        <td>50%</td>
+                        <td>50%</td>
+                        <td>50%</td>
+                        <td>50%</td>
+                        <td>50%</td>
+                        <td class="last">50%</td>
+                        <td class="tbnwrap"></td>
+                    </tr>
+                    <tr>
+                        <td class="depth2">소화전함</td>
+                        <td class="text-right">12,000,000</td>
+                        <td>식</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>50%</td>
+                        <td>50%</td>
+                        <td>50%</td>
+                        <td>50%</td>
+                        <td>50%</td>
+                        <td>50%</td>
+                        <td>50%</td>
+                        <td class="last">50%</td>
+                        <td class="tbnwrap"></td>
+                    </tr> 
+                    <tr>
+                        <td class="text-left">소화장비설치공사</td>
+                        <td class="text-right">12,000,000</td>
+                        <td>식</td>
+                        <td>15%</td>
+                        <td>15%</td>
+                        <td>15%</td>
+                        <td>15%</td>
+                        <td>7.5%</td>
+                        <td>7.5%</td>
+                        <td>7.5%</td>
+                        <td>7.5%</td>
+                        <td>7.5%</td>
+                        <td>7.5%</td>
+                        <td>7.5%</td>
+                        <td class="last">7.5%</td>
+                        <td class="tbnwrap"></td>
+                    </tr> 
+                    <tr>
+                        <td class="depth2 top_line">배관</td>
+                        <td class="text-right">12,000,000</td>
+                        <td>식</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>50%</td>
+                        <td>50%</td>
+                        <td>50%</td>
+                        <td>50%</td>
+                        <td>50%</td>
+                        <td>50%</td>
+                        <td>50%</td>
+                        <td class="last">50%</td>
+                        <td class="tbnwrap"></td>
+                    </tr>
+                    <tr>
+                        <td class="depth2">배선</td>
+                        <td class="text-right">12,000,000</td>
+                        <td>식</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>50%</td>
+                        <td>50%</td>
+                        <td>50%</td>
+                        <td>50%</td>
+                        <td>50%</td>
+                        <td>50%</td>
+                        <td>50%</td>
+                        <td class="last">50%</td>
+                        <td class="tbnwrap"></td>
+                    </tr>
+                    <tr>
+                        <td class="depth2">소화전함</td>
+                        <td class="text-right">12,000,000</td>
+                        <td>식</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>50%</td>
+                        <td>50%</td>
+                        <td>50%</td>
+                        <td>50%</td>
+                        <td>50%</td>
+                        <td>50%</td>
+                        <td>50%</td>
+                        <td class="last">50%</td>
+                        <td class="tbnwrap"></td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">소화장비설치공사</td>
+                        <td class="text-right">12,000,000</td>
+                        <td>식</td>
+                        <td>15%</td>
+                        <td>15%</td>
+                        <td>15%</td>
+                        <td>15%</td>
+                        <td>7.5%</td>
+                        <td>7.5%</td>
+                        <td>7.5%</td>
+                        <td>7.5%</td>
+                        <td>7.5%</td>
+                        <td>7.5%</td>
+                        <td>7.5%</td>
+                        <td>7.5%</td>
+                    </tr> 
+                    <tr>
+                        <td class="depth2 top_line">배관</td>
+                        <td class="text-right">12,000,000</td>
+                        <td>식</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>50%</td>
+                        <td>50%</td>
+                        <td>50%</td>
+                        <td>50%</td>
+                        <td>50%</td>
+                        <td>50%</td>
+                        <td>50%</td>
+                        <td class="last">50%</td>
+                        <td class="tbnwrap"></td>
+                    </tr>
+                    <tr>
+                        <td class="depth2">배선</td>
+                        <td class="text-right">12,000,000</td>
+                        <td>식</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>50%</td>
+                        <td>50%</td>
+                        <td>50%</td>
+                        <td>50%</td>
+                        <td>50%</td>
+                        <td>50%</td>
+                        <td>50%</td>
+                        <td class="last">50%</td>
+                        <td class="tbnwrap"></td>
+                    </tr>
+                    <tr>
+                        <td class="depth2">소화전함</td>
+                        <td class="text-right">12,000,000</td>
+                        <td>식</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>50%</td>
+                        <td>50%</td>
+                        <td>50%</td>
+                        <td>50%</td>
+                        <td>50%</td>
+                        <td>50%</td>
+                        <td>50%</td>
+                        <td class="last">50%</td>
+                        <td class="tbnwrap"></td>
+                    </tr>
+                    <tr class="tfoot">
+                        <td colspan="2">소계</td>
+                        <td class="text-right">12,000,000</td>
+                        <td>식</td>
+                        <td>39.24</td>
+                        <td>39.24</td>
+                        <td>39.24</td>
+                        <td>39.24</td>
+                        <td>14.7</td>
+                        <td>14.7</td>
+                        <td>14.7</td>
+                        <td>14.7</td>
+                        <td>14.7</td>
+                        <td>14.7</td>
+                        <td>14.7</td>
+                        <td class="last">14.7</td>
+                        <td class="tbnwrap"></td>
+                    </tr>
+                    
+                    <tr>
+                        <td rowspan="3">소방기계</td>
+                        <td class="text-left">소화장비설치공사</td>
+                        <td class="text-right">12,000,000</td>
+                        <td>식</td>
+                        <td>20.25</td>
+                        <td>20.25</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="last"></td>
+                        <td class="tbnwrap"></td>
+                    </tr>
+                    <tr>
+                        <td class="text-left top_line">배관</td>
+                        <td class="text-right">12,000,000</td>
+                        <td>식</td>
+                        <td>20.25</td>
+                        <td>20.25</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="last"></td>
+                        <td class="tbnwrap"></td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">배선</td>
+                        <td class="text-right">12,000,000</td>
+                        <td>식</td>
+                        <td>20.25</td>
+                        <td>20.25</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="last"></td>
+                        <td class="tbnwrap"></td>
+                    </tr>
+                    <tr class="tfoot">
+                        <td colspan="2">소계</td>
+                        <td class="text-right">12,000,000</td>
+                        <td>식</td>
+                        <td>20.25</td>
+                        <td>20.25</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="last"></td>
+                        <td class="tbnwrap"></td>
+                    </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2">합계</td>
+                            <td class="text-right">12,000,000</td>
+                            <td>식</td>
+                            <td>100%</td>
+                            <td>100%</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="last"></td>
+                            <td class="tbnwrap"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">순공사비</td>
+                            <td class="text-right">12,000,000</td>
+                            <td>식</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="last"></td>
+                            <td class="tbnwrap">
+                                <div>
+                                <button type="button" class="btn btn-outline-secondary icobn"><i class="ico bi-minus"></i><span class="sr-only">삭제</span></button>
+                                <!-- <button type="button" class="btn btn-outline-primary icobn"><i class="ico bi-plus"></i><span class="sr-only">추가</span></button> -->
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">사급자재비</td>
+                            <td class="text-right">12,000,000</td>
+                            <td>식</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="last"></td>
+                            <td class="tbnwrap">
+                                <div>
+                                <button type="button" class="btn btn-outline-secondary icobn"><i class="ico bi-minus"></i><span class="sr-only">삭제</span></button>
+                                <button type="button" class="btn btn-outline-primary icobn"><i class="ico bi-plus"></i><span class="sr-only">추가</span></button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <!-- //테이블 -->
+                <div class="btnwrap lg">
+                    <button type="button" class="btn btn-primary btn-lg">저장</button>
+                    <button type="button" class="btn btn-secondary btn-lg">취소</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- [include] fooer -->
+    <div id="footer"></div>
+    <!-- //[include] fooer -->
+</div>
+<!-- //content 영역입니다. -->
+</body>
+</html>

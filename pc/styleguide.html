@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>styleguide</title>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"/> -->
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/component.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./css/button.css" />
+    <!-- include -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./js/include.js"></script>
+    <!-- //include -->
+  </head>
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css"> -->
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1>Button</h1>
+          <button type="button" class="btn btn-primary">Primary</button>
+          <button type="button" class="btn btn-secondary">Secondary</button>
+          <button type="button" class="btn btn-outline-primary">Primary</button>
+          <button type="button" class="btn btn-outline-secondary">
+            Secondary
+          </button>
+          <p></p>
+          <h1>Button_size</h1>
+          <p>
+            <button type="button" class="btn btn-primary btn-lg">
+              Button large
+            </button>
+          </p>
+          <p>
+            <button type="button" class="btn btn-primary btn-sm">
+              Button Small
+            </button>
+          </p>
+          <p>
+            <button type="button" class="btn btn-primary btn-block">
+              Button Block
+            </button>
+          </p>
+
+          <br />
+          <br />
+          <br />
+          <h1>Button_color</h1>
+          <button type="button" class="btn btn-primary">Primary</button>
+          <button type="button" class="btn btn-secondary">Secondary</button>
+          <button type="button" class="btn btn-success">Success</button>
+          <button type="button" class="btn btn-danger">Danger</button>
+          <button type="button" class="btn btn-warning">Warning</button>
+          <button type="button" class="btn btn-info">Info</button>
+          <button type="button" class="btn btn-light">Light</button>
+          <button type="button" class="btn btn-dark">Dark</button>
+          <button type="button" class="btn btn-link">Link</button>
+          <br />
+          <br />
+          <br />
+          <h1>ico_Button-blue</h1>
+          <button type="submit" class="btn btn-outline-primary">
+            <i class="ico bi-plus mr5"></i>자재승인 작성
+          </button>
+          <h1>ico_blue</h1>
+          <i class="ico bi-out"></i>
+          <i class="ico bi-plus_big"></i>
+          <i class="ico bi-plus"></i>
+          <h1>ico_white</h1>
+          <div style="background: #ccc">
+            <i class="ico bi-search_w"></i>
+            <i class="ico bi-blank_w"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tablewrap" style="padding: 0 20%">
+      <h1>table-striped</h1>
+      <table class="table table-striped">
+        <caption>
+          자재승인형황 검색결과 목록 - 번호, 제목, 작성자, 파일, 작성일, 조회수
+          정보 제공
+        </caption>
+        <colgroup>
+          <col style="width: 10%" />
+          <col />
+          <col style="width: 20%" />
+          <col style="width: 10%" />
+          <col style="width: 10%" />
+          <col style="width: 10%" />
+          <col style="width: 10%" />
+          <col style="width: 10%" />
+          <col style="width: 10%" />
+        </colgroup>
+        <thead>
+          <tr>
+            <th scope="col" class="first">번호</th>
+            <th scope="col">제목</th>
+            <th scope="col">작성자</th>
+            <th scope="col">파일</th>
+            <th scope="col">작성일</th>
+            <th scope="col">작성일</th>
+            <th scope="col">작성일</th>
+            <th scope="col">작성일</th>
+            <th scope="col" class="last">조회수</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+        </tbody>
+      </table>
+      <h1>table-hover</h1>
+      <table class="table table-hover">
+        <caption>
+          자재승인형황 검색결과 목록 - 번호, 제목, 작성자, 파일, 작성일, 조회수
+          정보 제공
+        </caption>
+        <colgroup>
+          <col style="width: 10%" />
+          <col />
+          <col style="width: 20%" />
+          <col style="width: 10%" />
+          <col style="width: 10%" />
+          <col style="width: 10%" />
+          <col style="width: 10%" />
+          <col style="width: 10%" />
+          <col style="width: 10%" />
+        </colgroup>
+        <thead>
+          <tr>
+            <th scope="col" class="first">번호</th>
+            <th scope="col">제목</th>
+            <th scope="col">작성자</th>
+            <th scope="col">파일</th>
+            <th scope="col">작성일</th>
+            <th scope="col">작성일</th>
+            <th scope="col">작성일</th>
+            <th scope="col">작성일</th>
+            <th scope="col" class="last">조회수</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h1>table-default</h1>
+      <table class="table table-default">
+        <caption>
+          자재승인형황 검색결과 목록 - 번호, 제목, 작성자, 파일, 작성일, 조회수
+          정보 제공
+        </caption>
+        <colgroup>
+          <col style="width: 10%" />
+          <col />
+          <col style="width: 20%" />
+          <col style="width: 10%" />
+          <col style="width: 10%" />
+          <col style="width: 10%" />
+          <col style="width: 10%" />
+          <col style="width: 10%" />
+          <col style="width: 10%" />
+        </colgroup>
+        <thead>
+          <tr>
+            <th scope="col" class="first">번호</th>
+            <th scope="col">제목</th>
+            <th scope="col">작성자</th>
+            <th scope="col">파일</th>
+            <th scope="col">작성일</th>
+            <th scope="col">작성일</th>
+            <th scope="col">작성일</th>
+            <th scope="col">작성일</th>
+            <th scope="col" class="last">조회수</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="2">1</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+        </tbody>
+      </table>
+      <h1>table-border</h1>
+      <table class="table table-border">
+        <caption>
+          자재승인형황 검색결과 목록 - 번호, 제목, 작성자, 파일, 작성일, 조회수
+          정보 제공
+        </caption>
+        <colgroup>
+          <col style="width: 10%" />
+          <col />
+          <col style="width: 20%" />
+          <col style="width: 10%" />
+          <col style="width: 10%" />
+          <col style="width: 10%" />
+          <col style="width: 10%" />
+          <col style="width: 10%" />
+          <col style="width: 10%" />
+        </colgroup>
+        <thead>
+          <tr>
+            <th scope="col" class="first">번호</th>
+            <th scope="col">제목</th>
+            <th scope="col">작성자</th>
+            <th scope="col">파일</th>
+            <th scope="col">작성일</th>
+            <th scope="col">작성일</th>
+            <th scope="col">작성일</th>
+            <th scope="col">작성일</th>
+            <th scope="col" class="last">조회수</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="2">1</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h1>dataTable</h1>
+      <table class="table dataTable">
+        <caption>
+          자재승인형황 검색결과 목록 - 번호, 제목, 작성자, 파일, 작성일, 조회수
+          정보 제공
+        </caption>
+        <colgroup>
+          <col style="width: 10%" />
+          <col />
+          <col style="width: 20%" />
+          <col style="width: 10%" />
+          <col style="width: 10%" />
+          <col style="width: 10%" />
+          <col style="width: 10%" />
+          <col style="width: 10%" />
+          <col style="width: 10%" />
+        </colgroup>
+        <thead>
+          <tr>
+            <th scope="col" class="first">번호</th>
+            <th scope="col">제목</th>
+            <th scope="col">작성자</th>
+            <th scope="col">파일</th>
+            <th scope="col">작성일</th>
+            <th scope="col">작성일</th>
+            <th scope="col">작성일</th>
+            <th scope="col">작성일</th>
+            <th scope="col" class="last">조회수</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="2">1</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+        </tbody>
+      </table>
+
+      
+    </div>
+
+  <!-- [include] pagenate -->
+  <div id="pagenate"></div>
+  <!-- //[include] pagenate -->
+
+  <i class="ico state_yes">완료</i>
+  <i class="ico state_none">미완료</i>
+  
+  <span class="tag state_yes"><i class="ico state_yes"></i>적합</span>
+
+  <span class="tag state_ing">검토중</span>
+  <span class="tag state_end">검토완료</span>
+
+
+  
+  <div class="btnwrap lg">
+    <button type="button" class="btn btn-primary btn-lg">저장</button>
+    <button type="button" class="btn btn-secondary btn-lg">취소</button>
+</div>
+
+<div class="input_row">
+    <label for="select4_6" class="bar_title">결과</label>
+    <select id="input4_6"  class="box_input w100p">
+        <optgroup>
+            <option>적합</option>
+        </optgroup>
+    </select>
+</div> 
+
+
+
+<div class="input_row">
+    <label for="input4_1" class="bar_title"><b>직위</b></label>
+    <input type="text" id="input4_6"  class="box_input">
+</div>
+
+
+<div class="input_row">
+    <strong class="bar_title">작성날짜</strong>
+    <div class="box_period">
+        <label for="select4_1"><span class="blind">YYYYMM</span><span class="blind">작성날짜 검색조건 시작일</span></label>
+        <input type="date" id="select4_1" class="expect_date box_input">
+       <!-- <button class="btn_calendar" type="button"></button>-->
+    </div> 
+   <span class="space"> - </span>
+    <div class="box_period">
+        <label for="select4_2"><span class="blind">YYYYMM</span><span class="blind">작성날짜 검색조건 종료일</span></label>
+        <input type="date" id="select4_2" class="expect_date box_input">
+       <!-- <button class="btn_calendar" type="button"></button>-->
+    </div>
+</div>
+
+
+
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script> -->
+  </body>
+</html>

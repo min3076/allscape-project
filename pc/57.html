@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<title>57 allscape</title>
+<link rel="stylesheet" href="./css/common.css" />
+<link rel="stylesheet" href="./css/layout.css" />
+<link rel="stylesheet" href="./css/component.css" />
+<link rel="stylesheet" href="./css/resume.css" />
+<script type="text/javascript" src="./font/webfont.js"></script>
+<script src="./js/jquery-3.3.1.min.js"></script>
+<script src="./js/jquery-migrate-1.4.1.min.js" defer="defer"></script>
+<script type="text/javascript">
+    WebFont.load({custom: {families: ["Spoqa Han Sans"],urls: ["./font/font_spoqahansans.css"],}, });
+</script>
+ <!-- include -->
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+ <script src="./js/include.js"></script>
+ <!-- //include -->
+<!--[if lt IE 9]>
+    <script src="/pcms/common/pluigs/html5/html5shiv.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<!-- content 영역입니다. -->
+<div class="wrapper">
+    <!-- [include] header -->
+    <div id="header"></div>
+    <!-- //[include] header -->
+
+    <section class="container">
+       <!-- [include] lnb -->
+       <div id="lnb"></div>
+       <!-- //[include] lnb -->
+        <div class="content_wrap">
+            <div id="location" class="title_wrap">
+                <h2 class="page__title">문서관리</h2>
+                <!-- 로케이션 시작 -->
+                <ul class="location_wrap">
+                    <li class="n1 home"><a href="#">HOME</a></li>
+                    <li class="n2"><a href="#">1차메뉴</a></li>
+                    <li class="n3"><a href="#">2차메뉴</a></li>
+                    <li class="n4"><a href="#" class="navi_ov">신규등록</a></li>
+                </ul>
+                <!-- 로케이션 끝 -->
+            </div>
+            <div id="txt">
+                <!-- 결재/확인 요청문서 -->
+                <div class="linebox">
+                    <div class="search_result_tit">
+                        <div class="lcon">
+                            <h3>결재/확인 요청 문서</h3>
+                            <div class="num_total">24</div>
+                        </div>
+                        <button type="submit" class="btn btn-outline-secondary">전체보기</button>
+                    </div>
+                    <table class="table table-default table-hover">
+                        <caption>자재승인형황 검색결과  목록 - 번호, 제목, 작성자, 파일, 작성일, 조회수 정보 제공</caption>
+                        <colgroup>
+                            <col>
+                            <col>
+                            <col>
+                            <col>
+                            <col style="width:15%">
+                            <col>
+                            <col>
+                            <col>
+                        </colgroup>
+                        <thead>
+                        <tr>
+                            <th scope="col">문서 양식</th>
+                            <th scope="col">제목</th>
+                            <th scope="col">작성자</th>
+                            <th scope="col">작성날짜</th>
+                            <th scope="col">관련문서</th>
+                            <th scope="col">수신자</th>
+                            <th scope="col">상태</th>
+                            <th scope="col">출력</th>
+                            <th scope="col">문서다운로드</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>현장실정보고서</td>
+                            <td>00000공사 변경</td>
+                            <td>홍길동</td>
+                            <td>2022-06-08 11:05:00</td>
+                            <td>20220608-설계검토의견서-01</td>
+                            <td>김철수</td>
+                            <td><span class="tag state_ing">결재 대기중</span></td>
+                            <td><button type="button"><i class="ico bi-print">프린트</i></button></td>
+                            <td>
+                                <div class="btnwrap sm">
+                                    <button type="button"><i class="ico bi-hwp">hwp파일</i></button>
+                                    <button type="button"><i class="ico bi-pdf">pdf파일</i></button>
+                                    <button type="button"><i class="ico bi-doc">doc파일</i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- //결재/확인 요청문서 -->
+                
+                <!-- 기안 문서 -->
+                <div class="linebox">
+                    <div class="search_result_tit">
+                        <div class="lcon">
+                            <h3>기안 문서</h3>
+                            <div class="num_total">24</div>
+                        </div>
+                        <div class="btnwrap">
+                            <button type="submit" class="btn btn-outline-secondary">전체보기</button>
+                            <button type="submit" class="btn btn-outline-primary">문서작성</button>
+                        </div>
+                    </div>
+                    <table class="table table-default table-hover">
+                        <caption>자재승인형황 검색결과  목록 - 번호, 제목, 작성자, 파일, 작성일, 조회수 정보 제공</caption>
+                        <colgroup>
+                            <col>
+                            <col>
+                            <col>
+                            <col>
+                            <col style="width:15%">
+                            <col>
+                            <col>
+                            <col>
+                        </colgroup>
+                        <thead>
+                        <tr>
+                            <th scope="col">문서 양식</th>
+                            <th scope="col">제목</th>
+                            <th scope="col">작성자</th>
+                            <th scope="col">작성날짜</th>
+                            <th scope="col">관련문서</th>
+                            <th scope="col">수신자</th>
+                            <th scope="col">상태</th>
+                            <th scope="col">출력</th>
+                            <th scope="col">문서다운로드</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>현장실정보고서</td>
+                            <td>00000공사 변경</td>
+                            <td>홍길동</td>
+                            <td>2022-06-08 11:05:00</td>
+                            <td>20220608-설계검토의견서-01</td>
+                            <td>김철수</td>
+                            <td><span class="tag state_ing">결재 대기중</span></td>
+                            <td><button type="button"><i class="ico bi-print">프린트</i></button></td>
+                            <td>
+                                <div class="btnwrap sm">
+                                    <button type="button"><i class="ico bi-hwp">hwp파일</i></button>
+                                    <button type="button"><i class="ico bi-pdf">pdf파일</i></button>
+                                    <button type="button"><i class="ico bi-doc">doc파일</i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- //기안 문서 -->
+
+                 <!-- 공문 문서 -->
+                 <div class="linebox">
+                    <div class="search_result_tit">
+                        <div class="lcon">
+                            <h3>공문</h3>
+                            <div class="num_total">24</div>
+                        </div>
+                        <div class="btnwrap">
+                            <button type="submit" class="btn btn-outline-secondary">전체보기</button>
+                            <button type="submit" class="btn btn-outline-primary">문서작성</button>
+                        </div>
+                    </div>
+                    <table class="table table-default table-hover">
+                        <caption>자재승인형황 검색결과  목록 - 번호, 제목, 작성자, 파일, 작성일, 조회수 정보 제공</caption>
+                        <colgroup>
+                            <col>
+                            <col>
+                            <col>
+                            <col>
+                            <col style="width:15%">
+                            <col>
+                            <col>
+                            <col>
+                        </colgroup>
+                        <thead>
+                        <tr>
+                            <th scope="col">문서 양식</th>
+                            <th scope="col">제목</th>
+                            <th scope="col">작성자</th>
+                            <th scope="col">작성날짜</th>
+                            <th scope="col">관련문서</th>
+                            <th scope="col">수신자</th>
+                            <th scope="col">상태</th>
+                            <th scope="col">출력</th>
+                            <th scope="col">문서다운로드</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>현장실정보고서</td>
+                            <td>00000공사 변경</td>
+                            <td>홍길동</td>
+                            <td>2022-06-08 11:05:00</td>
+                            <td>20220608-설계검토의견서-01</td>
+                            <td>김철수</td>
+                            <td><span class="tag state_ing">결재 대기중</span></td>
+                            <td><button type="button"><i class="ico bi-print">프린트</i></button></td>
+                            <td>
+                                <div class="btnwrap sm">
+                                    <button type="button"><i class="ico bi-hwp">hwp파일</i></button>
+                                    <button type="button"><i class="ico bi-pdf">pdf파일</i></button>
+                                    <button type="button"><i class="ico bi-doc">doc파일</i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- //공문 문서 -->
+
+                <!-- 문서 조회 -->
+                <div class="linebox">
+                    <div class="searchbox">
+                        <div class="title_wrap">
+                        <strong>SEARCH</strong>
+                        <p>자재 선정 승인 현황</p>
+                        </div>
+                        
+                        <div class="formwrap">
+                        <form>
+                            <fieldset>
+                            <legend>전체검색</legend>
+                            <div class="row">
+                                <div class="input_row">
+                                    <label for="input4_1" class="bar_title">품명</label>
+                                    <input type="text" id="input4_1"  class="box_input w200">
+                                </div>
+                                <div class="input_row">
+                                    <label for="input4_2" class="bar_title">공종</label>
+                                    <input type="text" id="input4_2"  class="box_input w200">
+                                </div>
+                                <div class="input_row">
+                                    <label for="input4_3" class="bar_title">작성자</label>
+                                    <input type="text" id="input4_3"  class="box_input w80">
+                                </div>
+                                <div class="input_row">
+                                    <strong class="bar_title">작성날짜</strong>
+                                    <div class="box_period focus">
+                                        <label for="select4_1"><span class="blind">YYYYMM</span><span class="blind">작성날짜 검색조건 시작일</span></label>
+                                        <input type="date" id="select4_1" class="expect_date box_input">
+                                       <!-- <button class="btn_calendar" type="button"></button>-->
+                                    </div> 
+                                <span class="space"> - </span>
+                                    <div class="box_period focus">
+                                        <label for="select4_2"><span class="blind">YYYYMM</span><span class="blind">작성날짜 검색조건 종료일</span></label>
+                                        <input type="date" id="select4_2" class="expect_date box_input">
+                                       <!-- <button class="btn_calendar" type="button"></button>-->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input_row">
+                                    <label for="input4_4" class="bar_title">검토자</label>
+                                    <input type="text" id="input4_4"  class="box_input w80">
+                                </div>
+                                <div class="input_row">
+                                    <strong class="bar_title">완료날짜</strong>
+                                    <div class="box_period focus">
+                                        <label for="select4_3"><span class="blind">YYYYMM</span><span class="blind">완료날짜 검색조건 시작일</span></label>
+                                        <input type="date" id="select4_3" class="expect_date box_input">
+                                       <!-- <button class="btn_calendar" type="button"></button>-->
+                                    </div> 
+                                <span class="space"> - </span>
+                                    <div class="box_period focus">
+                                        <label for="select4_4"><span class="blind">YYYYMM</span><span class="blind">완료날짜 검색조건 종료일</span></label>
+                                        <input type="date" id="select4_4" class="expect_date box_input">
+                                       <!-- <button class="btn_calendar" type="button"></button>-->
+                                    </div>
+                                </div>
+                                <div class="input_row">
+                                    <label for="select4_5" class="bar_title">상태</label>
+                                    <select id="input4_5"  class="box_input w100p">
+                                        <optgroup>
+                                            <option>완료</option>
+                                        </optgroup>
+                                    </select>
+                                </div>
+                                <div class="input_row">
+                                    <label for="select4_6" class="bar_title">결과</label>
+                                    <select id="input4_6"  class="box_input w100p">
+                                        <optgroup>
+                                            <option>적합</option>
+                                        </optgroup>
+                                    </select>
+                                </div>
+                                <button type="submit" class="btn btn-primary ml_10"><i class="ico bi-search_w mr5"></i>검색</button>
+                            </div>
+                            </fieldset>
+                        </form>
+                        </div>
+                    </div>
+                   
+                    <table class="table table-default table-hover">
+                        <caption>자재승인형황 검색결과  목록 - 번호, 제목, 작성자, 파일, 작성일, 조회수 정보 제공</caption>
+                        <colgroup>
+                            <col style="width:10%">
+                            <col style="width:10%">
+                            <col>
+                            <col style="width:15%">
+                            <col>
+                            <col>
+                            <col style="width:15%">
+                            <col>
+                            <col>
+                            <col>
+                        </colgroup>
+                        <thead>
+                        <tr>
+                            <th scope="col">작성날짜</th>
+                            <th scope="col">완료날짜</th>
+                            <th scope="col">문서 양식</th>
+                            <th scope="col">관련문서</th>
+                            <th scope="col">작성자</th>
+                            <th scope="col">수신자</th>
+                            <th scope="col">문서번호</th>
+                            <th scope="col">상태</th>
+                            <th scope="col">출력</th>
+                            <th scope="col">문서다운로드</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>2022-06-08 11:05:00</td>
+                            <td>2022-06-08 11:05:00</td>
+                            <td>현장실정보고서</td>
+                            <td>20220608-설계검토의견서-01</td>
+                            <td>홍길동</td>
+                            <td>김철수</td>
+                            <td>20220608-01-시정지시서</td>
+                            <td>
+                                <div class="btnwrap sm">
+                                    <span class="tag state_end">검토완료</span>
+                                    <button type="button" class="btn btn-outline-secondary btn-sm">철회</i></button>
+                                </div>
+                            </td>
+                            <td><button type="button"><i class="ico bi-print">프린트</i></button></td>
+                            <td>
+                                <div class="btnwrap sm">
+                                    <button type="button"><i class="ico bi-hwp">hwp파일</i></button>
+                                    <button type="button"><i class="ico bi-pdf">pdf파일</i></button>
+                                    <button type="button"><i class="ico bi-doc">doc파일</i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <!-- [include] pagenate -->
+                    <div id="pagenate"></div>
+                    <!-- //[include] pagenate -->
+                </div>
+                <!-- //문서 조회 -->
+                
+            </div>   
+        </div>     
+
+
+
+
+
+
+
+    </section>
+
+    <!-- [include] fooer -->
+    <div id="footer"></div>
+    <!-- //[include] fooer -->
+</div>
+<!-- //content 영역입니다. -->
+</body>
+</html>

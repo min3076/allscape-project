@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+@font-face {
+   font-family: 'Noto Sans KR';
+   font-style: normal;
+   src: url(/pcms/common/font/notosanskr/NotoSansKR-Regular.woff2) format('woff2'),
+        url(/pcms/common/font/notosanskr/NotoSansKR-Regular.woff) format('woff'),
+        url(/pcms/common/font/notosanskr/NotoSansKR-Regular.otf) format('opentype');
+ }
+ 
+ @font-face {
+   font-family: 'Noto Sans KR';
+   font-style: normal;
+   font-weight: 400;
+   src: url(/pcms/common/font/notosanskr/NotoSansKR-Regular.woff2) format('woff2'),
+        url(/pcms/common/font/notosanskr/NotoSansKR-Regular.woff) format('woff'),
+        url(/pcms/common/font/notosanskr/NotoSansKR-Regular.otf) format('opentype');
+ }
+
+.ntk{font-family: "Noto Sans CJK KR" , "Noto Sans KR", 'Noto Sans EOT', SimHei, Sans-serif;font-weight: 400;}

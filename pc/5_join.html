@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<title>5 allscape</title>
+<link rel="stylesheet" href="./css/common.css" />
+<link rel="stylesheet" href="./css/layout.css" />
+<link rel="stylesheet" href="./css/component.css" />
+<script type="text/javascript" src="./font/webfont.js"></script>
+<script src="./js/jquery-3.3.1.min.js"></script>
+<script src="./js/jquery-migrate-1.4.1.min.js" defer="defer"></script>
+
+
+<script type="text/javascript">
+    WebFont.load({custom: {families: ["Spoqa Han Sans"],urls: ["./font/font_spoqahansans.css"],}, });
+</script>
+ <!-- include -->
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+ <script src="./js/include.js"></script>
+ <!-- //include -->
+<!--[if lt IE 9]>
+    <script src="/pcms/common/pluigs/html5/html5shiv.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<!-- content 영역입니다. -->
+<div class="wrapper join">
+    <section class="container">
+        <div class="titwrap tit2">
+            <h1>회원가입</h1> 
+        </div>
+        <div class="rcon">
+            <div class="linebox_bott col2">
+                <div class="input_row">
+                    <strong class="bar_title"><b><span class="point">필수</span>회원구분</b></strong>
+                    <div class="box_period">
+                        <input type="radio" id="input5_0_1" checked>
+                        <label for="input5_0_1" class="mr_10">개인</label>
+                        <input type="radio" id="input5_0_2" >
+                        <label for="input5_0_2" >기업</label>
+                    </div>
+                </div>
+            </div>
+            <div class="linebox_bott col2">
+                <div class="input_row">
+                    <label for="input5_1" class="bar_title"><b><span class="point">필수</span>ID</b></label>
+                    <input type="text" id="input5_1"  class="box_input">
+                </div>
+                <div class="input_row">
+                    <label for="input5_2" class="bar_title"><b><span class="point">필수</span>이름</b></label>
+                    <input type="text" id="input5_2"  class="box_input">
+                </div>
+                <div class="input_row">
+                    <label for="input5_3" class="bar_title"><b><span class="point">필수</span>패스워드</b></label>
+                    <input type="password" id="input5_3"  class="box_input">
+                </div>
+                <div class="input_row">
+                    <label for="input5_4" class="bar_title"><b><span class="point">필수</span>패스워드 확인</b></label>
+                    <input type="password" id="input5_4"  class="box_input">
+                </div>
+                <div class="input_row">
+                    <label for="input5_5" class="bar_title"><b><span class="point">필수</span>연락처</b></label>
+                    <input type="text" id="input5_5"  class="box_input">
+                </div>
+                <div class="input_row">
+                    <label for="input5_6" class="bar_title"><b><span class="point">필수</span>E-Mail</b></label>
+                    <input type="email" id="input5_6"  class="box_input wide">
+                </div>
+                <div class="input_row">
+                    <label for="input5_7" class="bar_title"><b>직위</b></label>
+                    <input type="text" id="input5_7"  class="box_input">
+                </div>
+                <div class="input_row">
+                    <label for="input5_8" class="bar_title"><b><span class="point">필수</span>주민등록번호</b></label>
+                    <input type="text" id="input5_8"  class="box_input">
+                </div>
+                <div class="input_row">
+                    <strong class="bar_title"><b><span class="point">필수</span>재직 여부</b></strong>
+                    <div class="box_period">
+                        <input type="radio" id="input5_9_1" checked>
+                        <label for="input5_9_1" class="mr_10">재직</label>
+                        <input type="radio" id="input5_9_2" >
+                        <label for="input5_9_2" >무직</label>
+                    </div>
+                </div>
+
+            </div>
+            <div class="linebox_bott col2">
+                <div class="input_row">
+                    <label for="input5_2_1" class="bar_title"><b>회사명</b></label>
+                    <input type="text" id="input5_2_1"  class="box_input wide">
+                </div>
+                <div class="input_row">
+                    <label for="input5_2_2" class="bar_title"><b>회사 대표자</b></label>
+                    <input type="text" id="input5_2_2"  class="box_input">
+                </div>
+                <div class="input_row">
+                    <label for="input5_2_6" class="bar_title"><b>회사 소재지</b></label>
+                    <input type="text" id="input5_2_6"  class="box_input wide">
+                </div>
+                <div class="input_row">
+                    <label for="input5_2_3" class="bar_title"><b>회사 연락처</b></label>
+                    <input type="text" id="input5_2_3"  class="box_input">
+                </div>
+                <div class="input_row full_row">
+                    <strong class="bar_title"><b>등급수첩</b></strong>
+                    <div class="box_period filewrap">
+                        <input placeholder="등급수첩 첨부파일" class="box_input wide">
+                        <label for="input5_2_7" class="btn btn-outline-primary"><i class="ico bi-plus mr_5"></i><span class="sr-only">등급수첩</span> 첨부</label> 
+                        <input type="file" id="input5_2_7">
+                    </div>
+                </div>
+                <div class="input_row">
+                    <label for="select5_2_4" class="bar_title">업무구분</b></label>
+                    <select id="select5_2_4"  class="input_select">
+                        <optgroup>
+                            <option>시공자</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div class="input_row full_row">
+                    <strong class="bar_title"><b>서명</b></strong>
+                    <div class="box_period filewrap">
+                        <input placeholder="서명 첨부파일" class="box_input wide">
+                        <label for="input5_2_8" class="btn btn-outline-primary"><i class="ico bi-plus mr_5"></i><span class="sr-only">서명</span> 첨부</label> 
+                        <input type="file" id="input5_2_8">
+                    </div>
+                </div>
+                <div class="input_row full_row">
+                    <strong class="bar_title"><b>분야/등급</b></strong>
+                    <div class="box_period addwrap">
+                        <div>
+                            <div class="selectwrap">
+                                <label for="select5_2_9_1" class="sr-only">분야선택</label> 
+                                <select id="select5_2_9_1"  class="input_select">
+                                    <optgroup>
+                                        <option>전기</option>
+                                    </optgroup>
+                                </select>
+                                <span class="space"> / </span>
+                                <label for="select5_2_9_2" class="sr-only">등급선택</label> 
+                                <select id="select5_2_9_2"  class="input_select">
+                                    <optgroup>
+                                        <option>특급기술자</option>
+                                    </optgroup>
+                                </select>
+                                <button type="button" class="btn btn-outline-primary"><i class="ico bi-plus mr5"></i>첨부</button>
+                            </div>
+                            <div class="linebox sm gray">
+                                <ul>
+                                    <li>전기/특급기술자
+                                        <button type="button" class="btn btn-outline-secondary"><i class="ico bi-minus mr5"></i>삭제</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btnwrap lg">
+                <button type="button" class="btn btn-primary btn-lg">저장</button>
+                <button type="button" class="btn btn-secondary btn-lg">취소</button>
+            </div>
+            <!-- [include] fooer -->
+            <div id="footer"></div>
+            <!-- //[include] fooer -->
+        </div>
+    </section>
+</div>
+<!-- //content 영역입니다. -->
+</body>
+</html>

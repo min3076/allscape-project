@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<title>74 allscape</title>
+<link rel="stylesheet" href="./css/common.css" />
+<link rel="stylesheet" href="./css/layout.css" />
+<link rel="stylesheet" href="./css/component.css" />
+<link rel="stylesheet" href="./css/resume.css" />
+<script type="text/javascript" src="./font/webfont.js"></script>
+<script src="./js/jquery-3.3.1.min.js"></script>
+<script src="./js/jquery-migrate-1.4.1.min.js" defer="defer"></script>
+<script type="text/javascript">
+    WebFont.load({custom: {families: ["Spoqa Han Sans"],urls: ["./font/font_spoqahansans.css"],}, });
+</script>
+ <!-- include -->
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+ <script src="./js/include.js"></script>
+ <!-- //include -->
+<!--[if lt IE 9]>
+    <script src="/pcms/common/pluigs/html5/html5shiv.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<!-- content 영역입니다. -->
+<div class="wrapper">
+    <!-- [include] header -->
+    <div id="header"></div>
+    <!-- //[include] header -->
+
+    <section class="container">
+       <!-- [include] lnb -->
+       <div id="lnb"></div>
+       <!-- //[include] lnb -->
+        <div class="content_wrap">
+            <div id="location" class="title_wrap">
+                <h2 class="page__title">감리일지</h2>
+                <!-- 로케이션 시작 -->
+                <ul class="location_wrap">
+                    <li class="n1 home"><a href="#">HOME</a></li>
+                    <li class="n2"><a href="#">1차메뉴</a></li>
+                    <li class="n3"><a href="#">2차메뉴</a></li>
+                    <li class="n4"><a href="#" class="navi_ov">신규등록</a></li>
+                </ul>
+                <!-- 로케이션 끝 -->
+            </div>
+            <div id="txt">
+                <!-- search -->
+                <div class="searchbox">
+                    <div class="title_wrap">
+                    <strong>SEARCH</strong>
+                    <p>감리일지 조회</p>
+                    </div>
+                    
+                    <div class="formwrap">
+                    <form>
+                        <fieldset>
+                        <legend>전체검색</legend>
+                        <div class="row">
+                            <div class="input_row">
+                                <strong class="bar_title">작성날짜</strong>
+                                <div class="box_period focus">
+                                    <label for="select74_1"><span class="blind">YYYYMM</span><span class="blind">작성날짜 검색조건 시작일</span></label>
+                                    <input type="date" id="select74_1" class="expect_date box_input">
+                                   <!-- <button class="btn_calendar" type="button"></button>-->
+                                </div> 
+                                <span class="space"> - </span>
+                                    <div class="box_period focus">
+                                        <label for="select74_2"><span class="blind">YYYYMM</span><span class="blind">작성날짜 검색조건 종료일</span></label>
+                                        <input type="date" id="select74_2" class="expect_date box_input">
+                                       <!-- <button class="btn_calendar" type="button"></button>-->
+                                    </div>
+                            </div>
+                            <div class="input_row grow2">
+                                <label for="input74_1" class="bar_title">감리사항</label>
+                                <input type="text" id="input74_1"  class="box_input w100p">
+                            </div>
+                            <button type="submit" class="btn btn-primary ml_10"><i class="ico bi-search_w mr5"></i>검색</button>
+                        </div>
+                        </fieldset>
+                    </form>
+                    </div>
+                </div>
+                <!-- //search -->
+                <!-- 문서 조회 결과-->
+                <div class="search_result_tit">
+                    <div class="lcon">
+                        <h3>감리일지(을지) 검색 결과</h3>
+                        <div class="num_total">24</div>
+                    </div>
+                    <div class="btnwrap">
+                        <button type="button" class="btn btn-outline-secondary">문서통합</button>
+                        <button type="button" class="btn btn-outline-primary"><i class="ico bi-plus mr5"></i>감리일지 작성</button>
+                    </div>
+                    
+                </div>
+                <table class="table table-default table-hover">
+                    <caption>감리일지 검색결과  목록 - 번호, 제목, 작성자, 파일, 작성일, 조회수 정보 제공</caption>
+                    <colgroup>
+                        <col style="width:20%">
+                        <col style="width:15%">
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                        <col style="width:20%">
+                        <col style="width:20%">
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th scope="col">작성날짜</th>
+                        <th scope="col">작성자</th>
+                        <th scope="col">설계</th>
+                        <th scope="col">품질</th>
+                        <th scope="col">시공</th>
+                        <th scope="col">공정</th>
+                        <th scope="col">기성</th>
+                        <th scope="col">출력</th>
+                        <th scope="col">문서다운로드</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>2022-06-08 11:05:00</td>
+                        <td>홍길동</td>
+                        <td><i class="ico state_yes">완료</i></td>
+                        <td><i class="ico state_yes">완료</i></td>
+                        <td><i class="ico state_yes">완료</i></td>
+                        <td><i class="ico state_none">미완료</i></td>
+                        <td><i class="ico state_yes">완료</i></td>
+                        <td><button type="button"><i class="ico bi-print">프린트</i></button></td>
+                        <td>
+                            <div class="btnwrap sm">
+                                <button type="button"><i class="ico bi-hwp">hwp파일</i></button>
+                                <button type="button"><i class="ico bi-pdf">pdf파일</i></button>
+                                <button type="button"><i class="ico bi-doc">doc파일</i></button>
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <!-- [include] pagenate -->
+                <div id="pagenate"></div>
+                <!-- //[include] pagenate -->
+                <!-- //문서 조회 결과-->
+                
+            </div>   
+        </div>     
+
+
+
+
+
+
+
+    </section>
+
+    <!-- [include] fooer -->
+    <div id="footer"></div>
+    <!-- //[include] fooer -->
+</div>
+<!-- //content 영역입니다. -->
+</body>
+</html>

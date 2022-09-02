@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<title>4 allscape</title>
+<link rel="stylesheet" href="./css/common.css" />
+<link rel="stylesheet" href="./css/layout.css" />
+<link rel="stylesheet" href="./css/component.css" />
+<script type="text/javascript" src="./font/webfont.js"></script>
+<script src="./js/jquery-3.3.1.min.js"></script>
+<script src="./js/jquery-migrate-1.4.1.min.js" defer="defer"></script>
+
+
+<script type="text/javascript">
+    WebFont.load({custom: {families: ["Spoqa Han Sans"],urls: ["./font/font_spoqahansans.css"],}, });
+</script>
+ <!-- include -->
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+ <script src="./js/include.js"></script>
+ <!-- //include -->
+<!--[if lt IE 9]>
+    <script src="/pcms/common/pluigs/html5/html5shiv.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<!-- content 영역입니다. -->
+<div class="wrapper wide">
+    <!-- [include] header -->
+    <div id="header"></div>
+    <!-- //[include] header -->
+    <section class="container">
+        <div id="location" class="title_wrap">
+            <h2 class="page__title">MY PAGE</h2>
+            <!-- 로케이션 시작 -->
+            <ul class="location_wrap">
+                <li class="n1 home"><a href="#">HOME</a></li>
+                <li class="n4"><a href="#" class="navi_ov">MY PAGE</a></li>
+            </ul>
+            <!-- 로케이션 끝 -->
+        </div>
+        <div id="txt">
+            <div class="linebox_bott col2">
+                <div class="input_row">
+                    <strong class="bar_title"><b><span class="point">필수</span>회원구분</b></strong>
+                    <div class="box_period">
+                        <input type="radio" id="input11_0_1">
+                        <label for="input11_0_1" class="mr_10">개인</label>
+                        <input type="radio" id="input11_0_2" checked>
+                        <label for="input11_0_2" >기업</label>
+                    </div>
+                </div>
+            </div>
+            <div class="linebox_bott col2">
+                <div class="input_row">
+                    <strong class="bar_title"><b><span class="point">필수</span>ID</b></strong>
+                    <p class="input_txt">Admin</p>
+                </div>
+                <div class="input_row">
+                    <label for="input11_2" class="bar_title"><b><span class="point">필수</span>이름</b></label>
+                    <input type="text" id="input11_2"  class="box_input">
+                </div>
+                <div class="input_row">
+                    <label for="input11_3" class="bar_title"><b><span class="point">필수</span>패스워드</b></label>
+                    <input type="password" id="input11_3"  class="box_input">
+                </div>
+                <div class="input_row">
+                    <label for="input11_4" class="bar_title"><b><span class="point">필수</span>패스워드 확인</b></label>
+                    <input type="password" id="input11_4"  class="box_input">
+                </div>
+                <div class="input_row">
+                    <label for="input11_5" class="bar_title"><b><span class="point">필수</span>연락처</b></label>
+                    <input type="text" id="input11_5"  class="box_input">
+                </div>
+                <div class="input_row">
+                    <label for="input11_6" class="bar_title"><b><span class="point">필수</span>E-Mail</b></label>
+                    <input type="email" id="input11_6"  class="box_input wide">
+                </div>
+                <div class="input_row">
+                    <label for="input11_7" class="bar_title"><b>직위</b></label>
+                    <input type="text" id="input11_7"  class="box_input">
+                </div>
+                <div class="input_row">
+                    <label for="input11_8" class="bar_title"><b><span class="point">필수</span>주민등록번호</b></label>
+                    <input type="text" id="input11_8"  class="box_input">
+                </div>
+                <div class="input_row">
+                    <strong class="bar_title"><b><span class="point">필수</span>업무구분</b></strong>
+                    <p class="input_txt">감리자</p>
+                </div>
+
+            </div>
+            <div class="linebox_bott col2">
+                <div class="input_row">
+                    <label for="input11_2_1" class="bar_title"><b><span class="point">필수</span>회사명</b></label>
+                    <input type="text" id="input11_2_1"  class="box_input wide">
+                </div>
+                <div class="input_row">
+                    <label for="input11_2_2" class="bar_title"><b><span class="point">필수</span>회사 대표자</b></label>
+                    <input type="text" id="input11_2_2"  class="box_input">
+                </div>
+                <div class="input_row">
+                    <label for="input11_2_3" class="bar_title"><b><span class="point">필수</span>회사 연락처</b></label>
+                    <input type="text" id="input11_2_3"  class="box_input">
+                </div>
+                <div class="input_row">
+                    <label for="input11_2_4" class="bar_title"><b><span class="point">필수</span>사업자등록번호</b></label>
+                    <input type="text" id="input11_2_4"  class="box_input">
+                </div>
+                <div class="input_row">
+                    <label for="input11_2_5" class="bar_title"><b><span class="point">필수</span>업종</b></label>
+                    <input type="text" id="input11_2_5"  class="box_input">
+                </div>
+                <div class="input_row">
+                    <label for="input11_2_6" class="bar_title"><b><span class="point">필수</span>회사 소재지</b></label>
+                    <input type="text" id="input11_2_6"  class="box_input wide">
+                </div>
+                <div class="input_row full_row">
+                    <strong class="bar_title"><b>공사업 등록번호</b></strong>
+                    <div class="box_period filewrap">
+                        <input placeholder="공사업 등록번호 첨부파일" class="box_input wide">
+                        <label for="input11_2_7" class="btn btn-outline-primary"><i class="ico bi-plus mr_5"></i><span class="sr-only">공사업 등록번호</span> 첨부</label> 
+                        <input type="file" id="input11_2_7">
+                    </div>
+                </div>
+                <div class="input_row full_row">
+                    <strong class="bar_title"><b>사업자등록증</b></strong>
+                    <div class="box_period filewrap">
+                        <input placeholder="사업자등록증 첨부파일" class="box_input wide">
+                        <label for="input11_2_8" class="btn btn-outline-primary"><i class="ico bi-plus mr_5"></i><span class="sr-only">사업자등록증</span> 첨부</label> 
+                        <input type="file" id="input11_2_8">
+                    </div>
+                </div>
+                <div class="input_row full_row">
+                    <strong class="bar_title"><b>서명</b></strong>
+                    <div class="box_period filewrap">
+                        <input placeholder="서명 첨부파일" class="box_input wide">
+                        <label for="input11_2_9" class="btn btn-outline-primary"><i class="ico bi-plus mr_5"></i><span class="sr-only">서명</span>첨부</label> 
+                        <input type="file" id="input11_2_9">
+                    </div>
+                </div>
+            </div>
+            <div class="btnwrap lg">
+                <button type="button" class="btn btn-primary btn-lg">저장</button>
+                <button type="button" class="btn btn-secondary btn-lg">취소</button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- [include] fooer -->
+    <div id="footer"></div>
+    <!-- //[include] fooer -->
+</div>
+<!-- //content 영역입니다. -->
+</body>
+</html>

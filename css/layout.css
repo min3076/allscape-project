@@ -157,7 +157,7 @@ h1.logo a {display:block;width:127px;height:34px;background: url(../images/commo
 .slick-arrow.slick-hidden { display: none; }
 
 
-#visual { overflow:hidden;float: left; position: relative; width: calc(100% - 1017px);background:#182869 url(../images/common/visual_bg.svg) no-repeat 100% 100%;}
+#visual { overflow:hidden; position: relative; width:50%;height:100vh;background:#182869 url(../images/common/visual_bg.svg) no-repeat 100% 100%;}
 #visual .visual_wrap { overflow: hidden;}
 #visual .slide_item { height: 808px; background-repeat: no-repeat; }
 #visual .slide_item.visual_01 {}

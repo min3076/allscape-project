@@ -87,8 +87,11 @@ h3{font-size:18px;font-weight:bold;color:#0F2248}
 .ico.bi-plus{width:13px;height:13px;line-height:20px;background:url(../images/common/ico_plus_sm.svg) no-repeat;}
 .ico.bi-blank_w{width:24px;height:24px;line-height:20px;background:url(../images/common/ico_blank.svg) no-repeat;}
 .ico.bi-search_w{width:16px;height:16px;line-height:20px;background:url(../images/common/btn_ico_search.svg) no-repeat;}
-
 .ico.bi-minus{width:13px;height:13px;line-height:20px;background:url(../images/common/ico_minus.svg) no-repeat 0 50%;}
+.ico.bi-arr{width:13px;height:13px;line-height:20px;background:url(../images/common/ico_arr.svg) no-repeat 0 50%;}
+.ico.bi-arr-g{width:13px;height:13px;line-height:20px;background:url(../images/common/ico_arr_g.svg) no-repeat 0 50%;}
+
+.ico.bi-qs{width:24px;height:24px;line-height:20px;background:url(../images/common/ico_qs.svg) no-repeat 0 50%;}
 
 
 .ico.bi-print{width:33px;height:32px;background:url(../images/common/ico_print.svg) no-repeat;}

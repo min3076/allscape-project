@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="./css/common.css" />
 <link rel="stylesheet" href="./css/layout.css" />
 <link rel="stylesheet" href="./css/component.css" />
+<link rel="stylesheet" href="./css/main.css" />
 <script src="./font/webfont.js"></script>
 <script src="./js/jquery-3.3.1.min.js"></script>
 <script src="./js/jquery-migrate-1.4.1.min.js" defer="defer"></script>
@@ -24,17 +25,279 @@
 <body>
 <!-- content 영역입니다. -->
 
-<div class="wrapper wide">
+<div class="wrapper main">
     <!-- [include] header -->
     <div id="header"></div>
     <!-- //[include] header -->
     <section class="container">
-        
+        <div class="con con_top">
+            <!-- 1_1top total -->
+            <div class="con_top_l box">
+                <div class="tit">
+                    <h2>Dashboard</h2>
+                    <p>안녕하세요 <b>홍길동님,</b> 좋은하루 되세요!</p>
+                </div>
+                <ul class="alldata">
+                    <li>
+                        <span class="mico ico1"></span>
+                        <strong><b>전체</b><span>17</span></strong>
+                        <ul>
+                            <li><b>상주</b><span>1</span></li>
+                            <li><b>일반</b><span>1</span></li>
+                        </ul>                        
+                    </li>
+                    <li>
+                        <span class="mico ico2"></span>
+                        <strong><b>전체</b><span>5</span></strong>
+                        <ul>
+                            <li><b>상주</b><span>1</span></li>
+                            <li><b>일반</b><span>1</span></li>
+                        </ul>                        
+                    </li>
+                    <li>
+                        <span class="mico ico3"></span>
+                        <strong><b>전체</b><span>10</span></strong>
+                        <ul>
+                            <li><b>상주</b><span>1</span></li>
+                            <li><b>일반</b><span>1</span></li>
+                        </ul>                        
+                    </li>
+                    <li>
+                        <span class="mico ico4"></span>
+                        <strong><b>전체</b><span>1</span></strong>
+                        <ul>
+                            <li><b>상주</b><span>1</span></li>
+                            <li><b>일반</b><span>1</span></li>
+                        </ul>                        
+                    </li>
+                </ul>
+            </div>
+            <!-- //1_1top total -->
+            <!-- 1_2사고현황 -->
+            <div class="con_top_r box">
+                <h3><span class="mico"></span>사고현황</h3>
+                <ul>
+                    <li><b>안전사고</b><span>1</span></li>
+                    <li><b>재해사고</b><span>1</span></li>
+                </ul>
+            </div>
+            <!-- //1_2사고현황 -->
+        </div>
+        <div class="con con_mid">
+            <!-- 2_1지도api -->
+            <div class="con_mid_ㅣ box">지도</div>
+            <!-- //2_1지도api -->
+            <!-- 2_2프로젝트 리스트 -->
+            <div class="con_mid_r box col board">
+                <div class="titwrap">
+                    <h3>프로젝트 리스트</h3>
+                    <div class="tab-nav">
+                        <a href="#tab1" class="tab-nav_link active"><span>전체</span></a>
+                        <a href="#tab2" class="tab-nav_link event"><span>준비</span></a>
+                        <a href="#tab3" class="tab-nav_link event"><span>진행</span></a>
+                        <a href="#tab4" class="tab-nav_link event"><span>완료</span></a>
+                    </div>
+                </div>
+                    
+                <div class="tab-body active" id="tab1">
+                    <div class="projectlist ">
+                        <ul class="list">
+                            <li>
+                                <div class="lcon">
+                                    <strong>봉산휴먼시아2단지 국민임대</strong>
+                                    <span class="adr">대전시 유성구 봉명로 655-1번지</span>
+                                </div>
+                                <div class="rcon">
+                                    <div class="state rate_ready">
+                                        <b>준비</b><span class="rate rate0">0%</span>
+                                    </div>
+                                    <div class="btnwrap">
+                                        <button type="button" class="btn btn-outline-secondary">점검결과<i class="ico bi-arr-g ml5"></i></button>
+                                        <button type="button" class="btn btn-outline-primary">상세보기<i class="ico bi-arr ml5"></i></button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="lcon">
+                                    <strong>봉산휴먼시아2단지 국민임대</strong>
+                                    <span class="adr">대전시 유성구 봉명로 655-1번지</span>
+                                </div>
+                                <div class="rcon">
+                                    <div class="state rate_ing">
+                                        <b>준비</b><span class="rate rate10">10%</span>
+                                    </div>
+                                    <div class="btnwrap">
+                                        <button type="button" class="btn btn-outline-secondary">점검결과<i class="ico bi-arr-g ml5"></i></button>
+                                        <button type="button" class="btn btn-outline-primary">상세보기<i class="ico bi-arr ml5"></i></button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="lcon">
+                                    <strong>봉산휴먼시아2단지 국민임대</strong>
+                                    <span class="adr">대전시 유성구 봉명로 655-1번지</span>
+                                </div>
+                                <div class="rcon">
+                                    <div class="state rate_ready">
+                                        <b>준비</b><span class="rate rate0">0%</span>
+                                    </div>
+                                    <div class="btnwrap">
+                                        <button type="button" class="btn btn-outline-secondary">점검결과<i class="ico bi-arr-g ml5"></i></button>
+                                        <button type="button" class="btn btn-outline-primary">상세보기<i class="ico bi-arr ml5"></i></button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="lcon">
+                                    <strong>봉산휴먼시아2단지 국민임대</strong>
+                                    <span class="adr">대전시 유성구 봉명로 655-1번지</span>
+                                </div>
+                                <div class="rcon">
+                                    <div class="state rate_ready">
+                                        <b>준비</b><span class="rate rate0">0%</span>
+                                    </div>
+                                    <div class="btnwrap">
+                                        <button type="button" class="btn btn-outline-secondary">점검결과<i class="ico bi-arr-g ml5"></i></button>
+                                        <button type="button" class="btn btn-outline-primary">상세보기<i class="ico bi-arr ml5"></i></button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="lcon">
+                                    <strong>봉산휴먼시아2단지 국민임대</strong>
+                                    <span class="adr">대전시 유성구 봉명로 655-1번지</span>
+                                </div>
+                                <div class="rcon">
+                                    <div class="state rate_ready">
+                                        <b>준비</b><span class="rate rate0">0%</span>
+                                    </div>
+                                    <div class="btnwrap">
+                                        <button type="button" class="btn btn-outline-secondary">점검결과<i class="ico bi-arr-g ml5"></i></button>
+                                        <button type="button" class="btn btn-outline-primary">상세보기<i class="ico bi-arr ml5"></i></button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="lcon">
+                                    <strong>봉산휴먼시아2단지 국민임대</strong>
+                                    <span class="adr">대전시 유성구 봉명로 655-1번지</span>
+                                </div>
+                                <div class="rcon">
+                                    <div class="state rate_ready">
+                                        <b>준비</b><span class="rate rate0">0%</span>
+                                    </div>
+                                    <div class="btnwrap">
+                                        <button type="button" class="btn btn-outline-secondary">점검결과<i class="ico bi-arr-g ml5"></i></button>
+                                        <button type="button" class="btn btn-outline-primary">상세보기<i class="ico bi-arr ml5"></i></button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="lcon">
+                                    <strong>봉산휴먼시아2단지 국민임대</strong>
+                                    <span class="adr">대전시 유성구 봉명로 655-1번지</span>
+                                </div>
+                                <div class="rcon">
+                                    <div class="state rate_ready">
+                                        <b>준비</b><span class="rate rate0">0%</span>
+                                    </div>
+                                    <div class="btnwrap">
+                                        <button type="button" class="btn btn-outline-secondary">점검결과<i class="ico bi-arr-g ml5"></i></button>
+                                        <button type="button" class="btn btn-outline-primary">상세보기<i class="ico bi-arr ml5"></i></button>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-body" id="tab2">
+                    탭2
+                </div>
+                <div class="tab-body" id="tab3">
+                    탭3
+                </div>
+                <div class="tab-body" id="tab4">
+                    탭4
+                </div>
+            </div>
+            <!-- //2_2프로젝트 리스트 -->
+        </div>
+        <div class="con con_bottom">
+            <!-- 3_1준공예정 -->
+            <div class="con_bottom_1wrap box col">
+                <div class="titwrap">
+                    <h3>준공예정</h3>
+                </div>
+                <ul>
+                    <li><b>공정률 임박<span>90%</span></b><span class="num">10</span></li>
+                    <li><b>기간 임박<span>2달</span></b><span class="num">3</span></li>
+                </ul>
+            </div>
+            <!-- //3_1준공예정 -->
+            <!-- 3_2인력관리현황 -->
+            <div class="con_bottom_2wrap box col">
+                <div class="titwrap">
+                    <h3>인력관리현황</h3>
+                </div>
+                <div class="txtwrap">
+                <table class="table center">
+                    <caption>인력관리현황 - 구분, 업체, 기술자 정보 제공
+                    </caption>
+                    <thead>
+                      <tr>
+                        <th scope="col">구분</th>
+                        <th scope="col">업체</th>
+                        <th scope="col">기술자</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">감리</th>
+                        <td>21</td>
+                        <td>49</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">시공</th>
+                        <td>31</td>
+                        <td>142</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+            </div>
+            <!-- //3_2인력관리현황 -->
+            <!-- 3_3공정율진행상황 -->
+            <div class="con_bottom_3wrap box col">
+                <div class="titwrap bn_qs">
+                    <h3>공정율(%) 진행상황</h3>
+                    <button type="button" class="btn btn-outline-secondary"><span class="sr-only">공정율(%) 진행상황이란?</span><i class="ico bi-qs ml5"></i></button>
+                </div>
+            </div>
+            <!-- //3_3공정율진행상황 -->
+            <!-- 3_4건물용도에 따른공사현황 -->
+            <div class="con_bottom_4wrap box col">
+                <div class="titwrap bn_qs">
+                    <h3>건물 용도에 따른 공사현황</h3>
+                    <button type="button" class="btn btn-outline-secondary"><span class="sr-only">건물 용도에 따른 공사현황이란?</span><i class="ico bi-qs ml5"></i></button>
+                </div>
+            </div>
+            <!-- //3_4건물용도에 따른공사현황 -->
+        </div>
     </section>
     
     <!-- [include] fooer -->
     <div id="footer"></div>
     <!-- //[include] fooer -->
+<style>
+
+
+</style>
+    
+
+    <script src="./js/main.js"></script>
+
+
+
 </div>
 <!-- //content 영역입니다. -->
 </body>

@@ -100,3 +100,4 @@ input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button{appearance:none;-webkit-appearance:none;-moz-appearance:none;}
 select{padding:0 15px 0 5px;background:transparent url(../images/common/ico_arr_select.svg) no-repeat 95% 50%;appearance:none;-webkit-appearance:none;-moz-appearance:none;-webkit-appearance: none;-ms-appearance: none;-o-appearance: none;}
 select::-ms-expand {display: none;}
+b{font-weight:normal;}

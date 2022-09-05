@@ -73,6 +73,8 @@ h3{font-size:18px;font-weight:bold;color:#0F2248}
 .blue70p40{color:#A5AECA!important}
 .bg_blue70{background:#182869!important}
 
+.w40{width:40px;}
+.w60{width:60px;}
 .w80{width:80px;}
 .w100{width:100px;}
 .w200{width:200px;}
@@ -349,16 +351,18 @@ a.text-success:hover{color:#2b542c}.text-info{color:#31708f}a.text-info:hover{co
 .searchbox .title_wrap p{font-size:16px;font-weight:bold;}
 .searchbox .formwrap{width:calc(100% - 150px);}
 .searchbox .formwrap form fieldset .row{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;padding-bottom:4px;}
+.searchbox .formwrap form fieldset .row.alone{justify-content:flex-end;}
+.searchbox .formwrap form fieldset .row.alone .input_row .bar_title{min-width:auto}
 .formwrap .grow2{flex-grow:2}
 
-.input_row {display:flex;flex-grow:1;}
-.input_row .bar_title{display:inline-block;width:110px;padding:7px 20px 0 0;text-align:right;}
+.input_row {display:flex;/*flex-grow:1;*/align-items:center;}
+.input_row .bar_title{display:inline-block;min-width:78px;padding:0 10px 0 14px;text-align:right;}
 .input_row .bar_title b{position:relative;font-weight:normal}
 .input_row .bar_title .point{position:absolute;left:-10px;top:0;display:inline-block;width:8px;height:10px;font-size:0;text-indent:-999px;overflow:hidden;background:url(../images/join/point.svg) no-repeat}
-.input_row input{flex-grow:1}
+/* .input_row input{flex-grow:1} */
 .input_row .input_txt{padding:0 10px;line-height:36px;color:#747EA5}
 
-.space{display:inline-block;padding:10px;}
+.space{display:inline-block;padding:4px;}
 
 .search_result_tit{display:flex;justify-content:space-between;margin-bottom:20px;}
 .search_result_tit .lcon{display:flex;align-items:center;}
@@ -373,10 +377,10 @@ input[type=date]::-webkit-datetime-edit-year-field {-webkit-appearance: none;  d
 input[type="date"]:valid{color:#c9c9c9;}
 input[type="date"]{ position: relative;}
 input[type="date"]::-webkit-calendar-picker-indicator {background: transparent;z-index: 1;}
-input[type="date"]::after{content:'';position:absolute;top:50%;right:8px;z-index:2;margin-top:-10px;width:20px;height:20px;border:0;background:url(../images/common/ico_calendar.svg) no-repeat 0 0}
+.btn_calendar{position:absolute;top:50%;right:8px;z-index:2;margin-top:-10px;width:20px;height:20px;border:0;background:url(../images/common/ico_calendar.svg) no-repeat 0 0}
 
 
-.expect_date{width:130px;}
+.expect_date{width:100px;}
 .linebox{margin-bottom:50px;padding:40px 50px;margin-bottom:60px;border:1px solid #D9D9D9;border-radius:10px;}
 .linebox.gray{background:#FCFCFC}
 .linebox.sm{padding:20px 30px;border-radius:3px;}

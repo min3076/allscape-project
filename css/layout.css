@@ -125,8 +125,8 @@ h1.logo a {display:block;width:127px;height:34px;background: url(../images/commo
 .wrapper.login .container .lcon{display:flex;flex-direction:column;align-items:center;justify-content:center;}
 .wrapper.login .container .lcon .wrap{width:380px;}
 .wrapper.login .container .lcon h1 b{margin-top:-100px;margin-bottom:50px;width:152px;height:42px;background:url(../images/common/logo_b.svg)}
-.wrapper.login .container .lcon .input_row {flex-direction:column;margin-bottom:10px;}
-.wrapper.login .container .lcon .input_row .bar_title{display:block;text-align:left;}
+.wrapper.login .container .lcon .input_row {flex-direction:column;margin-bottom:10px;align-items:flex-start;}
+.wrapper.login .container .lcon .input_row .bar_title{display:block;text-align:left;padding:0;}
 .wrapper.login .container .lcon .input_row input{height:44px;color:#747EA5;background:#F5F8FF}
 .wrapper.login .container .lcon .input_row input::placeholder{color:#747EA5;}
 .wrapper.login .container .lcon .check_row{margin-bottom:20px;color:#747EA5;font-size:15px;}
@@ -203,7 +203,9 @@ h1.logo a {display:block;width:127px;height:34px;background: url(../images/commo
 .linebox_bott.col2{display:flex;flex-wrap:wrap;}
 .linebox_bott .input_row:nth-of-type(odd){margin-right:50px;}
 .linebox_bott .input_row{display:inline-flex;width:50%;margin-bottom:10px;width:48%}
-.linebox_bott .input_row.full_row{width:51%;margin-right:0;}
+.linebox_bott .input_row.full_row{width:48%;margin-right:50px;align-items: flex-start;}
+.linebox_bott .input_row.full_row .bar_title{width:144px;padding-top:9px;}
+.linebox_bott .input_row.full_row .box_period{width:100%}
 .linebox_bott .input_row .bar_title{padding-left:0;width:120px;}
 .linebox_bott .input_row input{flex-grow:0}
 .linebox_bott .input_row input.wide{flex-grow:1}
@@ -231,3 +233,6 @@ h1.logo a {display:block;width:127px;height:34px;background: url(../images/commo
 .wrapper.wide .container #txt{width:1420px;padding:100px 70px;margin-bottom:60px;background:#fff;border-radius:10px;}
 .wrapper.wide #footer{position:static;}
 .wrapper.wide #footer p{justify-content: flex-start;}
+
+
+.wrapper.wide.content14 .container #txt{width:1800px;}

@@ -32,7 +32,7 @@
     <section class="container">
         <div class="con con_top">
             <!-- 1_1top total -->
-            <div class="con_top_l box">
+            <div class="maintitwrap box">
                 <div class="tit">
                     <h2>Dashboard</h2>
                     <p>안녕하세요 <b>홍길동님,</b> 좋은하루 되세요!</p>
@@ -42,31 +42,31 @@
                         <span class="mico ico1"></span>
                         <strong><b>전체</b><span>17</span></strong>
                         <ul>
-                            <li><b>상주</b><span>1</span></li>
-                            <li><b>일반</b><span>1</span></li>
+                            <li><b>상주</b><span>5</span></li>
+                            <li><b>일반</b><span>12</span></li>
                         </ul>                        
                     </li>
                     <li>
                         <span class="mico ico2"></span>
-                        <strong><b>전체</b><span>5</span></strong>
+                        <strong><b>준비</b><span>5</span></strong>
                         <ul>
                             <li><b>상주</b><span>1</span></li>
-                            <li><b>일반</b><span>1</span></li>
+                            <li><b>일반</b><span>4</span></li>
                         </ul>                        
                     </li>
                     <li>
                         <span class="mico ico3"></span>
-                        <strong><b>전체</b><span>10</span></strong>
+                        <strong><b>진행</b><span>10</span></strong>
                         <ul>
-                            <li><b>상주</b><span>1</span></li>
-                            <li><b>일반</b><span>1</span></li>
+                            <li><b>상주</b><span>4</span></li>
+                            <li><b>일반</b><span>6</span></li>
                         </ul>                        
                     </li>
                     <li>
                         <span class="mico ico4"></span>
-                        <strong><b>전체</b><span>1</span></strong>
+                        <strong><b>중지</b><span>1</span></strong>
                         <ul>
-                            <li><b>상주</b><span>1</span></li>
+                            <li><b>상주</b><span>0</span></li>
                             <li><b>일반</b><span>1</span></li>
                         </ul>                        
                     </li>
@@ -85,10 +85,10 @@
         </div>
         <div class="con con_mid">
             <!-- 2_1지도api -->
-            <div class="con_mid_ㅣ box">지도</div>
+            <div class="con_mid_ㅣ box"><img src="./images/main/img_map.png"></div>
             <!-- //2_1지도api -->
             <!-- 2_2프로젝트 리스트 -->
-            <div class="con_mid_r box col board">
+            <div class="projectwrap box col">
                 <div class="titwrap">
                     <h3>프로젝트 리스트</h3>
                     <div class="tab-nav">
@@ -124,7 +124,7 @@
                                 </div>
                                 <div class="rcon">
                                     <div class="state rate_ing">
-                                        <b>준비</b><span class="rate rate10">10%</span>
+                                        <b>진행</b><span class="rate rate10">10%</span>
                                     </div>
                                     <div class="btnwrap">
                                         <button type="button" class="btn btn-outline-secondary">점검결과<i class="ico bi-arr-g ml5"></i></button>
@@ -138,8 +138,8 @@
                                     <span class="adr">대전시 유성구 봉명로 655-1번지</span>
                                 </div>
                                 <div class="rcon">
-                                    <div class="state rate_ready">
-                                        <b>준비</b><span class="rate rate0">0%</span>
+                                    <div class="state rate_end">
+                                        <b>완료</b><span class="rate rate100">100%</span>
                                     </div>
                                     <div class="btnwrap">
                                         <button type="button" class="btn btn-outline-secondary">점검결과<i class="ico bi-arr-g ml5"></i></button>
@@ -272,6 +272,7 @@
                     <h3>공정율(%) 진행상황</h3>
                     <button type="button" class="btn btn-outline-secondary"><span class="sr-only">공정율(%) 진행상황이란?</span><i class="ico bi-qs ml5"></i></button>
                 </div>
+                <div class="grap"><img src="./images/main/img_graph.png"></div>
             </div>
             <!-- //3_3공정율진행상황 -->
             <!-- 3_4건물용도에 따른공사현황 -->
@@ -280,6 +281,7 @@
                     <h3>건물 용도에 따른 공사현황</h3>
                     <button type="button" class="btn btn-outline-secondary"><span class="sr-only">건물 용도에 따른 공사현황이란?</span><i class="ico bi-qs ml5"></i></button>
                 </div>
+                <div class="grap"><img src="./images/main/img_graph2.png"></div>
             </div>
             <!-- //3_4건물용도에 따른공사현황 -->
         </div>
@@ -288,16 +290,7 @@
     <!-- [include] fooer -->
     <div id="footer"></div>
     <!-- //[include] fooer -->
-<style>
-
-
-</style>
-    
-
     <script src="./js/main.js"></script>
-
-
-
 </div>
 <!-- //content 영역입니다. -->
 </body>

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>25 allscape dashboard</title>
+<link rel="stylesheet" href="./css/common.css" />
+<link rel="stylesheet" href="./css/layout.css" />
+<link rel="stylesheet" href="./css/component.css" />
+<link rel="stylesheet" href="./css/main.css" />
+<script src="./font/webfont.js"></script>
+<script src="./js/jquery-3.3.1.min.js"></script>
+<script src="./js/jquery-migrate-1.4.1.min.js" defer="defer"></script>
+<script type="text/javascript">
+    WebFont.load({custom: {families: ["Spoqa Han Sans"],urls: ["./font/font_spoqahansans.css"],}, });
+</script>
+ <!-- include -->
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+ <script src="./js/include.js"></script>
+ <!-- //include -->
+<!--[if lt IE 9]>
+    <script src="./js/html5/html5shiv.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<!-- content 영역입니다. -->
+
+<div class="wrapper main main24">
+    <!-- [include] header -->
+    <div id="header"></div>
+    <!-- //[include] header -->
+    <section class="container">
+        <div class="con con_l">
+            <!-- 1_1top total -->
+            <div class="maintitwrap box">
+                <div class="tit">
+                    <h2>Dashboard</h2>
+                    <p>안녕하세요 <b>홍길동님,</b> 좋은하루 되세요!</p>
+                </div>
+                <ul class="alldata">
+                    <li>
+                        <span class="mico ico1"></span>
+                        <strong><b>전체</b><span>17</span></strong>
+                    </li>
+                    <li>
+                        <span class="mico ico2"></span>
+                        <strong><b>준비</b><span>5</span></strong>
+                    </li>
+                    <li>
+                        <span class="mico ico3"></span>
+                        <strong><b>진행</b><span>10</span></strong>
+                    </li>
+                    <li>
+                        <span class="mico ico4"></span>
+                        <strong><b>중지</b><span>1</span></strong>
+                    </li>
+                    <li>
+                        <span class="mico ico5"></span>
+                        <strong><b>완료</b><span>1</span></strong>
+                    </li>
+                </ul>
+            </div>
+            <!-- //1_1top total -->
+            <!-- 1_2 시스템 현황 --> 
+            <div class="con_l_1wrap box col">
+                <div class="titwrap bn_qs">
+                    <h3>시스템 현황</h3>
+                    <button type="button" class="btn btn-outline-secondary"><span class="sr-only">시스템 현황이란?</span><i class="ico bi-qs ml5"></i></button>
+                </div>
+                <div class="grap"><img src="./images/main/img_graph3.png"></div>
+            </div>
+            <!-- //1_2 시스템 현황 -->
+            <!-- 1_3 시스템 현황 --> 
+            <div class="con_l_2wrap box col">
+                <div class="titwrap">
+                    <h3>시스템 로그 리스트</h3>
+                    <div class="list_condition">
+                        <label for="log_level">로그레벨</label>
+                        <select id="log_level"  class="input_select">
+                          <option>전체</option>
+                        </select>
+                        <input type="checkbox" id="reflash">
+                        <label for="reflash" class="blue50">자동새로고침<i class="ico refreshify ml_5"></i></label>
+                    </div>
+                </div>
+                <div class="grap">
+                <table class="table center">
+                    <caption>시스템 로그 리스트 - 로그ID, 날짜, 시스템명, 로그레벨, 로그내용 정보 제공
+                    </caption>
+                    <colgroup>
+                        <col />
+                        <col style="width: 20%" />
+                        <col />
+                        <col />
+                        <col style="width: 50%" />
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th scope="col">로그ID</th>
+                        <th scope="col">날짜</th>
+                        <th scope="col">시스템명</th>
+                        <th scope="col">로그레벨</th>
+                        <th scope="col">로그내용</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>5</td>
+                        <td class="blue70p40">2022-05-25 11:27:54</td>
+                        <td class="blue70">WEB</td>
+                        <td><span class="tag state_app_no">FATAL</span></td>
+                        <td>DataBase에 접속 할 수 없습니다</td>
+                      </tr>
+                      <tr>
+                        <td>5</td>
+                        <td class="blue70p40">2022-05-25 11:27:54</td>
+                        <td class="blue70">WEB</td>
+                        <td><span class="tag state_app_no">FATAL</span></td>
+                        <td>DataBase에 접속 할 수 없습니다</td>
+                      </tr>
+                      <tr>
+                        <td>5</td>
+                        <td class="blue70p40">2022-05-25 11:27:54</td>
+                        <td class="blue70">WEB</td>
+                        <td><span class="tag state_app_no">FATAL</span></td>
+                        <td>DataBase에 접속 할 수 없습니다</td>
+                      </tr>
+                      <tr>
+                        <td>5</td>
+                        <td class="blue70p40">2022-05-25 11:27:54</td>
+                        <td class="blue70">WEB</td>
+                        <td><span class="tag state_app_no">FATAL</span></td>
+                        <td>DataBase에 접속 할 수 없습니다</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+            </div>
+            <!-- //1_3 시스템 현황 -->
+        </div>
+        <div class="con con_r">
+            <!-- 2_1프로젝트 리스트 -->
+            <div class="projectwrap box col">
+                <div class="titwrap">
+                    <h3>프로젝트 리스트</h3>
+                    <div class="tab-nav">
+                        <a href="#tab1" class="tab-nav_link active"><span>전체</span></a>
+                        <a href="#tab2" class="tab-nav_link event"><span>준비</span></a>
+                        <a href="#tab3" class="tab-nav_link event"><span>진행</span></a>
+                        <a href="#tab4" class="tab-nav_link event"><span>완료</span></a>
+                    </div>
+                </div>
+                    
+                <div class="tab-body active" id="tab1">
+                    <div class="projectlist ">
+                        <ul class="list">
+                            <li>
+                                <div class="lcon">
+                                    <strong>봉산휴먼시아2단지 국민임대</strong>
+                                    <span class="adr">대전시 유성구 봉명로 655-1번지</span>
+                                </div>
+                                <div class="rcon">
+                                    <div class="state rate_ready">
+                                        <b>준비</b><span class="rate rate0">0%</span>
+                                    </div>
+                                    <button type="button" class="btn btn-outline-primary onlybn"><span class="sr-only">상세보기</span><i class="ico bi-arr"></i></button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="lcon">
+                                    <strong>봉산휴먼시아2단지 국민임대</strong>
+                                    <span class="adr">대전시 유성구 봉명로 655-1번지</span>
+                                </div>
+                                <div class="rcon">
+                                    <div class="state rate_ing">
+                                        <b>진행</b><span class="rate rate10">10%</span>
+                                    </div>
+                                    <button type="button" class="btn btn-outline-primary onlybn"><span class="sr-only">상세보기</span><i class="ico bi-arr"></i></button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="lcon">
+                                    <strong>봉산휴먼시아2단지 국민임대</strong>
+                                    <span class="adr">대전시 유성구 봉명로 655-1번지</span>
+                                </div>
+                                <div class="rcon">
+                                    <div class="state rate_ready">
+                                        <b>준비</b><span class="rate rate0">0%</span>
+                                    </div>
+                                    <button type="button" class="btn btn-outline-primary onlybn"><span class="sr-only">상세보기</span><i class="ico bi-arr"></i></button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="lcon">
+                                    <strong>봉산휴먼시아2단지 국민임대</strong>
+                                    <span class="adr">대전시 유성구 봉명로 655-1번지</span>
+                                </div>
+                                <div class="rcon">
+                                    <div class="state rate_ready">
+                                        <b>준비</b><span class="rate rate0">0%</span>
+                                    </div>
+                                    <button type="button" class="btn btn-outline-primary onlybn"><span class="sr-only">상세보기</span><i class="ico bi-arr"></i></button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="lcon">
+                                    <strong>봉산휴먼시아2단지 국민임대</strong>
+                                    <span class="adr">대전시 유성구 봉명로 655-1번지</span>
+                                </div>
+                                <div class="rcon">
+                                    <div class="state rate_ready">
+                                        <b>준비</b><span class="rate rate0">0%</span>
+                                    </div>
+                                    <button type="button" class="btn btn-outline-primary onlybn"><span class="sr-only">상세보기</span><i class="ico bi-arr"></i></button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="lcon">
+                                    <strong>봉산휴먼시아2단지 국민임대</strong>
+                                    <span class="adr">대전시 유성구 봉명로 655-1번지</span>
+                                </div>
+                                <div class="rcon">
+                                    <div class="state rate_ready">
+                                        <b>준비</b><span class="rate rate0">0%</span>
+                                    </div>
+                                    <button type="button" class="btn btn-outline-primary onlybn"><span class="sr-only">상세보기</span><i class="ico bi-arr"></i></button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="lcon">
+                                    <strong>봉산휴먼시아2단지 국민임대</strong>
+                                    <span class="adr">대전시 유성구 봉명로 655-1번지</span>
+                                </div>
+                                <div class="rcon">
+                                    <div class="state rate_ready">
+                                        <b>준비</b><span class="rate rate0">0%</span>
+                                    </div>
+                                    <button type="button" class="btn btn-outline-primary onlybn"><span class="sr-only">상세보기</span><i class="ico bi-arr"></i></button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-body" id="tab2">
+                    탭2
+                </div>
+                <div class="tab-body" id="tab3">
+                    탭3
+                </div>
+                <div class="tab-body" id="tab4">
+                    탭4
+                </div>
+            </div>
+            <!-- //2_1프로젝트 리스트 -->
+            <!-- 2_2 회원가입 승인대기 리스트 --> 
+            <div class="con_l_2wrap box col">
+                <div class="titwrap">
+                    <h3>회원가입 승인대기 리스트</h3>
+                    <div class="list_condition">
+                        <input type="checkbox" id="reflash2">
+                        <label for="reflash2" class="blue50">자동새로고침<i class="ico refreshify ml_5"></i></label>
+                    </div>
+                </div>
+                <div class="grap">
+                <table class="table center">
+                    <caption>회원가입 승인대기 리스트 - 가입날짜, 회사명, 이름, 권한, 상태 정보, 승인/취소 제공
+                    </caption>
+                    <colgroup>
+                        <col style="width:30%" />
+                        <col />
+                        <col style="width:11%" />
+                        <col style="width:11%" />
+                        <col />
+                        <col style="width:15%" />
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th scope="col">가입날짜</th>
+                        <th scope="col">회사명</th>
+                        <th scope="col">이름</th>
+                        <th scope="col">권한</th>
+                        <th scope="col">상태</th>
+                        <th scope="col">승인/취소</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="blue70p40">2022-05-25 11:27:54</td>
+                        <td class="blue70">CA파트너스</td>
+                        <td>황희정</td>
+                        <td>감리원</td>
+                        <td><span class="tag state_app_ready">승인대기</span></td>
+                        <td>
+                            <div class="btnwrap">
+                                <button type="button" class="btn btn-outline-primary btn-sm">승인</button>
+                                <button type="button" class="btn btn-outline-secondary btn-sm">취소</button>
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="blue70p40">2022-05-25 11:27:54</td>
+                        <td class="blue70">CA파트너스</td>
+                        <td>황희정</td>
+                        <td>감리원</td>
+                        <td><span class="tag state_app_ready">승인대기</span></td>
+                        <td>
+                            <div class="btnwrap">
+                                <button type="button" class="btn btn-outline-primary btn-sm">승인</button>
+                                <button type="button" class="btn btn-outline-secondary btn-sm">취소</button>
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="blue70p40">2022-05-25 11:27:54</td>
+                        <td class="blue70">CA파트너스</td>
+                        <td>황희정</td>
+                        <td>감리원</td>
+                        <td><span class="tag state_app_ready">승인대기</span></td>
+                        <td>
+                            <div class="btnwrap">
+                                <button type="button" class="btn btn-outline-primary btn-sm">승인</button>
+                                <button type="button" class="btn btn-outline-secondary btn-sm">취소</button>
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="blue70p40">2022-05-25 11:27:54</td>
+                        <td class="blue70">CA파트너스</td>
+                        <td>황희정</td>
+                        <td>감리원</td>
+                        <td><span class="tag state_app_ready">승인대기</span></td>
+                        <td>
+                            <div class="btnwrap">
+                                <button type="button" class="btn btn-outline-primary btn-sm">승인</button>
+                                <button type="button" class="btn btn-outline-secondary btn-sm">취소</button>
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="blue70p40">2022-05-25 11:27:54</td>
+                        <td class="blue70">CA파트너스</td>
+                        <td>황희정</td>
+                        <td>감리원</td>
+                        <td><span class="tag state_app_ready">승인대기</span></td>
+                        <td>
+                            <div class="btnwrap">
+                                <button type="button" class="btn btn-outline-primary btn-sm">승인</button>
+                                <button type="button" class="btn btn-outline-secondary btn-sm">취소</button>
+                            </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+            </div>
+            <!-- //1_3 시스템 현황 -->
+        </div>
+    </section>
+    
+    <!-- [include] fooer -->
+    <div id="footer"></div>
+    <!-- //[include] fooer -->
+    <script src="./js/main.js"></script>
+</div>
+<!-- //content 영역입니다. -->
+</body>
+</html>

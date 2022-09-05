@@ -27,7 +27,7 @@ h1.logo a {display:block;width:127px;height:34px;background: url(../images/commo
 .utill .user_info{position:relative;display:flex;justify-content:center;color:#fff}
 .utill .user_info:before{content:"";display:block;width:26px;height:26px;margin-right:2px;background:url(../images/common/ir_header.svg) no-repeat -35px 0;}
 .utill .user_info #bn_open{display:block;width:20px;height:28px;background:url(../images/common/ir_header.svg) no-repeat -68px 0;}
-.utill .user_info #info_check{position:absolute;top:30px;right:0;width:150px;background:#fff;border-radius:10px;box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);text-align:center;}
+.utill .user_info #info_check{position:absolute;top:30px;right:0;width:150px;background:#fff;border-radius:10px;box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);text-align:center;z-index:10;}
 .utill .user_info #info_check ul{padding:14px 20px;color:#333;border-bottom:1px solid #D9D9D9;text-align:left;}
 .utill .user_info #info_check ul li b{margin-right:10px;font-weight:normal;color:#9B9B9B}
 .utill .user_info #info_check .logout{justify-content:center;width:100%;padding:10px;color:#333;background:transparent}

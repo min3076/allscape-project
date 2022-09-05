@@ -64,7 +64,7 @@ h3{font-size:18px;font-weight:bold;color:#0F2248}
 .box_input, 
 .input_select{height:36px;border: 1px solid #E4EAFC; box-sizing: border-box;color: #747EA5;font-size: 15px;line-height:36px;border-radius:3px;}
 .box_input{padding: 0 10px;}
-.input_select {padding:0 25px 0 5px}
+.input_select {padding:0 30px 0 5px}
 
 .input_select::placeholder .box_input::placeholder{color:#747EA5}
 
@@ -92,6 +92,9 @@ h3{font-size:18px;font-weight:bold;color:#0F2248}
 .ico.bi-minus{width:13px;height:13px;line-height:20px;background:url(../images/common/ico_minus.svg) no-repeat 0 50%;}
 .ico.bi-arr{width:13px;height:13px;line-height:20px;background:url(../images/common/ico_arr.svg) no-repeat 0 50%;}
 .ico.bi-arr-g{width:13px;height:13px;line-height:20px;background:url(../images/common/ico_arr_g.svg) no-repeat 0 50%;}
+.ico.bi-arr-b{width:8px;height:11px;background-image:url(../images/main/ico_arr_b.svg);}
+.ico.bi-arr-w{width:8px;height:11px;background-image:url(../images/main/ico_arr_w.svg);}
+
 
 .ico.bi-qs{width:24px;height:24px;line-height:20px;background:url(../images/common/ico_qs.svg) no-repeat 0 50%;}
 
@@ -123,6 +126,9 @@ h3{font-size:18px;font-weight:bold;color:#0F2248}
 .tag.state_app_yes{padding:2px 10px;color:#fff;background:#46CE9B;border-radius:100px;font-size:14px;}
 .tag.state_app_ready{padding:2px 10px;color:#fff;background:#AFAFAF;border-radius:100px;font-size:14px;}
 .tag.state_app_no{padding:2px 10px;color:#F66D6D;background:#FDE2E2;border-radius:100px;font-size:14px;}
+
+.tag.state_off{padding:2px 10px;color:#182869;background:#EDEDED;border-radius:100px;font-size:14px;}
+.tag.state_on{padding:2px 10px;color:#0057FF;background:#E2E8FB;border-radius:100px;font-size:14px;}
 
 
 
@@ -310,6 +316,27 @@ a.text-success:hover{color:#2b542c}.text-info{color:#31708f}a.text-info:hover{co
 .table td.tbnwrap{padding-top:6px;padding-bottom:6px;border:0;background: #fff;}
 .table td.tbnwrap div{display:flex;align-items:center;}
 .table td.tbnwrap div button{margin:0 2px;}
+
+
+/* calendar wrapper */
+#caltab{justify-content:flex-start;width:100%;height:881px;padding:40px 50px;}
+#caltab .titwrap{padding:0;}
+#caltab .tab-nav{display:flex;justify-content: flex-end;gap:4px;width:100%;}
+#caltab .tab-nav .tab-nav_link{display:inline-block;padding:0.375rem 0.75rem;border:1px solid #A5AECA;color:#6c757d;border-radius:0.25rem;}
+#caltab .tab-nav .tab-nav_link.active{color:#007bff;border-color:#007bff}
+
+/* calendar 테이블 */
+.calendar-table {height:100%;}
+.calendar-table .table-condensed{border-top:1px solid #182869;border-bottom:1px solid #EFEFEF;height:100%;}
+.calendar-table .table-condensed thead tr th{padding:12px 0;border:0;background:none;font-weight:bold;font-size:15px;line-height:1;}
+.calendar-table .table-condensed td{position:relative;height:63px;border:1px solid #EFEFEF;vertical-align: top;color:#747EA5}
+.calendar-table .table-condensed td.fc-sun{border:1px solid #FDDCDC;background:#FFF8F8;color:#F66D6D}
+.calendar-table .table-condensed td.fc-sat{border:1px solid #E2E8FB;background:#F5F8FF;}
+.calendar-table .table-condensed td.fc-none{border-color:#EFEFEF;background:none}
+.calendar-table .table-condensed td .none,
+.calendar-table .table-condensed td .day-num{display:block;height:64px;font-weight:bold;}
+.calendar-table .table-condensed td ul{position:absolute;top:40px;width:90%;height:50px;overflow:auto;}
+
 
 .num-list>li {counter-increment: number;margin-bottom: 3px;position: relative}
 .num-list>li:before {display: inline-block;margin-right: 3px; width: auto;height: auto;line-height: 24px;color: #e4001a; text-align: center;content: counter(number,decimal)".";font-size: 14px;background: 0 0;position: relative;top: auto; right: auto;left: auto}

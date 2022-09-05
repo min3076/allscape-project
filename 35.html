@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>35 allscape dashboard</title>
+<link rel="stylesheet" href="./css/common.css" />
+<link rel="stylesheet" href="./css/layout.css" />
+<link rel="stylesheet" href="./css/component.css" />
+<link rel="stylesheet" href="./css/main.css" />
+<script src="./font/webfont.js"></script>
+<script src="./js/jquery-3.3.1.min.js"></script>
+<script src="./js/jquery-migrate-1.4.1.min.js" defer="defer"></script>
+<script type="text/javascript">
+    WebFont.load({custom: {families: ["Spoqa Han Sans"],urls: ["./font/font_spoqahansans.css"],}, });
+</script>
+ <!-- include -->
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+ <script src="./js/include.js"></script>
+ <!-- //include -->
+<!--[if lt IE 9]>
+    <script src="./js/html5/html5shiv.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<!-- content 영역입니다. -->
+
+<div class="wrapper main main35">
+    <!-- [include] header -->
+    <div id="header"></div>
+    <!-- //[include] header -->
+    <section class="container">
+        <div class="con con_top">
+            <!-- 1_1top total -->
+            <div class="maintitwrap box">
+                <div class="tit">
+                    <h2>Dashboard</h2>
+                    <p>안녕하세요 <b>홍길동님,</b> 좋은하루 되세요!</p>
+                </div>
+                <ul class="alldata">
+                    <li>
+                        <span class="mico ico1"></span>
+                        <strong><b>전체</b><span>17</span></strong>
+                        <ul>
+                            <li><b>상주</b><span>5</span></li>
+                            <li><b>일반</b><span>12</span></li>
+                        </ul>                        
+                    </li>
+                    <li>
+                        <span class="mico ico2"></span>
+                        <strong><b>준비</b><span>5</span></strong>
+                        <ul>
+                            <li><b>상주</b><span>1</span></li>
+                            <li><b>일반</b><span>4</span></li>
+                        </ul>                        
+                    </li>
+                    <li>
+                        <span class="mico ico3"></span>
+                        <strong><b>진행</b><span>10</span></strong>
+                        <ul>
+                            <li><b>상주</b><span>4</span></li>
+                            <li><b>일반</b><span>6</span></li>
+                        </ul>                        
+                    </li>
+                    <li>
+                        <span class="mico ico4"></span>
+                        <strong><b>중지</b><span>1</span></strong>
+                        <ul>
+                            <li><b>상주</b><span>0</span></li>
+                            <li><b>일반</b><span>1</span></li>
+                        </ul>                        
+                    </li>
+                    <li>
+                        <span class="mico ico5"></span>
+                        <strong><b>완료</b><span>1</span></strong>
+                        <ul>
+                            <li><b>상주</b><span>0</span></li>
+                            <li><b>일반</b><span>1</span></li>
+                        </ul>                        
+                    </li>
+                </ul>
+            </div>
+            <!-- //1_1top total -->
+            <!-- 1_2무사고 -->
+            <div class="con_top_r box">
+                <h3><span class="mico"></span>무사고</h3>
+                <b> - 142</b>
+            </div>
+            <!-- //1_2무사고-->
+        </div>
+        <div class="con con_mid">
+            <!-- 2_1지도api -->
+            <div class="con_mid_ㅣ box"><img src="./images/main/img_map.png"></div>
+            <!-- //2_1지도api -->
+            <!-- 2_2프로젝트 리스트 -->
+            <div class="projectwrap tabwrap box col" id="tab1">
+                <div class="titwrap">
+                    <h3>프로젝트 리스트</h3>
+                    <div class="tab-nav">
+                        <a href="#tab1_1" class="tab-nav_link active"><span>전체</span></a>
+                        <a href="#tab1_2" class="tab-nav_link event"><span>준비</span></a>
+                        <a href="#tab1_3" class="tab-nav_link event"><span>진행</span></a>
+                        <a href="#tab1_4" class="tab-nav_link event"><span>완료</span></a>
+                    </div>
+                </div>
+                    
+                <div class="tab-body active" id="tab1_1">
+                    <div class="projectlist wrap">
+                        <ul class="list">
+                            <li>
+                                <div class="lcon">
+                                    <strong>봉산휴먼시아2단지 국민임대</strong>
+                                    <span class="adr">대전시 유성구 봉명로 655-1번지</span>
+                                </div>
+                                <div class="rcon">
+                                    <div class="state rate_ready">
+                                        <b>준비</b><span class="rate rate0">0%</span>
+                                    </div>
+                                    <button type="button" class="btn btn-outline-primary onlybn"><span class="sr-only">상세보기</span><i class="ico bi-arr"></i></button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="lcon">
+                                    <strong>봉산휴먼시아2단지 국민임대</strong>
+                                    <span class="adr">대전시 유성구 봉명로 655-1번지</span>
+                                </div>
+                                <div class="rcon">
+                                    <div class="state rate_ing">
+                                        <b>진행</b><span class="rate rate10">10%</span>
+                                    </div>
+                                    <button type="button" class="btn btn-outline-primary onlybn"><span class="sr-only">상세보기</span><i class="ico bi-arr"></i></button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="lcon">
+                                    <strong>봉산휴먼시아2단지 국민임대</strong>
+                                    <span class="adr">대전시 유성구 봉명로 655-1번지</span>
+                                </div>
+                                <div class="rcon">
+                                    <div class="state rate_ready">
+                                        <b>준비</b><span class="rate rate0">0%</span>
+                                    </div>
+                                    <button type="button" class="btn btn-outline-primary onlybn"><span class="sr-only">상세보기</span><i class="ico bi-arr"></i></button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="lcon">
+                                    <strong>봉산휴먼시아2단지 국민임대</strong>
+                                    <span class="adr">대전시 유성구 봉명로 655-1번지</span>
+                                </div>
+                                <div class="rcon">
+                                    <div class="state rate_ready">
+                                        <b>준비</b><span class="rate rate0">0%</span>
+                                    </div>
+                                    <button type="button" class="btn btn-outline-primary onlybn"><span class="sr-only">상세보기</span><i class="ico bi-arr"></i></button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="lcon">
+                                    <strong>봉산휴먼시아2단지 국민임대</strong>
+                                    <span class="adr">대전시 유성구 봉명로 655-1번지</span>
+                                </div>
+                                <div class="rcon">
+                                    <div class="state rate_ready">
+                                        <b>준비</b><span class="rate rate0">0%</span>
+                                    </div>
+                                    <button type="button" class="btn btn-outline-primary onlybn"><span class="sr-only">상세보기</span><i class="ico bi-arr"></i></button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="lcon">
+                                    <strong>봉산휴먼시아2단지 국민임대</strong>
+                                    <span class="adr">대전시 유성구 봉명로 655-1번지</span>
+                                </div>
+                                <div class="rcon">
+                                    <div class="state rate_ready">
+                                        <b>준비</b><span class="rate rate0">0%</span>
+                                    </div>
+                                    <button type="button" class="btn btn-outline-primary onlybn"><span class="sr-only">상세보기</span><i class="ico bi-arr"></i></button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="lcon">
+                                    <strong>봉산휴먼시아2단지 국민임대</strong>
+                                    <span class="adr">대전시 유성구 봉명로 655-1번지</span>
+                                </div>
+                                <div class="rcon">
+                                    <div class="state rate_ready">
+                                        <b>준비</b><span class="rate rate0">0%</span>
+                                    </div>
+                                    <button type="button" class="btn btn-outline-primary onlybn"><span class="sr-only">상세보기</span><i class="ico bi-arr"></i></button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-body" id="tab1_2">
+                    탭2
+                </div>
+                <div class="tab-body" id="tab1_3">
+                    탭3
+                </div>
+                <div class="tab-body" id="tab1_4">
+                    탭4
+                </div>
+            </div>
+            <!-- //2_2프로젝트 리스트 -->
+            <!-- 2_3프로젝트별  결제요청문서 -->
+            <div class="con_mid_r box col">
+                <div class="titwrap">
+                    <h3>프로젝트별 결제요청문서</h3>
+                    <div class="input_row">
+                        <label for="select4_6" class="sr-only">프로젝트선택</label>
+                        <select id="select4_6"  class="input_select">
+                                <option>전체프로젝트</option>
+                        </select>
+                    </div> 
+                </div>
+                <div class="wrap">
+                    <dl class="settlement">
+                        <!-- group -->
+                        <dt>도안 3지구 아파트공사</dt>
+                        <dd>
+                            <span class="cate">작업일지</span>
+                            <span class="company">시행사</span>
+                            <span class="name">홍길동</span>
+                            <span class="date">2022-05-30 11:58:00</span>
+                        </dd>
+                        <dd>
+                            <span class="cate">업무지시서</span>
+                            <span class="company">시행사</span>
+                            <span class="name">홍길동</span>
+                            <span class="date">2022-05-30 11:58:00</span>
+                        </dd>
+                        <dd>
+                            <span class="cate">업무지시서</span>
+                            <span class="company">시행사</span>
+                            <span class="name">홍길동</span>
+                            <span class="date">2022-05-30 11:58:00</span>
+                        </dd>
+                        <!-- //group -->
+                        <!-- group -->
+                        <dt>도안 3지구 아파트공사</dt>
+                        <dd>
+                            <span class="cate">작업일지</span>
+                            <span class="company">시행사</span>
+                            <span class="name">홍길동</span>
+                            <span class="date">2022-05-30 11:58:00</span>
+                        </dd>
+                        <dd>
+                            <span class="cate">업무지시서</span>
+                            <span class="company">시행사</span>
+                            <span class="name">홍길동</span>
+                            <span class="date">2022-05-30 11:58:00</span>
+                        </dd>
+                        <dd>
+                            <span class="cate">업무지시서</span>
+                            <span class="company">시행사</span>
+                            <span class="name">홍길동</span>
+                            <span class="date">2022-05-30 11:58:00</span>
+                        </dd>
+                        <!-- //group -->
+                        <!-- group -->
+                        <dt>도안 3지구 아파트공사</dt>
+                        <dd>
+                            <span class="cate">작업일지</span>
+                            <span class="company">시행사</span>
+                            <span class="name">홍길동</span>
+                            <span class="date">2022-05-30 11:58:00</span>
+                        </dd>
+                        <dd>
+                            <span class="cate">업무지시서</span>
+                            <span class="company">시행사</span>
+                            <span class="name">홍길동</span>
+                            <span class="date">2022-05-30 11:58:00</span>
+                        </dd>
+                        <dd>
+                            <span class="cate">업무지시서</span>
+                            <span class="company">시행사</span>
+                            <span class="name">홍길동</span>
+                            <span class="date">2022-05-30 11:58:00</span>
+                        </dd>
+                        <!-- //group -->
+                        <!-- group -->
+                        <dt>도안 3지구 아파트공사</dt>
+                        <dd>
+                            <span class="cate">작업일지</span>
+                            <span class="company">시행사</span>
+                            <span class="name">홍길동</span>
+                            <span class="date">2022-05-30 11:58:00</span>
+                        </dd>
+                        <dd>
+                            <span class="cate">업무지시서</span>
+                            <span class="company">시행사</span>
+                            <span class="name">홍길동</span>
+                            <span class="date">2022-05-30 11:58:00</span>
+                        </dd>
+                        <dd>
+                            <span class="cate">업무지시서</span>
+                            <span class="company">시행사</span>
+                            <span class="name">홍길동</span>
+                            <span class="date">2022-05-30 11:58:00</span>
+                        </dd>
+                        <!-- //group -->
+                    </dl>
+                </div>
+            </div>
+            <!-- //2_3프로젝트별  결제요청문서 -->
+        </div>
+        <div class="con con_bottom">
+            <!-- 3_1금일 프로젝트 별 작업 내용 -->
+            <div class="con_bottom_1wrap box">
+                <div class="titwrap">
+                    <h3>금일 프로젝트 별 <br>
+                        작업 내용</h3>
+                    <div class="input_row">
+                        <label for="select4_7" class="sr-only">프로젝트선택</label>
+                        <select id="select4_7"  class="input_select w100p">
+                                <option>전체프로젝트</option>
+                        </select>
+                    </div> 
+                </div>
+                <ul class="worklist">
+                    <!-- group -->
+                    <li>
+                        <strong>도안 3지구 아파트공사</strong>
+                        <div>
+                            <span class="company">에이치디씨</span>
+                            <span class="person">책임시공기술자 <span>윤찬호</span></span>
+                            <ul>
+                                <li>측면헤드 테프론 처리 </li>
+                                <li>1층 가대작업</li>
+                                <li>중계기 입출력작업</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- //group -->
+                    <!-- group -->
+                    <li>
+                        <strong>도안 3지구 아파트공사</strong>
+                        <div>
+                            <span class="company">에이치디씨</span>
+                            <span class="person">책임시공기술자 <span>윤찬호</span></span>
+                            <ul>
+                                <li>측면헤드 테프론 처리 </li>
+                                <li>1층 가대작업</li>
+                                <li>중계기 입출력작업</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- //group -->
+                    <!-- group -->
+                    <li>
+                        <strong>도안 3지구 아파트공사</strong>
+                        <div>
+                            <span class="company">에이치디씨</span>
+                            <span class="person">책임시공기술자 <span>윤찬호</span></span>
+                            <ul>
+                                <li>측면헤드 테프론 처리 </li>
+                                <li>1층 가대작업</li>
+                                <li>중계기 입출력작업</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- //group -->
+                    <!-- group -->
+                    <li>
+                        <strong>도안 3지구 아파트공사</strong>
+                        <div>
+                            <span class="company">에이치디씨</span>
+                            <span class="person">책임시공기술자 <span>윤찬호</span></span>
+                            <ul>
+                                <li>측면헤드 테프론 처리 </li>
+                                <li>1층 가대작업</li>
+                                <li>중계기 입출력작업</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- //group -->
+                </ul>
+                <a href="#" class="bn_more">더보기</a>
+            </div>
+            <!-- //3_1금일 프로젝트 별 작업 내용 -->
+            <!-- 3_2공지사항 -->
+            <div class="con_bottom_2wrap box iconews">
+                <div class="icotit ico2">
+                    <h3>공지사항</h3>
+                </div>
+                <ul class="news">
+                    <li><a href="#">공동연차 건에 대한 공지사항</a><span class="date">07-22</span></li>
+                    <li><a href="#">공동연차 건에 대한 공지사항</a><span class="date">07-22</span></li>
+                    <li><a href="#">공동연차 건에 대한 공지사항</a><span class="date">07-22</span></li>
+                    <li><a href="#">공동연차 건에 대한 공지사항</a><span class="date">07-22</span></li>
+                    <li><a href="#">공동연차 건에 대한 공지사항</a><span class="date">07-22</span></li>
+                    <li><a href="#">공동연차 건에 대한 공지사항</a><span class="date">07-22</span></li>
+                    <li><a href="#">공동연차 건에 대한 공지사항</a><span class="date">07-22</span></li>
+                </ul>
+                <a href="#" class="bn_more">더보기</a>
+            </div>
+            <!-- //3_2공지사항 -->
+        </div>
+    </section>
+    
+    <!-- [include] fooer -->
+    <div id="footer"></div>
+    <!-- //[include] fooer -->
+    <script src="./js/main.js"></script>
+</div>
+<!-- //content 영역입니다. -->
+</body>
+</html>

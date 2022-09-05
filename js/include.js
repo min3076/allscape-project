@@ -15,6 +15,11 @@ $(function(){
     $("#pagenate").load("./include/pagenate.html"); 
     });
 
+$(function(){
+    $("#calendar").load("./include/calendar.html"); 
+    });
+    
+
 
 $(document).ready( function() 
 {

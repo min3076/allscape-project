@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>48 allscape popup</title>
+<link rel="stylesheet" href="./css/common.css" />
+<link rel="stylesheet" href="./css/layout.css" />
+<link rel="stylesheet" href="./css/component.css" />
+<link rel="stylesheet" href="./css/contents.css" />
+<script src="./font/webfont.js"></script>
+<script src="./js/jquery-3.3.1.min.js"></script>
+<script src="./js/jquery-migrate-1.4.1.min.js" defer="defer"></script>
+<script type="text/javascript">
+    WebFont.load({custom: {families: ["Spoqa Han Sans"],urls: ["./font/font_spoqahansans.css"],}, });
+</script>
+ <!-- include -->
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+ <script src="./js/include.js"></script>
+ <!-- //include -->
+<!--[if lt IE 9]>
+    <script src="./js/html5/html5shiv.min.js"></script>
+<![endif]-->
+<!-- 레이어팝업 -->
+<script src="http://code.jquery.com/jquery-latest.js"></script> 
+<script src="./js/tmpl.js"></script>
+<!-- //레이어팝업 -->
+</head>
+<body>
+<!-- content 영역입니다. -->
+
+<div class="wrapper">
+    <!-- [include] header -->
+    <div id="header"></div>
+    <!-- //[include] header -->
+    <section class="container">
+        <!-- [include] lnb -->
+        <div id="lnb"></div>
+        <!-- //[include] lnb -->
+        <div class="content_wrap">
+            <div id="location" class="title_wrap">
+            <h2 class="page__title">기본 정보 입력</h2>
+            <!-- 로케이션 시작 -->
+            <ul class="location_wrap">
+                <li class="n1 home"><a href="#">HOME</a></li>
+                <li class="n2"><a href="#">1차메뉴</a></li>
+                <li class="n3"><a href="#">2차메뉴</a></li>
+                <li class="n4"><a href="#" class="navi_ov">신규등록</a></li>
+            </ul>
+            <!-- 로케이션 끝 -->
+        </div>
+        <div id="txt">
+            
+            <a href="#" class="openMask">버튼</a> 
+            <!-- 레이어팝업 -->
+            <div id="mask">
+                <div class="wrap"> 
+                    <div class="window p48"> 
+                        <div class="titrap"><h3>기본 정보 입력</h3></div>
+                        <div class="pop_body">
+                            <div class="form col">
+                                <div class="input_row wide">
+                                    <label for="input48_1" class="bar_title">공사명</label>
+                                    <input type="text" id="input48_1"  class="box_input">
+                                </div>
+                                <div class="input_row wide">
+                                    <label for="input48_2" class="bar_title">위치</label>
+                                    <input type="text" id="input48_2"  class="box_input">
+                                </div>
+                                <!-- col -->
+                                <div class="row">
+                                    <div class="input_row wide">
+                                        <label for="input48_3" class="bar_title">공사종류</label>
+                                        <input type="text" id="input48_3"  class="box_input">
+                                    </div>
+                                    <div class="input_row wide">
+                                        <label for="input48_4" class="bar_title">용도</label>
+                                        <input type="text" id="input48_4"  class="box_input">
+                                    </div>
+                                </div>
+                                <!-- //col -->
+                                <div class="row">
+                                    <div class="input_row wide">
+                                        <label for="input48_5" class="bar_title">시행사 상호</label>
+                                        <input type="text" id="input48_5"  class="box_input">
+                                    </div>
+                                    <div class="input_row wide">
+                                        <label for="input48_6" class="bar_title">소재지 연락처</label>
+                                        <input type="text" id="input48_6"  class="box_input">
+                                    </div>
+                                </div>
+                                <div class="input_row wide">
+                                    <label for="input48_7" class="bar_title">사업개요</label>
+                                    <input type="text" id="input48_7"  class="box_input">
+                                </div>
+                                <!-- col -->
+                                <div class="row">
+                                    <div class="input_row wide">
+                                        <label for="input48_8" class="bar_title">총 공사비</label>
+                                        <input type="text" id="input48_8"  class="box_input">
+                                    </div>
+                                    <div class="input_row wide">
+                                        <label for="input48_9" class="bar_title">관급액</label>
+                                        <input type="text" id="input48_9"  class="box_input">
+                                    </div>
+                                </div>
+                                <!-- //col -->
+                                <!-- col -->
+                                <div class="row">
+                                    <div class="input_row wide">
+                                        <label for="input48_10" class="bar_title">설계비</label>
+                                        <input type="text" id="input48_10"  class="box_input">
+                                    </div>
+                                    <div class="input_row wide">
+                                        <label for="input48_11" class="bar_title">구조</label>
+                                        <input type="text" id="input48_11"  class="box_input">
+                                    </div>
+                                </div>
+                                <!-- //col -->
+                                <!-- col -->
+                                <div class="row">
+                                    <div class="input_row wide">
+                                        <label for="input48_12" class="bar_title">지상</label>
+                                        <input type="text" id="input48_12"  class="box_input">
+                                    </div>
+                                    <div class="input_row wide">
+                                        <label for="input48_13" class="bar_title">지하</label>
+                                        <input type="text" id="input48_13"  class="box_input">
+                                    </div>
+                                </div>
+                                <!-- //col -->
+                                <!-- col -->
+                                <div class="row">
+                                    <div class="input_row">
+                                        <strong class="bar_title">지상</strong>
+                                        <label for="input48_14_1" class="w40">주 - </label>
+                                        <input type="text" id="input48_14_1"  class="box_input w80">
+                                        <label for="input48_14_2" class="w40 ml_10">부 - </label>
+                                        <input type="text" id="input48_14_2"  class="box_input w80">
+                                    </div>
+                                    <div class="input_row wide">
+                                        <label for="input48_15" class="bar_title">세대수</label>
+                                        <input type="text" id="input48_15"  class="box_input">
+                                    </div>
+                                </div>
+                                <!-- //col -->
+                                <!-- col -->
+                                <div class="row">
+                                    <div class="input_row wide wide2">
+                                        <label for="input48_16" class="bar_title">대지면적</label>
+                                        <input type="text" id="input48_16"  class="box_input">
+                                        <span class="endtx">(㎡)</span>
+                                    </div>
+                                    <div class="input_row wide wide2">
+                                        <label for="input48_17" class="bar_title">건축면적</label>
+                                        <input type="text" id="input48_17"  class="box_input">
+                                        <span class="endtx">(㎡)</span>
+                                    </div>
+                                </div>
+                                <!-- //col -->
+                                <!-- col -->
+                                <div class="row">
+                                    <div class="input_row wide wide2">
+                                        <label for="input48_18" class="bar_title">연면적</label>
+                                        <input type="text" id="input48_18"  class="box_input">
+                                        <span class="endtx">(㎡)</span>
+                                    </div>
+                                    <div class="input_row wide wide2">
+                                        <label for="input48_19" class="bar_title">바닥면적</label>
+                                        <input type="text" id="input48_19"  class="box_input">
+                                        <span class="endtx">(㎡)</span>
+                                    </div>
+                                </div>
+                                <!-- //col -->
+                                <div class="input_row wide">
+                                    <label for="input48_20" class="bar_title">부가정보</label>
+                                    <input type="text" id="input48_20"  class="box_input">
+                                </div>
+                            </div>
+                            <div class="btnwrap lg">
+                                <button type="button" class="btn btn-primary btn-lg">저장</button>
+                                <button type="button" class="btn btn-secondary btn-lg">취소</button>
+                            </div>
+                        </div>
+                        <button type="button" class="bn_close"><span class="sr-only">닫기</span></button>
+                    </div> 
+                </div>
+            </div>
+            <!-- //레이어팝업 -->
+            
+          </div>
+        </div>
+    </section>
+    <!-- [include] fooer -->
+    <div id="footer"></div>
+    <!-- //[include] fooer -->
+</div>
+<!-- //content 영역입니다. -->
+</body>
+</html>

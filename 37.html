@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>159 allscape dashboard</title>
+<link rel="stylesheet" href="./css/common.css" />
+<link rel="stylesheet" href="./css/layout.css" />
+<link rel="stylesheet" href="./css/component.css" />
+<link rel="stylesheet" href="./css/contents.css" />
+<script src="./font/webfont.js"></script>
+<script src="./js/jquery-3.3.1.min.js"></script>
+<script src="./js/jquery-migrate-1.4.1.min.js" defer="defer"></script>
+<script type="text/javascript">
+    WebFont.load({custom: {families: ["Spoqa Han Sans"],urls: ["./font/font_spoqahansans.css"],}, });
+</script>
+ <!-- include -->
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+ <script src="./js/include.js"></script>
+ <!-- //include -->
+<!--[if lt IE 9]>
+    <script src="./js/html5/html5shiv.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<!-- content 영역입니다. -->
+
+<div class="wrapper">
+    <!-- [include] header -->
+    <div id="header"></div>
+    <!-- //[include] header -->
+    <section class="container">
+        <!-- [include] lnb -->
+        <div id="lnb"></div>
+        <!-- //[include] lnb -->
+        <div class="content_wrap">
+            <div id="location" class="title_wrap">
+            <h2 class="page__title">공지사항 작성</h2>
+            <!-- 로케이션 시작 -->
+            <ul class="location_wrap">
+                <li class="n1 home"><a href="#">HOME</a></li>
+                <li class="n2"><a href="#">1차메뉴</a></li>
+                <li class="n3"><a href="#">2차메뉴</a></li>
+                <li class="n4"><a href="#" class="navi_ov">신규등록</a></li>
+            </ul>
+            <!-- 로케이션 끝 -->
+        </div>
+        <div id="txt">
+            <div class="writewrap">
+                <div class="wraptop">
+                    <div class="input_row">
+                        <label for="input37_1" class="bar_title"><b>제목</b></label>
+                        <input type="text" id="input37_1"  class="box_input w100p">
+                    </div>
+                    <div class="input_row wide">
+                        <div>
+                        <strong class="bar_title"><b>첨부파일</b></strong>
+                        <a href="#">설문조사.html</a>
+                        <button type="button" class="btn btn-outline-secondary btn-sm"><i class="ico bi-del-g_sm"></i>삭제</button>
+                        </div>
+                        <button type="button" class="btn btn-outline-primary"><i class="ico bi-plus mr5"></i>파일첨부</button>
+                    </div>
+                </div>
+                <div class="wrapmid">
+                    <!-- 에디터영역 -->
+                    <img src="./images/content/img_editer.png" alt="" />
+                    <!-- //에디터영역 -->
+                </div>
+                <div class="btnwrap lg">
+                    <button type="button" class="btn btn-primary btn-lg">저장</button>
+                    <button type="button" class="btn btn-secondary btn-lg">취소</button>
+                </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- [include] fooer -->
+    <div id="footer"></div>
+    <!-- //[include] fooer -->
+    <script src="./js/main.js"></script>
+</div>
+<!-- //content 영역입니다. -->
+</body>
+</html>

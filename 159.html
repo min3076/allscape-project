@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>159 allscape dashboard</title>
+<link rel="stylesheet" href="./css/common.css" />
+<link rel="stylesheet" href="./css/layout.css" />
+<link rel="stylesheet" href="./css/component.css" />
+<link rel="stylesheet" href="./css/contents.css" />
+<script src="./font/webfont.js"></script>
+<script src="./js/jquery-3.3.1.min.js"></script>
+<script src="./js/jquery-migrate-1.4.1.min.js" defer="defer"></script>
+<script type="text/javascript">
+    WebFont.load({custom: {families: ["Spoqa Han Sans"],urls: ["./font/font_spoqahansans.css"],}, });
+</script>
+ <!-- include -->
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+ <script src="./js/include.js"></script>
+ <!-- //include -->
+<!--[if lt IE 9]>
+    <script src="./js/html5/html5shiv.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<!-- content 영역입니다. -->
+
+<div class="wrapper">
+    <!-- [include] header -->
+    <div id="header"></div>
+    <!-- //[include] header -->
+    <section class="container">
+        <!-- [include] lnb -->
+        <div id="lnb"></div>
+        <!-- //[include] lnb -->
+        <div class="content_wrap">
+            <div id="location" class="title_wrap">
+            <h2 class="page__title">캘린더</h2>
+            <!-- 로케이션 시작 -->
+            <ul class="location_wrap">
+                <li class="n1 home"><a href="#">HOME</a></li>
+                <li class="n2"><a href="#">1차메뉴</a></li>
+                <li class="n3"><a href="#">2차메뉴</a></li>
+                <li class="n4"><a href="#" class="navi_ov">신규등록</a></li>
+            </ul>
+            <!-- 로케이션 끝 -->
+        </div>
+        <div id="txt">
+            <div class="commutewrap">
+                <div class="borderbox check">
+                    <div class="daywrap">
+                        <strong>Today</strong>
+                        <span class="day">2022-06-15(수)</span>
+                        <ul>
+                            <li><b>출근시간</b><span>미등록</span></li>
+                            <li><b>퇴근시간</b><span>미등록</span></li>
+                        </ul>
+                        <div class="btnwrap">
+                            <button type="button" class="btn btn-primary btn-lg">출근하기</button>
+                            <button type="button" class="btn btn-dark btn-lg">퇴근하기</button>
+                        </div>
+                    </div>
+                    <div class="holydaywrap">
+                        <strong>휴가기간</strong>
+                        <div class="input_row">
+                            <div class="box_period">
+                                <label for="select4_1"><span class="sr-only">YYYYMM</span><span class="sr-only">작성날짜 검색조건 시작일</span></label>
+                                <input type="date" id="select4_1" class="expect_date input_select">
+                               <button class="btn_calendar" type="button"></button>
+                            </div> 
+                           <span class="space"> - </span>
+                            <div class="box_period">
+                                <label for="select4_2"><span class="sr-only">YYYYMM</span><span class="sr-only">작성날짜 검색조건 종료일</span></label>
+                                <input type="date" id="select4_2" class="expect_date input_select">
+                               <button class="btn_calendar" type="button"></button>
+                            </div>
+                        </div>
+                        <div class="btnwrap">
+                            <button type="button" class="btn btn-outline-secondary btn-lg">등록하기</button>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- 1_1캘린더 -->
+                <!-- [include] header -->
+                <div id="calendar_commute" class="txtcal borderbox"></div>
+                <!-- //[include] header -->
+            
+                <!-- //1_1캘린더 -->
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- [include] fooer -->
+    <div id="footer"></div>
+    <!-- //[include] fooer -->
+    <script src="./js/main.js"></script>
+</div>
+<!-- //content 영역입니다. -->
+</body>
+</html>

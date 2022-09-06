@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>45 allscape popup</title>
+<link rel="stylesheet" href="./css/common.css" />
+<link rel="stylesheet" href="./css/layout.css" />
+<link rel="stylesheet" href="./css/component.css" />
+<link rel="stylesheet" href="./css/contents.css" />
+<script src="./font/webfont.js"></script>
+<script src="./js/jquery-3.3.1.min.js"></script>
+<script src="./js/jquery-migrate-1.4.1.min.js" defer="defer"></script>
+<script type="text/javascript">
+    WebFont.load({custom: {families: ["Spoqa Han Sans"],urls: ["./font/font_spoqahansans.css"],}, });
+</script>
+ <!-- include -->
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+ <script src="./js/include.js"></script>
+ <!-- //include -->
+<!--[if lt IE 9]>
+    <script src="./js/html5/html5shiv.min.js"></script>
+<![endif]-->
+<!-- 레이어팝업 -->
+<script src="http://code.jquery.com/jquery-latest.js"></script> 
+<script src="./js/tmpl.js"></script>
+<!-- //레이어팝업 -->
+</head>
+<body>
+<!-- content 영역입니다. -->
+
+<div class="wrapper">
+    <!-- [include] header -->
+    <div id="header"></div>
+    <!-- //[include] header -->
+    <section class="container">
+        <!-- [include] lnb -->
+        <div id="lnb"></div>
+        <!-- //[include] lnb -->
+        <div class="content_wrap">
+            <div id="location" class="title_wrap">
+            <h2 class="page__title">발주처 or 설계사 or 관할 관/청 등록</h2>
+            <!-- 로케이션 시작 -->
+            <ul class="location_wrap">
+                <li class="n1 home"><a href="#">HOME</a></li>
+                <li class="n2"><a href="#">1차메뉴</a></li>
+                <li class="n3"><a href="#">2차메뉴</a></li>
+                <li class="n4"><a href="#" class="navi_ov">신규등록</a></li>
+            </ul>
+            <!-- 로케이션 끝 -->
+        </div>
+        <div id="txt">
+            
+            <a href="#" class="openMask">버튼</a> 
+            <!-- 레이어팝업 -->
+            <div id="mask">
+                <div class="wrap"> 
+                    <div class="window p45 bg_gray"> 
+                        <div class="titrap"><h3>발주처 or 설계사 or 관할 관/청 등록</h3></div>
+                        <div class="pop_body">
+                            <div class="form row">
+                                <div class="input_row auto">
+                                    <label for="input45_1" class="bar_title sr-only">선택조건</label>
+                                    <select id="input45_1"  class="input_select w80">
+                                        <option>회사명</option>
+                                    </select>
+                                </div>
+                                <div class="input_row">
+                                    <label for="input45_2" class="bar_title sr-only">검색어</label>
+                                    <input type="text" id="input45_2"  class="box_input w100p">
+                                </div>
+                                <div class="btnwrap">
+                                    <button type="submit" class="btn btn-primary ml_10"><i class="ico bi-search_w mr5"></i>검색</button>
+                                    <button type="submit" class="btn btn-outline-primary ml_10"><i class="ico bi-plus mr5"></i>직접입력</button>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="grap">
+                                <table class="table table-default table-hover">
+                                    <caption>자재승인형황 검색결과  목록 - 번호, 제목, 작성자, 파일, 작성일, 조회수 정보 제공</caption>
+                                    <colgroup>
+                                        <col style="width:30%">
+                                        <col>
+                                        <col>
+                                        <col style="width:30%">
+                                        <col>
+                                    </colgroup>
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">회사명</th>
+                                        <th scope="col">이름</th>
+                                        <th scope="col">직위</th>
+                                        <th scope="col">연락처</th>
+                                        <th scope="col"><span class="sr-only">선택버튼</span></th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>CA파트너스</td>
+                                        <td>홍길동</td>
+                                        <td>PRO</td>
+                                        <td>042-123-1234</td>
+                                        <td>
+                                            <input type="radio"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>CA파트너스</td>
+                                        <td>홍길동</td>
+                                        <td>PRO</td>
+                                        <td>042-123-1234</td>
+                                        <td>
+                                            <input type="radio"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>CA파트너스</td>
+                                        <td>홍길동</td>
+                                        <td>PRO</td>
+                                        <td>042-123-1234</td>
+                                        <td>
+                                            <input type="radio"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>CA파트너스</td>
+                                        <td>홍길동</td>
+                                        <td>PRO</td>
+                                        <td>042-123-1234</td>
+                                        <td>
+                                            <input type="radio"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>CA파트너스</td>
+                                        <td>홍길동</td>
+                                        <td>PRO</td>
+                                        <td>042-123-1234</td>
+                                        <td>
+                                            <input type="radio"/>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                </div>
+                            </div>
+                            <div class="btnwrap lg">
+                                <button type="button" class="btn btn-primary btn-lg">저장</button>
+                                <button type="button" class="btn btn-secondary btn-lg">취소</button>
+                            </div>
+                        </div>
+                        <button type="button" class="bn_close"><span class="sr-only">닫기</span></button>
+                    </div> 
+                </div>
+            </div>
+            <!-- //레이어팝업 -->
+            
+          </div>
+        </div>
+    </section>
+    <!-- [include] fooer -->
+    <div id="footer"></div>
+    <!-- //[include] fooer -->
+</div>
+<!-- //content 영역입니다. -->
+</body>
+</html>

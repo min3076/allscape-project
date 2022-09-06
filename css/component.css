@@ -326,6 +326,8 @@ a.text-success:hover{color:#2b542c}.text-info{color:#31708f}a.text-info:hover{co
 #caltab .tab-nav{display:flex;justify-content: flex-end;gap:4px;width:100%;}
 #caltab .tab-nav .tab-nav_link{display:inline-block;padding:0.375rem 0.75rem;border:1px solid #A5AECA;color:#6c757d;border-radius:0.25rem;}
 #caltab .tab-nav .tab-nav_link.active{color:#007bff;border-color:#007bff}
+#caltab .tab-body{display:none;width:100%;margin-top: 0;position:relative;margin:6px 0 20px;}
+#caltab .tab-body.active{display:block}
 
 /* calendar 테이블 */
 .calendar-table {height:100%;}

@@ -1,3 +1,8 @@
 @charset "utf-8";
 
+.page53{padding:20px;display:flex;flex-wrap: wrap;}
+.page53 .input_row{display:inline-block;width:30%;padding:40px 50px ;margin:1.6%;border:1px solid #A5AECA;flex-grow: initial;}
+.page53 .input_row .bar_title{width:100%;text-align:center;}
+.page53 .input_row input{margin-top:10px;width:100%;text-align:center}
+
 #calendar_txt{}

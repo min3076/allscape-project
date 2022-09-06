@@ -89,6 +89,8 @@ h3{font-size:18px;font-weight:bold;color:#0F2248}
 .ico.bi-out{width:20px;height:20px;line-height:20px;background:url(../images/common/ico_out.svg) no-repeat;}
 .ico.bi-plus_big{width:15px;height:16px;line-height:20px;background:url(../images/common/ico_plus.svg) no-repeat;}
 .ico.bi-plus{width:13px;height:13px;line-height:20px;background:url(../images/common/ico_plus_sm.svg) no-repeat;}
+.ico.bi-plus-w{width:15px;height:15px;line-height:20px;background:url(../images/common/ico_plus_w.svg) no-repeat;}
+
 .ico.bi-blank_w{width:24px;height:24px;line-height:20px;background:url(../images/common/ico_blank.svg) no-repeat;}
 .ico.bi-search_w{width:16px;height:16px;line-height:20px;background:url(../images/common/btn_ico_search.svg) no-repeat;}
 .ico.bi-minus{width:13px;height:13px;line-height:20px;background:url(../images/common/ico_minus.svg) no-repeat 0 50%;}
@@ -352,6 +354,7 @@ a.text-success:hover{color:#2b542c}.text-info{color:#31708f}a.text-info:hover{co
 .num-list>li:before {display: inline-block;margin-right: 3px; width: auto;height: auto;line-height: 24px;color: #e4001a; text-align: center;content: counter(number,decimal)".";font-size: 14px;background: 0 0;position: relative;top: auto; right: auto;left: auto}
 
 /* 컴포넌트 */
+.borderbox{padding:30px 50px;margin-bottom:60px;border:1px solid #A3ABBA;border-radius:10px;}
 .searchbox{display:flex;justify-content:space-between;align-items:center;padding:30px 50px;margin-bottom:60px;border:1px solid #A3ABBA;border-radius:10px;}
 .searchbox .title_wrap{position:relative;width:145px;color:#182869}
 .searchbox .title_wrap:before{content:"";display:block;position:absolute;right:0;top:-14px;width:53px;height:53px;background:url(../images/common/ico_search.svg)}
@@ -393,11 +396,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {background: transparent;z
 .linebox.gray{background:#FCFCFC}
 .linebox.sm{padding:20px 30px;border-radius:3px;}
 
-
-.page53{padding:20px;display:flex;flex-wrap: wrap;}
-.page53 .input_row{display:inline-block;width:30%;padding:40px 50px ;margin:20px;border:1px solid #A5AECA;flex-grow: initial;}
-.page53 .input_row .bar_title{width:100%;text-align:center;}
-.page53 .input_row input{margin-top:10px;width:100%;text-align:center}
 /* pagenate */
 #pagenate{display:flex;justify-content:flex-end;}
 .pagination{display:flex;align-items:center;margin:20px 0;}

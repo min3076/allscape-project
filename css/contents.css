@@ -5,4 +5,12 @@
 .page53 .input_row .bar_title{width:100%;text-align:center;}
 .page53 .input_row input{margin-top:10px;width:100%;text-align:center}
 
-#calendar_txt{}
+/* 166 캘린더 */
+#calendar_txt #caltab{height:auto}
+#calendar_txt #caltab .titwrap{display:flex;justify-content:space-between;align-items:center;}
+#calendar_txt #caltab .weekcal td{height:574px;}
+#calendar_txt #caltab .daycal td{display:flex;height:auto;border-left:0;border-right:0;}
+#calendar_txt #caltab .daycal td ul{width:auto;height:auto;position:static;overflow: visible;}
+#calendar_txt #caltab .daycal td .day-time{display:flex;align-items:center;width:200px;color:#747EA5}
+#calendar_txt #caltab .daycal td .day-time span{display:inline-block;width:40px;text-align:right;font-weight:bold}
+#calendar_txt #caltab .daycal td.alltime{background:#F5F8FF;}

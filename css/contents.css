@@ -98,7 +98,7 @@
 #mask .window.p29 .box{height:400px;}
 #mask .window.p33 .form.col .input_row .bar_title{width:74px;}
 #mask .window.p34{width:540px;height:auto;}
-#mask .window.p45,
+#mask .window.p45, % add .
 #mask .window.p47{width:640px;height:auto;}
 #mask .window.p47 .grap{height:100px}
 #mask .window.p47 .box{margin-top:60px;padding:20px 10px;border-radius:0;border:1px solid #ccc;background:#FCFCFC}

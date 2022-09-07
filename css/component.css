@@ -399,7 +399,7 @@ textarea.boxarea{height:120px;padding:10px;border: 1px solid #E4EAFC; box-sizing
 .txtcal #caltab .daycal td .day-time span{display:inline-block;width:40px;text-align:right;font-weight:bold}
 .txtcal #caltab .daycal td.alltime{background:#F5F8FF;}
 #caltab .calendar-table .table-condensed td{height:110px;}
-
+.submain #caltab .calendar-table .table-condensed td{height:64px;}
 .num-list>li {counter-increment: number;margin-bottom: 3px;position: relative}
 .num-list>li:before {display: inline-block;margin-right: 3px; width: auto;height: auto;line-height: 24px;color: #e4001a; text-align: center;content: counter(number,decimal)".";font-size: 14px;background: 0 0;position: relative;top: auto; right: auto;left: auto}
 

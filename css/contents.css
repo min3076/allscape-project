@@ -133,16 +133,12 @@
 #mask .window.p127 .pop_body .rcon .boxinfo strong{display:block;padding:20px 30px;color:#0F2248;font-size:20px;font-weight:bold;border-bottom: 1px solid #E2E2E2;}
 #mask .window.p127 .pop_body .rcon .boxinfo strong b{display:block;font-size:15px;font-weight:normal}
 #mask .window.p127 .pop_body .rcon .boxinfo .info{padding:30px 20px;}
+#mask .window.p127 .pop_body .rcon .info_bott{padding:30px 0 10px}
+#mask .window.p127 .pop_body .rcon .info_bott li{display:block;}
+#mask .window.p127 .pop_body .rcon .info_bott li b,
+#mask .window.p127 .pop_body .rcon .info_bott li span{display:block;width:100%;text-align:right;}
 #mask .window.p127 .pop_body .rcon .inputwrap .input_row .bar_title{color:#AFAFAF}
 #mask .window.p127 .pop_body .rcon .btnwrap button{flex-basis:100%;}
-
-/* 공통 하단 사람정보 */
-.info_bott{padding:30px 0 10px}
-.info_bott li{display:block;}
-.info_bott li b,
-.info_bott li span{display:block;width:100%;text-align:right;color:#747EA5}
-.info_bott li b{color:#182869}
-
 .info{display:block;}
 .info li{display:flex;width:100%;padding:2px 0;gap:20px;color:#747EA5}
 .info li b{width:60px;text-align:right;color:#182869}
@@ -170,13 +166,24 @@
 .padd_v{padding:60px 0}
 
 .col2 {display:flex;width:100%;}
-.col2 h4{width:200px;color:#0F2248;font-weight:bold}
+.col2 h4{width:20%;color:#0F2248;font-weight:bold}
+.col2 h4 span{display:block}
 .view .mid .info {width:100%;}
 .view .mid .info li{display:flex;width:100%;color:#747EA5}
-.view .mid .info li b{width:100px;color:#182869}
+.view .mid .info li b{width:80px;color:#182869}
+.view .mid .info li span{width:100%}
+.view .mid .info.w100 li b{width:100px;color:#182869}
 .view .mid .info.list b{text-align:left}
+.view .mid p,
+.view .mid table td{color:#747EA5}
+
+.view .mid .info_bott{padding:50px 0;}
+.view .mid .info_bott li{display:flex;justify-content:flex-end;gap:10px;padding:5px 0;color:#747EA5}
+.view .mid .info_bott li b{color:#0F2248}
 
 .view .mid .bott_line{border-bottom: 1px solid #D9D9D9;}
+.view .input_row {justify-content:center;}
+.view .input_row .bar_title{color:#747EA5}
 
 #signwrap{font-size:13px;color:#747EA5}
 #signwrap .btnwrap{padding:0 0 16px;justify-content:flex-end;}

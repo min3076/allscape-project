@@ -35,7 +35,7 @@
        <!-- //[include] lnb -->
         <div class="content_wrap">
             <div id="location" class="title_wrap">
-                <h2 class="page__title">소방공사감리자 지정신고서</h2>
+                <h2 class="page__title">소방공사감리원 배치변경통보</h2>
                 <!-- 로케이션 시작 -->
                 <ul class="location_wrap">
                     <li class="n1 home"><a href="#">HOME</a></li>
@@ -57,7 +57,7 @@
                     <!-- content -->
                     <div class="mid">
                         <div class="mid_top">
-                            <h3 class="contit">소방공사감리자 지정신고서</h3>
+                            <h3 class="contit">소방공사감리원 배치변경통보</h3>
                             <!-- [include] sign -->
                             <div id="signwrap"></div>
                             <!-- //[include] sign -->
@@ -83,38 +83,46 @@
                                 </ul>
                             </div>
                             <div class="padd_v col2 bott_line">
-                                <h4>소방공사<span>감리업자</span></h4>
-                                <ul class="info list">
-                                    <li><b>상호</b><span>씨에이엔지니어링</span></li>
-                                    <li><b>등록번호</b><span>제2014-7호</span></li>
-                                    <li><b>대표자</b><span>박홍주</span></li>
-                                    <li><b>연락처</b><span>041-523-4858</span></li>
-                                    <li><b>소재지</b><span>충청남도 천안시 서북구 불당22대로 92, 6층 605호(불당동, 마블러스티타워)</span></li>
-                                </ul>
+                                <h4>변경사유</h4>
+                                <div class="info">
+                                    <label for="input65_1" class="sr-only">변경사유</label>
+                                    <textarea id="input65_1"  class="boxarea w100p"></textarea>
+                                </div>
                             </div>
                             <div class="padd_v col2 bott_line">
-                                <h4>소방공사<span>감리원</span></h4>
+                                <h4>소방공사 감리원<span>변경사항</span></h4>
                                 <table class="table table-default">
                                 <thead>
                                 <tr>
-                                    <th scope="col">번호</th>
-                                    <th scope="col">제목</th>
-                                    <th scope="col">작성자</th>
+                                    <th scope="col">성명</th>
+                                    <th scope="col">분야/등급</th>
+                                    <th scope="col">감리원구분</th>
                                 </tr>
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <td>노정호</td>
-                                    <td>기계/특급, 전기/특급 </td>
-                                    <td>책임감리원</td>
-                                </tr>
-                                <tr>
-                                    <td>이종하</td>
+                                    <td>
+                                    <div class="input_row">
+                                    <strong class="bar_title">변경 전 </strong>
+                                    <label for="select65_1" class="sr-only">감리원 변경 전</label> 
+                                    <select id="select65_1"  class="input_select">
+                                    <option>이종하</option>
+                                    </select>
+                                    </div>
+                                    </td>
                                     <td>기계/특급, 전기/특급 </td>
                                     <td>보조감리원</td>
                                 </tr>
                                 <tr>
-                                    <td>김상곤</td>
+                                    <td>
+                                    <div class="input_row">
+                                    <strong class="bar_title">변경 후 </strong>
+                                    <label for="select65_2" class="sr-only">감리원 변경 후</label> 
+                                    <select id="select65_2"  class="input_select">
+                                    <option>홍길동</option>
+                                    </select>
+                                    </div>
+                                    </td>
                                     <td>기계/특급, 전기/특급 </td>
                                     <td>보조감리원</td>
                                 </tr>
@@ -122,26 +130,25 @@
                                 </table>
                             </div>
                             <div class="padd_v col2 bott_line">
-                                <h4>감리대상 <span>소방시설 종류</span></h4>
-                                <ul class="info list w100">
-                                    <li><b>소화설비</b><span>소화기구, 주방용자동소화장치, 옥내소화전설비, 스프링쿨러설비 </span></li>
-                                    <li><b>경보설비</b><span>자동화재탐지설비, 시각경보기, 비상방송설비, 가스누설경보기, 자동화재속보설비 </span></li>
-                                    <li><b>피난구조설비</b><span>피난기구, 유도등, 비상조명등 </span></li>
-                                    <li><b>소화용수설비</b><span>상수도소화용수설비</span></li>
-                                    <li><b>소화활동설비</b><span>제연설비, 연결송스관설비, 비상콘센트설비 무선통신보조설비용</span></li>
-                                </ul>
-                            </div>
-                            <div class="padd_v col2 bott_line">
-                                <h4>소방공사 <span>감리기간</span> </h4>
-                                <p class="info list">2019년 8월 일부터 2021년 12월 31일까지</p>
-                            </div>
-                            <div class="padd_v col2 bott_line">
-                                <h4>감리 구분 </h4>
-                                <p class="info list">상주 감리</p>
+                                <h4>변경된 <span>감리원의 감리 기간</span></h4>
+                                <div class="input_row">
+                                    <div class="box_period">
+                                        <label for="select65_3_1"><span class="sr-only">YYYYMM</span><span class="sr-only">감리기간 시작일</span></label>
+                                        <input type="date" id="select65_3_1" class="expect_date input_select">
+                                        <button class="btn_calendar" type="button"></button>
+                                    </div> 
+                                    <span class="space"> - </span>
+                                    <div class="box_period">
+                                        <label for="select65_3_2"><span class="sr-only">YYYYMM</span><span class="sr-only">감리기간 종료일</span></label>
+                                        <input type="date" id="select65_3_2" class="expect_date input_select">
+                                        <button class="btn_calendar" type="button"></button>
+                                    </div>
+                                </div>
                             </div>
                             <ul class="info_bott">
                                 <li><b>작성날짜</b><span>2022년 06월 08일</span></li>
-                                <li><b>신고인</b><span> (주)하나자산신탁</span></li>
+                                <li><b>소방공사감리업자 </b><span> 박홍주</span></li>
+                                <li><b>소방공사감리원</b><span> 홍길동</span></li>
                             </ul>
                         </div>
                         

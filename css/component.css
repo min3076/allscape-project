@@ -77,7 +77,7 @@ textarea.boxarea{height:120px;padding:10px;border: 1px solid #E4EAFC; box-sizing
 .w60{width:60px;}
 .w80{width:80px;}
 .w100{width:100px;}
-.w200{width:200px;}
+.w200{width:200px!important;}
 .w100p{width:100%;}
 
 .t-center {text-align:center}

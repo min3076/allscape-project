@@ -123,8 +123,9 @@ h1.logo a {display:block;width:127px;height:34px;background: url(../images/commo
 .wrapper.login .container .lcon,
 .wrapper.login .container .visual{width:50%;height:100vh}
 .wrapper.login .container .lcon{display:flex;flex-direction:column;align-items:center;justify-content:center;}
-.wrapper.login .container .lcon .wrap{width:380px;}
+.wrapper.login .container .lcon .wrap{position:relative;width:380px;}
 .wrapper.login .container .lcon h1 b{margin-top:-100px;margin-bottom:50px;width:152px;height:42px;background:url(../images/common/logo_b.svg)}
+.wrapper.login .container .lcon h1.logo{left:0;}
 .wrapper.login .container .lcon .input_row {flex-direction:column;margin-bottom:10px;align-items:flex-start;}
 .wrapper.login .container .lcon .input_row .bar_title{display:block;text-align:left;padding:0;}
 .wrapper.login .container .lcon .input_row input{height:44px;color:#747EA5;background:#F5F8FF}

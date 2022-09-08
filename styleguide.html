@@ -10,11 +10,17 @@
 <link rel="stylesheet" href="./css/component.css" />
 <link rel="stylesheet" href="./css/layout.css" />
 <link rel="stylesheet" href="./css/button.css" />
-<!-- include -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-<script src="./js/include.js"></script>
-<script src="./js/tmpl.js"></script>
-<!-- //include -->
+<script src="./font/webfont.js"></script>
+<script src="./js/jquery-3.3.1.min.js"></script>
+<script src="./js/jquery-migrate-1.4.1.min.js" defer="defer"></script>
+<script type="text/javascript">
+    WebFont.load({custom: {families: ["Spoqa Han Sans"],urls: ["./font/font_spoqahansans.css"],}, });
+</script>
+ <!-- include -->
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+ <script src="./js/include.js"></script>
+ <script src="./js/tmpl.js"></script>
+ <!-- //include -->
 </head>
   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css"> -->
 
@@ -410,30 +416,53 @@
     </div>
 </div>
 
-<h3>tab</h3>
- <!-- 2_2프로젝트 리스트 -->
- <div class="tabwrap" id="tab1">
 
-<div class="tab-nav">
-    <a href="#tab1_1" class="tab-nav_link active"><span>전체</span></a>
-    <a href="#tab1_2" class="tab-nav_link event"><span>준비</span></a>
-    <a href="#tab1_3" class="tab-nav_link event"><span>진행</span></a>
-    <a href="#tab1_4" class="tab-nav_link event"><span>완료</span></a>
+<div class="info rcon">
+  <label for="input65_1" class="sr-only">변경사유</label>
+  <textarea id="input65_1"  class="boxarea w100p"></textarea>
 </div>
 
-      
-  <div class="tab-body active" id="tab1_1">
-    탭1
+
+<div class="row">
+  <div class="input_row w100p">
+      <label for="input73_3" class="sr-only"><b>참고자료 내용</b></label>
+      <input type="text" id="input73_3"  class="box_input w100p">
   </div>
-  <div class="tab-body" id="tab1_2">
-      탭2
+  <div class="input_row auto nobtn">
+      <strong class="bar_title">첨부파일 2</strong>
+      <div class="box_period filewrap">
+          <input placeholder="시방서.pdf" class="box_input wide">
+          <label for="input73_4_1" class="sr-only">참고자료2 삭제</label>
+          <button type="button" id="input73_4_1" class="btn btn-outline-secondary ml_5"><i class="ico bi-minus mr_5"></i>삭제</button>
+          <!-- <label for="input73_4" class="btn btn-outline-primary ml_5"><i class="ico bi-plus mr_5"></i><span class="sr-only">참고자료 2</span> 첨부</label>  -->
+          <input type="file" id="input73_4">
+      </div>
   </div>
-  <div class="tab-body" id="tab1_3">
-      탭3
+</div>
+
+
+<h3>tab</h3>
+ <!-- 2_2프로젝트 리스트 -->
+<div class="tabwrap" id="tab">
+
+  <div class="tab-nav">
+      <a href="#tab1_1" class="tab-nav_link active"><span>전체</span></a>
+      <a href="#tab1_2" class="tab-nav_link event"><span>준비</span></a>
+      <a href="#tab1_3" class="tab-nav_link event"><span>진행</span></a>
+      <a href="#tab1_4" class="tab-nav_link event"><span>완료</span></a>
   </div>
-  <div class="tab-body" id="tab1_4">
-      탭4
-  </div>
+    <div class="tab-body active" id="tab1_1">
+      탭1
+    </div>
+    <div class="tab-body" id="tab1_2">
+        탭2
+    </div>
+    <div class="tab-body" id="tab1_3">
+        탭3
+    </div>
+    <div class="tab-body" id="tab1_4">
+        탭4
+    </div>
 </div>
 <!-- //2_2프로젝트 리스트 -->
     <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>

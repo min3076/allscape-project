@@ -45,12 +45,12 @@ $(function(){
 });
 
 function tab(){
-    $("#tab1 .tab-nav_link").on("click", function (e) {
+    $("#tab .tab-nav_link").on("click", function (e) {
         var $this = $(this);
         e.preventDefault();
         var selector = $this.attr("href");
-        $("#tab1 .tab-nav_link").removeClass("active");
-        $("#tab1 .tab-body").hide();
+        $("#tab .tab-nav_link").removeClass("active");
+        $("#tab .tab-body").hide();
         $this.addClass("active");
         $(selector).show();
     });	

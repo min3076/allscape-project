@@ -210,19 +210,19 @@ h1.logo a {display:block;width:127px;height:34px;background: url(../images/commo
 .linebox_bott .input_row .bar_title{padding-left:0;width:120px;}
 .linebox_bott .input_row input{flex-grow:0}
 .linebox_bott .input_row input.wide{flex-grow:1}
+.linebox_bott .input_row .col{display:flex;flex-direction:column;width:100%}
 
 
 .wrapper.join #footer{position:static;}
 .wrapper.join #footer p{justify-content: flex-start;}
 
 .box_period.filewrap{width:40%;flex-grow:0;}
-.box_period.filewrap .box_input{margin-right:8px;}
+/* .box_period.filewrap .box_input{margin-right:8px;} */
 .box_period input[type="file"] {position: absolute;width: 0;height: 0;padding: 0;overflow: hidden;border: 0;}
 
 .box_period.addwrap{width:40%;flex-grow:0;}
 .box_period.addwrap div{width:100%;}
 .box_period.addwrap div .selectwrap{margin-bottom:10px;}
-.box_period.addwrap div .selectwrap button{margin-left:8px}
 .box_period.addwrap div .linebox ul li{display:flex;justify-content:space-between;align-items:center;padding-bottom:10px;padding-top:10px;border-top:1px solid #E2E8FB}
 .box_period.addwrap div .linebox ul li:first-child{padding-top:0;border:0;}
 

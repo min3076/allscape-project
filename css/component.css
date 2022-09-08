@@ -52,6 +52,8 @@
 
 
 h3{font-size:18px;font-weight:bold;color:#0F2248}
+h4{color:#0F2248;font-weight:bold}
+h4 span{display:block}
 
 .clear { display: block; }
 .clear:after { content: ""; display: table; clear: both; }
@@ -350,9 +352,9 @@ textarea.boxarea{height:120px;padding:10px;border: 1px solid #E4EAFC; box-sizing
 .table a{margin:0;color:#212529}
 .table-icon{position:absolute;z-index:2;top:67px;right:45%;width:50px;height:50px;border-radius:50px;background:#fff;box-shadow:-1px 1px 10px grey;align-items:center;justify-content:center;transition:all .5s ease-in-out}
 
-.table td.text-left{text-align:left}
-.table td.text-center{text-align:center}
-.table td.text-right{text-align:right}
+.text-left{text-align:left!important;}
+.text-center{text-align:center!important;}
+.text-right{text-align:right!important;}
 
 /* 테이블 tr 추가버튼 */
 .dataTable thead tr:first-child th.tbnwrap,
@@ -431,7 +433,7 @@ textarea.boxarea{height:120px;padding:10px;border: 1px solid #E4EAFC; box-sizing
 .search_result_tit .lcon .num_total{height:26px;margin-left:4px;padding:0 10px;color:#3267CE;background:#E4EAFC;border-radius:100px;}
 
 .box_period{display:flex;align-items:center;flex-grow: 1;position:relative;width:100px;padding-top:4px;color:#747EA5}
-
+.box_period.grow0{flex-grow:0;}
 input[type=date]::-webkit-datetime-edit-text {-webkit-appearance: none;display: none;} 
 input[type=date]::-webkit-datetime-edit-month-field{-webkit-appearance: none;display: none;} 
 input[type=date]::-webkit-datetime-edit-day-field {-webkit-appearance: none;display: none;} 

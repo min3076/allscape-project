@@ -418,13 +418,15 @@ textarea.boxarea{height:120px;padding:10px;border: 1px solid #E4EAFC; box-sizing
 .searchbox .formwrap form fieldset .row.alone .input_row .bar_title{min-width:auto}
 .formwrap .grow2{flex-grow:2}
 
-.input_row {display:flex;/*flex-grow:1;*/align-items:center;}
-.input_row .bar_title{display:inline-block;min-width:78px;padding:0 10px 0 14px;text-align:right;}
+.input_row {display:flex;/*flex-grow:1;align-items:center;*/}
+.input_row .bar_title{display:inline-block;min-width:78px;padding:6px 10px 0 14px;text-align:right;}
 .input_row .bar_title b{position:relative;font-weight:normal}
 .input_row .bar_title .point{position:absolute;left:-10px;top:0;display:inline-block;width:8px;height:10px;font-size:0;text-indent:-999px;overflow:hidden;background:url(../images/join/point.svg) no-repeat}
 /* .input_row input{flex-grow:1} */
 .input_row .input_txt{padding:0 10px;line-height:36px;color:#747EA5}
 .input_row.al_t{align-items:flex-start;}
+
+.nobtn{padding-right:75px;}
 
 .space{display:inline-block;padding:4px;}
 

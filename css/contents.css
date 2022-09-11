@@ -165,6 +165,7 @@
 .view .mid .mid_content .colwrap.col2 h4{width:20%;padding-top:10px;}
 
 .view .mid .mid_content .colwrap.col1box{display:flex;flex-direction:column;gap:10px;width:calc(100%);margin:0;padding:4%;background:#fff;}
+.view .mid .mid_content .colwrap.col1box.sm{padding:2% 4%;}
 .view .mid .mid_content .colwrap.col1box .rcon{display:flex;flex-direction:row;gap:1.5%;}
 .view .mid .mid_content .colwrap.col1box .rcon li{display:flex;flex-direction:column;flex-basis:25%;gap:8px;padding:2%;border:1px solid #D9D9D9;}
 .view .mid .mid_content .colwrap.col1box .rcon li:last-child{flex-basis:50%;}
@@ -221,6 +222,9 @@
 .view .mid .info_w100 li b{width:100px;color:#182869}
 .view .mid .info_w60 li b{width:60px;text-align:left;}
 
+.view .mid .mid_content .col1box .input_row span{line-height:2.2}
+
+
 .view .mid .bott_line{border-bottom: 1px solid #D9D9D9;}
 .view .flex_c {display:flex;justify-content:center;}
 
@@ -241,7 +245,7 @@
 
 
 .con108.view .mid .mid_content .col1box{position:relative;padding-bottom:80px;}
-.con108.view .mid .tabwrap .tab-nav {position:absolute;right:4%;top:135px;}
+.con108.view .mid .tabwrap .tab-nav {position:absolute;right:4%;top:145px;}
 
 #signwrap{font-size:13px;color:#747EA5}
 #signwrap .btnwrap{padding:0 0 16px;justify-content:flex-end;}

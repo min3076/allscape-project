@@ -175,7 +175,7 @@
 .view .mid .mid_content .colwrap.col1box .rcon li.text-left b,
 .view .mid .mid_content .colwrap.col1box .rcon li.text-left span{text-align:left;}
 
-.view .mid .mid_content .colwrap .row{display:flex;flex-direction:row;}
+.view .mid .mid_content .colwrap .row{display:flex;flex-direction:row;align-items:center;}
 .view .mid .mid_content .colwrap .col{display:flex;flex-direction:column;}
 .view .mid .mid_content .colwrap .col2{display:flex;flex-wrap:wrap;}
 .view .mid .mid_content .colwrap .col2 li{width:50%;}
@@ -206,12 +206,13 @@
 .view .mid .mid_content .colwrap .boxul li ul li b{width:70px;text-align:left;}
 .view .mid .mid_content .colwrap .boxul li ul li span{width:100%;}
 
-.view .mid .rcon {width:100%;}
+
 .view .mid .rcon.row{display:flex;align-items:center;}
 
 .view .mid .infobox{padding:25px;border:1px solid #D9D9D9;}
 .view .mid .info {width:100%;}
-.view .mid .rcon{color:#747EA5}
+.view .mid .rcon.info {width:100%;margin-top:10px;}
+.view .mid .rcon{width:100%;color:#747EA5}
 .view .mid .rcon li{display:flex;width:100%;}
 .view .mid .rcon li b{width:80px;color:#182869}
 .view .mid .rcon li .tit{width:100%;font-weight:bold;color:#182869}

@@ -27,6 +27,11 @@ $(function(){
 $(function(){
     $("#signwrap").load("./include/sign.html"); 
     });
+$(function(){
+    $("#signwrap2").load("./include/sign.html"); 
+    });
+
+
 
 $(document).ready( function() 
 {

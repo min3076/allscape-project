@@ -66,6 +66,7 @@ h4 span{display:block}
 .box_input{padding: 0 10px;}
 .input_select {padding:0 30px 0 5px;background-color:#fff;}
 textarea.boxarea{height:120px;padding:10px;border: 1px solid #E4EAFC; box-sizing: border-box;color: #747EA5;font-size: 15px;border-radius:3px;}
+.h350{height: 350px !important;}
 
 .input_select::placeholder,
 .box_input::placeholder{color:#747EA5}
@@ -107,7 +108,7 @@ textarea.boxarea{height:120px;padding:10px;border: 1px solid #E4EAFC; box-sizing
 .ico.bi-arr-w{width:8px;height:11px;background-image:url(../images/main/ico_arr_w.svg);}
 
 .ico.bi-del-g_sm{width:13px;height:13px;line-height:20px;background:url(../images/common/ico_del_g_sm.svg) no-repeat 0 50%;}
-
+.ico.bi-del-red_sm{width:20px;height:23px;line-height:20px;background:url(../images/common/ico_del_red_sm.svg) no-repeat 0 50%;}
 
 .ico.bi-qs{width:24px;height:24px;line-height:20px;background:url(../images/common/ico_qs.svg) no-repeat 0 50%;}
 
@@ -147,13 +148,28 @@ textarea.boxarea{height:120px;padding:10px;border: 1px solid #E4EAFC; box-sizing
 
 /* list */
 .list-1st{margin:10px 0;padding:0}
-.list-1st dd,.list-1st li,.txt_bul{position:relative;margin:3px 0;padding-left:7px;color:#666;font-size:16px;line-height:1.3}.list-1st dd:before,.list-1st li:before,.txt_bul:before{background:#a0a0a0;width:3px;height:3px;position:absolute;top:10px;display:inline-block}
+.list-1st dd,
+.list-1st li,
+.txt_bul{position:relative;margin:3px 0;padding-left:7px;color:#666;font-size:16px;line-height:1.3}
+.list-1st dd:before,
+.list-1st li:before,
+.txt_bul:before{background:#a0a0a0;width:3px;height:3px;position:absolute;top:10px;display:inline-block}
 .list-2st{margin:4px 0;padding:0}
-.list-2st li,.txt_bul2{position:relative;margin:3px 0;padding-left:11px;color:#666;line-height:1.3}
-.list-2st dd:before,.list-2st li:before,.txt_bul2:before{background:#222;width:6px;height:1px;position:absolute;top:10px;left:0;content:'';display:inline-block}.list-3st{margin:4px 0;padding:0}
-.list-3st li{margin:3px 0;padding-left:11px}.list-1st dd b,.list-1st li b,.list-2st li b,.list-3st li b{vertical-align:baseline}.tab-ul li,.tab-ul li a,
+.list-2st li{position:relative;margin:3px 0;padding-left:11px;color:#666;line-height:1.3}
+.list-2st dd:before,
+.list-2st li:before,
+.txt_bul2:before{background:#222;width:6px;height:1px;position:absolute;top:10px;left:0;content:'';display:inline-block}
+.list-3st{margin:4px 0;padding:0}
+.list-3st li{margin:3px 0;padding-left:11px}
+.list-1st dd b,
+.list-1st li b,
+.list-2st li b,
+.list-3st li b{vertical-align:baseline}
 .list-num li{margin:7px 0;padding-left:26px;line-height:21px}
 .list-num .badge{margin:0 5px 0 -26px}
+
+.list-1st li .list-2st {margin-bottom:20px;margin-left:20px;}
+
 
 .txt-h2,
 .txt-h3{margin:0 0 10px}
@@ -232,7 +248,7 @@ textarea.boxarea{height:120px;padding:10px;border: 1px solid #E4EAFC; box-sizing
 .table tfoot,
 .table tfoot th{background:#F6F6F6;font-weight:700}
 .table .tfoot{background:#FCFCFC;font-weight:500}
-/* .table th[rowspan]{border-right:1px solid #747EA5;} */
+.table thead th.last{border-left:1px solid #747EA5;}
 .table th[colspan]{border-bottom:1px solid #747EA5;}
 /* .table td[rowspan]{border-right:1px solid #D9D9D9} */
 /* .table td:first-child,
@@ -251,6 +267,17 @@ textarea.boxarea{height:120px;padding:10px;border: 1px solid #E4EAFC; box-sizing
 .td_row{color:#121212;background-color:#f1f3f8;font-weight:500}
 .tbl_txt{color:#b50e23}
 /* table-bordered  */
+
+/* table - td - noline */
+.table-td-noline.table{border-bottom:0;}
+.table-td-noline.table thead th{border-bottom:1px solid #D9D9D9;}
+.table-td-noline.table td{border-top:0;border-right:0;}
+
+/* table - all - noline */
+.table-all-noline.table{border-bottom:0;}
+.table-all-noline.table thead th,
+.table-all-noline.table td{border-top:0;}
+
 
 .table-striped tbody tr:nth-of-type(odd){background-color:rgba(0,0,0,.05)}
 
@@ -364,6 +391,9 @@ textarea.boxarea{height:120px;padding:10px;border: 1px solid #E4EAFC; box-sizing
 .table td.tbnwrap{padding-top:6px;padding-bottom:6px;border:0;background: #fff;}
 .table td.tbnwrap div{display:flex;align-items:center;}
 .table td.tbnwrap div button{margin:0 2px;}
+.gray.dataTable thead tr:first-child th.tbnwrap,
+.gray.table thead th.tbnwrap,
+.gray.table td.tbnwrap{background: #FCFCFC;}
 
 
 /* calendar wrapper */
@@ -420,7 +450,7 @@ textarea.boxarea{height:120px;padding:10px;border: 1px solid #E4EAFC; box-sizing
 .searchbox .formwrap form fieldset .row.alone .input_row .bar_title{min-width:auto}
 .formwrap .grow2{flex-grow:2}
 
-.input_row {display:flex;/*flex-grow:1;align-items:center;*/}
+.input_row {display:flex;color:#747EA5;/*flex-grow:1;align-items:center;*/}
 .input_row .bar_title{display:inline-block;min-width:60px;padding:6px 10px 0 0;text-align:right;}
 .input_row .bar_title b{position:relative;font-weight:normal}
 .input_row .bar_title .point{position:absolute;left:-10px;top:0;display:inline-block;width:8px;height:10px;font-size:0;text-indent:-999px;overflow:hidden;background:url(../images/join/point.svg) no-repeat}
@@ -439,6 +469,7 @@ textarea.boxarea{height:120px;padding:10px;border: 1px solid #E4EAFC; box-sizing
 .search_result_tit .lcon .num_total{height:26px;margin-left:4px;padding:0 10px;color:#3267CE;background:#E4EAFC;border-radius:100px;}
 
 .box_period{display:flex;align-items:center;flex-grow: 1;position:relative;width:100px;padding-top:4px;color:#747EA5}
+.box_period.calbox{width:auto;flex-grow:0;}
 .box_period.grow0{flex-grow:0;}
 input[type=date]::-webkit-datetime-edit-text {-webkit-appearance: none;display: none;} 
 input[type=date]::-webkit-datetime-edit-month-field{-webkit-appearance: none;display: none;} 
@@ -451,9 +482,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {background: transparent;z
 
 
 .expect_date{width:100%;}
-.linebox{margin-bottom:50px;padding:40px 50px;margin-bottom:60px;border:1px solid #D9D9D9;border-radius:10px;}
+.linebox{margin-bottom:50px;padding:40px 50px;margin-bottom:60px;border:1px solid #D9D9D9;border-radius:10px;background:#fff;}
 .linebox.gray{background:#FCFCFC}
 .linebox.sm{padding:20px 30px;border-radius:3px;}
+.linebox.lg{padding:40px 50px;border-radius:3px;}
+
+
 
 /* pagenate */
 #pagenate{display:flex;justify-content:flex-end;}

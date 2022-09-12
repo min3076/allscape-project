@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>124 allscape</title>
+<link rel="stylesheet" href="./css/common.css" />
+<link rel="stylesheet" href="./css/layout.css" />
+<link rel="stylesheet" href="./css/component.css" />
+<link rel="stylesheet" href="./css/contents.css" />
+<script src="./font/webfont.js"></script>
+<script src="./js/jquery-3.3.1.min.js"></script>
+<script src="./js/jquery-migrate-1.4.1.min.js" defer="defer"></script>
+<script type="text/javascript">
+    WebFont.load({custom: {families: ["Spoqa Han Sans"],urls: ["./font/font_spoqahansans.css"],}, });
+</script>
+ <!-- include -->
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+ <script src="./js/include.js"></script>
+ <!-- //include -->
+<!--[if lt IE 9]>
+    <script src="./js/html5/html5shiv.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<!-- content 영역입니다. -->
+<div class="wrapper">
+    <!-- [include] header -->
+    <div id="header"></div>
+    <!-- //[include] header -->
+
+    <section class="container">
+       <!-- [include] lnb -->
+       <div id="lnb"></div>
+       <!-- //[include] lnb -->
+        <div class="content_wrap">
+            <div id="location" class="title_wrap">
+                <h2 class="page__title">검측</h2>
+                <!-- 로케이션 시작 -->
+                <ul class="location_wrap">
+                    <li class="n1 home"><a href="#">HOME</a></li>
+                    <li class="n2"><a href="#">1차메뉴</a></li>
+                    <li class="n3"><a href="#">2차메뉴</a></li>
+                    <li class="n4"><a href="#" class="navi_ov">신규등록</a></li>
+                </ul>
+                <!-- 로케이션 끝 -->
+            </div>
+            <div id="txt">
+               <div class="view linebox">
+                    <!-- btnwrap top -->
+                    <div class="btnwrap top">
+                        <button type="button" class="btn btn-primary">최종제출</button>
+                        <button type="button" class="btn btn-outline-primary">저장</button>
+                        <button type="button" class="btn btn-secondary">취소</button>
+                    </div>
+                    <!-- //btnwrap top -->
+                    <!-- content -->
+                    <div class="mid_wrap_col2">
+                        <!-- mid 1 -->
+                        <div class="mid">
+                            <div class="mid_top">
+                                <h3 class="contit">검측 요청</h3>
+                                <!-- [include] sign -->
+                                <div id="signwrap" class="sign"></div>
+                                <!-- //[include] sign -->
+                            </div>
+                            <div class="mid_content">
+                                <div class="colwrap con_top padd_v bott_line">
+                                    <div class="input_row info_w_auto">
+                                        <b class="bar_title">공사명</b>
+                                        <span class="text-bold tx-gray-dark">도안 3지구 아파트 공사</span>
+                                    </div>
+                                    <div class="input_row info_w_auto">
+                                        <b class="bar_title">작성날짜</b>
+                                        <span>2022-06-02 15:23:11</span>
+                                    </div>
+                                </div>
+                                <div class="colwrap padd_v">
+                                    <div class="input_row">
+                                        <b class="bar_title info_w140">공종</b>
+                                        <span>슬리브 공사</span>
+                                    </div>
+                                    <div class="input_row">
+                                        <b class="bar_title info_w140">위치</b>
+                                        <span>201동</span>
+                                    </div>
+                                    <div class="input_row">
+                                        <b class="bar_title info_w140">검측 요구 일시</b>
+                                        <span>2020-02-07</span>
+                                    </div>
+                                    <div class="input_row">
+                                        <b class="bar_title info_w140">검측 부위</b>
+                                        <span>지상2층 벽체 / 지상3층 바닥</span>
+                                    </div>
+                                    <div class="input_row">
+                                        <b class="bar_title info_w140">검측 사항 </b>
+                                        <span>관통 슬리브 및 인서트</span>
+                                    </div>
+                                    <div class="input_row">
+                                        <b class="bar_title info_w140">공사참여자 실명부</b>
+                                        <span>공사참여자 실명부.pdf</span>
+                                    </div>
+                                    <div class="input_row">
+                                        <b class="bar_title info_w140">책임시공기술자</b>
+                                        <span>강병우</span>
+                                    </div>
+                                    <div class="input_row f_align_a_top">
+                                        <b class="bar_title info_w140">사진대지</b>
+                                        <div class="col w130_w100p">
+                                            <ul class="info_w_auto sc_group">
+                                                <li class="wide"><b>공종</b>슬리브 공사</li>
+                                                <li class="wide"><b>위치</b>지상2층벽체 / 지상3층 바닥</li>
+                                                <li class="wide"><b>내용</b>관통 슬리브 및 인서트</li>
+                                                <li><b>일자</b>2022-06-10</li>
+                                                <li><b>첨부파일</b><button type="button" class="btn btn-link">관통슬리브-1.jpg<i class="ico bi-search-sir ml_5"></i></button></li>
+                                            </ul><ul class="info_w_auto sc_group">
+                                                <li class="wide"><b>공종</b>슬리브 공사</li>
+                                                <li class="wide"><b>위치</b>지상2층벽체 / 지상3층 바닥</li>
+                                                <li class="wide"><b>내용</b>관통 슬리브 및 인서트</li>
+                                                <li><b>일자</b>2022-06-10</li>
+                                                <li><b>첨부파일</b><button type="button" class="btn btn-link">관통슬리브-1.jpg<i class="ico bi-search-sir ml_5"></i></button></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //mid 1 -->
+                        <!-- mid 2 -->
+                        <div class="mid">
+                            <div class="mid_top">
+                                <h3 class="contit">자재 검수 통보</h3>
+                                <!-- [include] sign -->
+                                <div id="signwrap2" class="sign"></div>
+                                <!-- //[include] sign -->
+                            </div>
+                            <div class="mid_content">
+                                <div class="colwrap con_top padd_v bott_line">
+                                    <div class="input_row info_w_auto">
+                                        <b class="bar_title ">수신</b>
+                                        <span>책임시공기술자</span>
+                                    </div>
+                                </div>
+                                <div class="colwrap padd_v input_form  bott_line">
+                                    <div class="input_row">
+                                        <label for="input124_1" class="bar_title"><b>검측결과</b></label>
+                                        <input id="input124_1" class="box_input mr_10">
+                                        <button class="btn btn-outline-primary">검측점검표</button>
+                                    </div>
+                                    <div class="input_row">
+                                        <label for="input124_2" class="bar_title"><b>검토의견</b></label>
+                                        <input type="text" id="input124_2"  class="box_input w100">
+                                    </div>
+                                    <div class="input_row f_align_a_top">
+                                        <strong class="bar_title">첨부파일<span class="sr-only">1</span></strong>
+                                        <div class="additem">
+                                            <div class="item box_period">
+                                                <input class="box_input wide">
+                                                <label for="input124_3_1_1" class="sr-only">참고자료1 삭제</label>
+                                                <button type="button" id="input124_3_1_1" class="btn btn-outline-secondary ml_5"><i class="ico bi-minus mr_5"></i>삭제</button>
+                                                <label for="input124_3_1" class="btn btn-outline-primary ml_5"><i class="ico bi-plus mr_5"></i><span class="sr-only">참고자료 1</span> 첨부</label> 
+                                                <input type="file" id="input124_3_1">
+                                            </div>  
+                                            <div class="item minus_item2 box_period">
+                                                <input class="box_input wide">
+                                                <label for="input124_3_2_1" class="sr-only">참고자료1 삭제</label>
+                                                <button type="button" id="input124_3_2_1" class="btn btn-outline-secondary ml_5"><i class="ico bi-minus mr_5"></i>삭제</button>
+                                                <label for="input124_3_2" class="btn btn-outline-primary ml_5"><i class="ico bi-plus mr_5"></i><span class="sr-only">참고자료 1</span> 첨부</label> 
+                                                <input type="file" id="input124_3_2">
+                                            </div>  
+                                            <button type="button" class="btn btn-dark addbtn"><i class="ico bi-plus-w mr_5"></i>추가</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="colwrap info_bott">
+                                    <li><b>감리원</b><span> 박영식</span></li>
+                                    <li><b>책임 감리원</b><span> 노정호</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- //mid 2 -->
+                    </div>
+                    <!-- content -->
+                    <!-- btnwrap bottom -->
+                    <div class="btnwrap lg bott">
+                        <button type="button" class="btn btn-primary btn-lg">최종제출</button>
+                        <button type="button" class="btn btn-outline-primary btn-lg">저장</button>
+                        <button type="button" class="btn btn-secondary btn-lg">취소</button>
+                    </div>
+                    
+                    <!-- //btnwrap bottom -->
+               </div>
+                
+            </div>   
+        </div>     
+
+
+
+
+
+
+
+    </section>
+
+    <!-- [include] fooer -->
+    <div id="footer"></div>
+    <!-- //[include] fooer -->
+</div>
+<!-- //content 영역입니다. -->
+</body>
+</html>

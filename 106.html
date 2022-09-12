@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>106 allscape</title>
+<link rel="stylesheet" href="./css/common.css" />
+<link rel="stylesheet" href="./css/layout.css" />
+<link rel="stylesheet" href="./css/component.css" />
+<link rel="stylesheet" href="./css/contents.css" />
+<script src="./font/webfont.js"></script>
+<script src="./js/jquery-3.3.1.min.js"></script>
+<script src="./js/jquery-migrate-1.4.1.min.js" defer="defer"></script>
+<script type="text/javascript">
+    WebFont.load({custom: {families: ["Spoqa Han Sans"],urls: ["./font/font_spoqahansans.css"],}, });
+</script>
+ <!-- include -->
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+ <script src="./js/include.js"></script> 
+ <script src="./js/tmpl.js"></script>
+ <!-- //include -->
+<!--[if lt IE 9]>
+    <script src="./js/html5/html5shiv.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<!-- content 영역입니다. -->
+<div class="wrapper">
+    <!-- [include] header -->
+    <div id="header"></div>
+    <!-- //[include] header -->
+
+    <section class="container">
+       <!-- [include] lnb -->
+       <div id="lnb"></div>
+       <!-- //[include] lnb -->
+        <div class="content_wrap">
+            <div id="location" class="title_wrap">
+                <h2 class="page__title">소방자재 인증정보</h2>
+                <!-- 로케이션 시작 -->
+                <ul class="location_wrap">
+                    <li class="n1 home"><a href="#">HOME</a></li>
+                    <li class="n2"><a href="#">1차메뉴</a></li>
+                    <li class="n3"><a href="#">2차메뉴</a></li>
+                    <li class="n4"><a href="#" class="navi_ov">신규등록</a></li>
+                </ul>
+                <!-- 로케이션 끝 -->
+            </div>
+            <div id="txt">
+               <div class="view linebox padd w140info">
+                    <!-- content -->
+
+                    <div class=" input_form">
+                        <div class="row">
+                            <div class="input_row">
+                                <label for="input106_3_1" class="bar_title"><b>자재명</b></label>
+                                <input type="text" id="input106_3_1"  class="box_input w100p">
+                            </div>
+                            <div class="input_row">
+                                <label for="input106_3_2" class="bar_title"><b>규격</b></label>
+                                <input type="text" id="input106_3_2"  class="box_input w100p">
+                            </div>
+                            <div class="input_row">
+                                <label for="input106_3_3" class="bar_title"><b>제조사</b></label>
+                                <input type="text" id="input106_3_3"  class="box_input w100p">
+                            </div>
+                            <div class="input_row">
+                                <label for="input106_3_4" class="bar_title"><b>승인날짜</b></label>
+                                <input type="text" id="input106_3_4"  class="box_input w100p">
+                            </div>
+                            <div class="input_row">
+                                <label for="input106_3_4" class="bar_title"><b>승인번호</b></label>
+                                <input type="text" id="input106_3_4"  class="box_input w100p">
+                            </div>
+                            <div class="input_row">
+                                <label for="input106_3_4" class="bar_title"><b>종별</b></label>
+                                <input type="text" id="input106_3_4"  class="box_input w100p">
+                            </div>
+                        </div>
+                        <div class="input_row f_align_a_top">
+                            <label for="input106_3_5" class="bar_title"><b>형식명</b></label>
+                            <textarea id="input106_3_5"  class="boxarea w100p"></textarea>
+                        </div>
+                        <div class="input_row">
+                            <strong class="bar_title"><b>KS여부</b></strong>
+                            <div class="row gap20">
+                                <span>
+                                    <input type="checkbox" id="input106_3_6_1">
+                                    <label for="input106_3_6_1"><b>KS</b></label>
+                                </span>
+                                <span>
+                                    <input type="checkbox" id="input106_3_6_2">
+                                    <label for="input106_3_6_2"><b>비KS</b></label>
+                                </span>
+                                <span>
+                                    <input type="checkbox" id="input106_3_6_3">
+                                    <label for="input106_3_6_3"><b>KFI</b></label>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="input_row">
+                            <label for="input106_7" class="bar_title"><b>승인여부</b></label>
+                            <select id="input106_7"  class="input_select">
+                            <option>승인</option>
+                            </select>
+                        </div>
+                    
+                        <div class="row f_align_j_wide">
+                            <div class="input_row">
+                                <strong class="bar_title info_w140">사업자등록증</strong>
+                                <div class="box_period filewrap ">
+                                    <input placeholder="tester.jpg" class="box_input w100p">
+                                    <label for="input106_8_1" class="sr-only">참고자료2 삭제</label>
+                                    <button type="button" id="input106_8_1" class="btn btn-outline-secondary ml_5"><i class="ico bi-minus mr_5"></i>삭제</button>
+                                    <label for="input106_8" class="btn btn-outline-primary ml_5">
+                                        <i class="ico bi-plus mr_5"></i><span class="sr-only">참고자료 2</span> 첨부
+                                    </label> 
+                                    <input type="file" id="input106_8">
+                                </div>
+                            </div>
+                            <div class="input_row">
+                                <strong class="bar_title info_w140">성능인증서</strong>
+                                <div class="box_period filewrap">
+                                    <input placeholder="tester.jpg" class="box_input w100p">
+                                    <label for="input106_9_1" class="sr-only">참고자료2 삭제</label>
+                                    <button type="button" id="input106_9_1" class="btn btn-outline-secondary ml_5"><i class="ico bi-minus mr_5"></i>삭제</button>
+                                    <label for="input106_9" class="btn btn-outline-primary ml_5">
+                                        <i class="ico bi-plus mr_5"></i><span class="sr-only">참고자료 2</span> 첨부
+                                    </label> 
+                                    <input type="file" id="input106_9">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row f_align_j_wide">
+                            <div class="input_row">
+                                <strong class="bar_title info_w140">납세증명서</strong>
+                                <div class="box_period filewrap">
+                                    <input placeholder="tester.jpg" class="box_input w100p">
+                                    <label for="input106_10_1" class="sr-only">참고자료2 삭제</label>
+                                    <button type="button" id="input106_10_1" class="btn btn-outline-secondary ml_5"><i class="ico bi-minus mr_5"></i>삭제</button>
+                                    <label for="input106_10" class="btn btn-outline-primary ml_5">
+                                        <i class="ico bi-plus mr_5"></i><span class="sr-only">참고자료 2</span> 첨부
+                                    </label> 
+                                    <input type="file" id="input106_10">
+                                </div>
+                            </div>
+                            <div class="input_row">
+                                <strong class="bar_title info_w140">KFI인정서</strong>
+                                <div class="box_period filewrap">
+                                    <input placeholder="tester.jpg" class="box_input w100p">
+                                    <label for="input106_11_1" class="sr-only">참고자료2 삭제</label>
+                                    <button type="button" id="input106_11_1" class="btn btn-outline-secondary ml_5"><i class="ico bi-minus mr_5"></i>삭제</button>
+                                    <label for="input106_11" class="btn btn-outline-primary ml_5">
+                                        <i class="ico bi-plus mr_5"></i><span class="sr-only">참고자료 2</span> 첨부
+                                    </label> 
+                                    <input type="file" id="input106_11">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row f_align_j_wide">
+                            <div class="input_row">
+                                <strong class="bar_title info_w140">KS허가증사본</strong>
+                                <div class="box_period filewrap">
+                                    <input placeholder="tester.jpg" class="box_input w100p">
+                                    <label for="input106_12_1" class="sr-only">참고자료2 삭제</label>
+                                    <button type="button" id="input106_12_1" class="btn btn-outline-secondary ml_5"><i class="ico bi-minus mr_5"></i>삭제</button>
+                                    <label for="input106_12" class="btn btn-outline-primary ml_5">
+                                        <i class="ico bi-plus mr_5"></i><span class="sr-only">참고자료 2</span> 첨부
+                                    </label> 
+                                    <input type="file" id="input106_12">
+                                </div>
+                            </div>
+                            <div class="input_row">
+                                <strong class="bar_title info_w140">공장등록증</strong>
+                                <div class="box_period filewrap">
+                                    <input placeholder="tester.jpg" class="box_input w100p">
+                                    <label for="input106_13_1" class="sr-only">참고자료2 삭제</label>
+                                    <button type="button" id="input106_13_1" class="btn btn-outline-secondary ml_5"><i class="ico bi-minus mr_5"></i>삭제</button>
+                                    <label for="input106_13" class="btn btn-outline-primary ml_5">
+                                        <i class="ico bi-plus mr_5"></i><span class="sr-only">참고자료 2</span> 첨부
+                                    </label> 
+                                    <input type="file" id="input106_13">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row f_align_j_wide">
+                            <div class="input_row">
+                                <strong class="bar_title info_w140">CATALOG</strong>
+                                <div class="box_period filewrap">
+                                    <input placeholder="tester.jpg" class="box_input w100p">
+                                    <label for="input106_14_1" class="sr-only">참고자료2 삭제</label>
+                                    <button type="button" id="input106_14_1" class="btn btn-outline-secondary ml_5"><i class="ico bi-minus mr_5"></i>삭제</button>
+                                    <label for="input106_14" class="btn btn-outline-primary ml_5">
+                                        <i class="ico bi-plus mr_5"></i><span class="sr-only">참고자료 2</span> 첨부
+                                    </label> 
+                                    <input type="file" id="input106_14">
+                                </div>
+                            </div>
+                            <div class="input_row">
+                                <strong class="bar_title info_w140">시험성적서</strong>
+                                <div class="box_period filewrap">
+                                    <input placeholder="tester.jpg" class="box_input w100p">
+                                    <label for="input106_15_1" class="sr-only">참고자료2 삭제</label>
+                                    <button type="button" id="input106_15_1" class="btn btn-outline-secondary ml_5"><i class="ico bi-minus mr_5"></i>삭제</button>
+                                    <label for="input106_15" class="btn btn-outline-primary ml_5">
+                                        <i class="ico bi-plus mr_5"></i><span class="sr-only">참고자료 2</span> 첨부
+                                    </label> 
+                                    <input type="file" id="input106_15">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row f_align_j_wide">
+                            <div class="input_row">
+                                <strong class="bar_title info_w140">납품실적</strong>
+                                <div class="box_period filewrap">
+                                    <input placeholder="tester.jpg" class="box_input w100p">
+                                    <label for="input106_16_1" class="sr-only">참고자료2 삭제</label>
+                                    <button type="button" id="input106_16_1" class="btn btn-outline-secondary ml_5"><i class="ico bi-minus mr_5"></i>삭제</button>
+                                    <label for="input106_16" class="btn btn-outline-primary ml_5">
+                                        <i class="ico bi-plus mr_5"></i><span class="sr-only">참고자료 2</span> 첨부
+                                    </label> 
+                                    <input type="file" id="input106_16">
+                                </div>
+                            </div>
+                            <div class="input_row">
+                                <strong class="bar_title info_w140">견본</strong>
+                                <div class="box_period filewrap">
+                                    <input placeholder="tester.jpg" class="box_input w100p">
+                                    <label for="input106_17_1" class="sr-only">참고자료2 삭제</label>
+                                    <button type="button" id="input106_17_1" class="btn btn-outline-secondary ml_5"><i class="ico bi-minus mr_5"></i>삭제</button>
+                                    <label for="input106_17" class="btn btn-outline-primary ml_5">
+                                        <i class="ico bi-plus mr_5"></i><span class="sr-only">참고자료 2</span> 첨부
+                                    </label> 
+                                    <input type="file" id="input106_17">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input_row f_align_a_top">
+                            <label for="input106_18" class="bar_title"><b>비고</b></label>
+                            <textarea id="input106_18"  class="boxarea w100p"></textarea>
+                        </div>
+                    </div>
+                        
+                    <!-- content -->
+                    <!-- btnwrap bottom -->
+                    <div class="btnwrap lg">
+                        <button type="button" class="btn btn-primary btn-lg">등록/수정</button>
+                        <button type="button" class="btn btn-secondary btn-lg">취소</button>
+                    </div>
+                    
+                    <!-- //btnwrap bottom -->
+               </div>
+                
+            </div>   
+        </div>     
+
+
+
+
+
+
+
+    </section>
+
+    <!-- [include] fooer -->
+    <div id="footer"></div>
+    <!-- //[include] fooer -->
+</div>
+<!-- //content 영역입니다. -->
+</body>
+</html>

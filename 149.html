@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>149 allscape</title>
+<link rel="stylesheet" href="./css/common.css" />
+<link rel="stylesheet" href="./css/layout.css" />
+<link rel="stylesheet" href="./css/component.css" />
+<link rel="stylesheet" href="./css/contents.css" />
+<script src="./font/webfont.js"></script>
+<script src="./js/jquery-3.3.1.min.js"></script>
+<script src="./js/jquery-migrate-1.4.1.min.js" defer="defer"></script>
+<script type="text/javascript">
+    WebFont.load({custom: {families: ["Spoqa Han Sans"],urls: ["./font/font_spoqahansans.css"],}, });
+</script>
+ <!-- include -->
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+ <script src="./js/include.js"></script> 
+ <script src="./js/tmpl.js"></script>
+ <!-- //include -->
+<!--[if lt IE 9]>
+    <script src="./js/html5/html5shiv.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<!-- content 영역입니다. -->
+<div class="wrapper">
+    <!-- [include] header -->
+    <div id="header"></div>
+    <!-- //[include] header -->
+
+    <section class="container">
+       <!-- [include] lnb -->
+       <div id="lnb"></div>
+       <!-- //[include] lnb -->
+        <div class="content_wrap">
+            <div id="location" class="title_wrap">
+                <h2 class="page__title">주간공정보고 및 실적</h2>
+                <!-- 로케이션 시작 -->
+                <ul class="location_wrap">
+                    <li class="n1 home"><a href="#">HOME</a></li>
+                    <li class="n2"><a href="#">1차메뉴</a></li>
+                    <li class="n3"><a href="#">2차메뉴</a></li>
+                    <li class="n4"><a href="#" class="navi_ov">신규등록</a></li>
+                </ul>
+                <!-- 로케이션 끝 -->
+            </div>
+            <div id="txt">
+               <div class="view linebox">
+                    <!-- btnwrap top -->
+                    <div class="btnwrap top">
+                        <button type="button" class="btn btn-primary">최종제출</button>
+                        <button type="button" class="btn btn-outline-primary">등록</button>
+                        <button type="button" class="btn btn-secondary">취소</button>
+                    </div>
+                    <!-- //btnwrap top -->
+                    <!-- content -->
+                    <div class="mid">
+                        <div class="mid_top">
+                            <h3 class="contit">주간공정보고</h3>
+                            <!-- [include] sign -->
+                            <div id="signwrap" class="sign"></div>
+                            <!-- //[include] sign -->
+                        </div>
+                        <div class="mid_content">
+                            <div class="colwrap padd_v_t">
+                                <div class="input_row info_w_auto">
+                                    <b class="bar_title">공사명 </b>
+                                    <span>도안 2-1지구 A2블럭 공동주택 </span>
+                                </div>
+                                <div class="input_row info_w_auto">
+                                    <b class="bar_title">작성날짜 </b>
+                                    <span>2022-06-29</span>
+                                </div>
+                                <div class="input_row info_w_auto">
+                                    <b class="bar_title">현장대리인</b>
+                                    <span>박후추</span>
+                                </div>
+                                <div class="input_row info_w_auto col f_align_a_top">
+                                    <b class="bar_title">공정현황</b>
+                                    <table class="table table-default table-td-noline mt_10">
+                                        <colgroup>
+                                            <col style="width:25%">
+                                            <col style="width:25%">
+                                            <col style="width:25%">
+                                            <col style="width:25%">
+                                        </colgroup>
+                                        <thead>
+                                        <tr>
+                                            <th scope="col">자재명 </th>
+                                            <th scope="col">계획</th>
+                                            <th scope="col">실시</th>
+                                            <th scope="col">대비</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <th scope="row">전주누계</th>
+                                            <td>73%</td>
+                                            <td>73%</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">금주실시</th>
+                                            <td><input type="text" class="box_input w60 text-center"></td>
+                                            <td><input type="text" class="box_input w60 text-center"></td>
+                                            <td><input type="text" class="box_input w60 text-center"></td>
+                                        </tr>
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <th scope="row">총 누계</th>
+                                                <td>73%</td>
+                                                <td>73%</td>
+                                                <td>0</td>
+                                            </tr>
+
+                                        </tfoot>
+                                    </table>
+                                </div>
+                                <div class="col2 report">
+                                    <div class="linebox sm">
+                                        <div class="tit">
+                                            <b>전주내용</b>
+                                            <span class="date">2022.06.18~2022.06.24</span>
+                                        </div>
+                                        <dl>
+                                            <dt>소방</dt>
+                                            <dd><span>도안2-1지구 A2블럭 공동주책</span>
+                                                <button type="button" class="btn btn-link">
+                                                <i class="ico bi-del-red_sm"></i><span class="sr-only">삭제</span>
+                                                </button>
+                                            </dd>
+                                            <dd><span>도안2-1지구 A2블럭 공동주책</span>
+                                                <button type="button" class="btn btn-link">
+                                                <i class="ico bi-del-red_sm"></i><span class="sr-only">삭제</span>
+                                                </button>
+                                            </dd>
+                                            <dd>
+                                                <div class="input_row">
+                                                    <input type="text" id="input4_6"  class="box_input" title="내용추가 입력">
+                                                    <button type="button" class="btn btn-outline-primary icobn"><i class="ico bi-plus"></i><span class="sr-only">추가</span></button>
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <div class="linebox sm">
+                                        <div class="tit">
+                                            <b>금주내용</b>
+                                            <span class="date">2022.06.18~2022.06.24</span>
+                                        </div>
+                                        <dl>
+                                            <dt>소방</dt>
+                                            <dd><span>도안2-1지구 A2블럭 공동주책</span>
+                                                <button type="button" class="btn btn-link">
+                                                <i class="ico bi-del-red_sm"></i><span class="sr-only">삭제</span>
+                                                </button>
+                                            </dd>
+                                            <dd><span>도안2-1지구 A2블럭 공동주책</span>
+                                                <button type="button" class="btn btn-link">
+                                                <i class="ico bi-del-red_sm"></i><span class="sr-only">삭제</span>
+                                                </button>
+                                            </dd>
+                                            <dd>
+                                                <div class="input_row">
+                                                    <input type="text" id="input4_6"  class="box_input" title="내용추가 입력">
+                                                    <button type="button" class="btn btn-outline-primary icobn"><i class="ico bi-plus"></i><span class="sr-only">추가</span></button>
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                       
+                    </div>
+                    <!-- content -->
+                    <!-- btnwrap bottom -->
+                    <div class="btnwrap lg bott">
+                        <button type="button" class="btn btn-primary btn-lg">최종제출</button>
+                        <button type="button" class="btn btn-outline-primary btn-lg">등록</button>
+                        <button type="button" class="btn btn-secondary btn-lg">취소</button>
+                    </div>
+                    
+                    <!-- //btnwrap bottom -->
+               </div>
+                
+            </div>   
+        </div>     
+
+
+
+
+
+
+
+    </section>
+
+    <!-- [include] fooer -->
+    <div id="footer"></div>
+    <!-- //[include] fooer -->
+</div>
+<!-- //content 영역입니다. -->
+</body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>100 allscape</title>
+<link rel="stylesheet" href="./css/common.css" />
+<link rel="stylesheet" href="./css/layout.css" />
+<link rel="stylesheet" href="./css/component.css" />
+<link rel="stylesheet" href="./css/contents.css" />
+<script src="./font/webfont.js"></script>
+<script src="./js/jquery-3.3.1.min.js"></script>
+<script src="./js/jquery-migrate-1.4.1.min.js" defer="defer"></script>
+<script type="text/javascript">
+    WebFont.load({custom: {families: ["Spoqa Han Sans"],urls: ["./font/font_spoqahansans.css"],}, });
+</script>
+ <!-- include -->
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+ <script src="./js/include.js"></script>
+ <!-- //include -->
+<!--[if lt IE 9]>
+    <script src="./js/html5/html5shiv.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<!-- content 영역입니다. -->
+<div class="wrapper">
+    <!-- [include] header -->
+    <div id="header"></div>
+    <!-- //[include] header -->
+
+    <section class="container">
+       <!-- [include] lnb -->
+       <div id="lnb"></div>
+       <!-- //[include] lnb -->
+        <div class="content_wrap">
+            <div id="location" class="title_wrap">
+                <h2 class="page__title">설계변경</h2>
+                <!-- 로케이션 시작 -->
+                <ul class="location_wrap">
+                    <li class="n1 home"><a href="#">HOME</a></li>
+                    <li class="n2"><a href="#">1차메뉴</a></li>
+                    <li class="n3"><a href="#">2차메뉴</a></li>
+                    <li class="n4"><a href="#" class="navi_ov">신규등록</a></li>
+                </ul>
+                <!-- 로케이션 끝 -->
+            </div>
+            <div id="txt">
+               <div class="view linebox">
+                    <!-- btnwrap top -->
+                    <div class="btnwrap top">
+                        <button type="button" class="btn btn-primary">통보</button>
+                        <button type="button" class="btn btn-outline-primary">등록/수정</button>
+                        <button type="button" class="btn btn-secondary">취소</button>
+                    </div>
+                    <!-- //btnwrap top -->
+                    <!-- content -->
+                    <div class="mid">
+                        <div class="mid_top">
+                            <h3 class="contit">설계변경검토 의견서</h3>
+                            <!-- [include] sign -->
+                            <div id="signwrap" class="sign"></div>
+                            <!-- //[include] sign -->
+                        </div>
+                        <div class="mid_content">
+                            <div class="colwrap con_top col2 padd_v bott_line f_align_j_wide">
+                                <div class="input_row">
+                                    <b class="bar_title">공종명 </b>
+                                    <span> 도안 3지구 아파트 공사</span>
+                                </div>
+                            </div>
+                            <div class="colwrap padd_v input_form">
+                                <div class="input_row">
+                                    <strong class="bar_title"><b>공사명</b></strong>
+                                    <div class="radiowrap">
+                                        <input type="radio" id="input94_2_1">
+                                        <label for="input94_2_1" class="ml_5 mr_30"><b>자체의견</b></label>
+                                        <input type="radio" id="input94_2_2">
+                                        <label for="input94_2_2" class="ml_5 mr_30"><b>시공사 제출</b></label>
+                                        <input type="radio" id="input94_2_3">
+                                        <label for="input94_2_3" class="ml_5 mr_30"><b>사업주체요청</b></label>
+                                    </div>
+                                </div>
+                                <div class="input_row">
+                                    <label for="input4_1" class="bar_title"><b>공종</b></label>
+                                    <input type="text" id="input4_6"  class="box_input w100p">
+                                </div>
+                                <div class="input_row">
+                                    <b class="bar_title">감리업체명 </b>
+                                    <span>CA파트너스</span>
+                                </div>
+                                <div class="input_row">
+                                    <b class="bar_title">대표이사 </b>
+                                    <span>홍길동</span>
+                                </div>
+                                <div class="input_row">
+                                    <b class="bar_title">감리원 </b>
+                                    <span> 이순신, 김영희, 김철수</span>
+                                </div>
+                                <div class="input_row">
+                                    <b class="bar_title">검토일자 </b>
+                                    <span>2022-07-22</span>
+                                </div>
+                                <div class="input_row">
+                                    <b class="bar_title">건명 </b>
+                                    <span>단위세대 창고 감지기 추가 건</span>
+                                </div>
+                                <div class="linebox lg mt_20">
+                                    <table class="table table-default table-hover table-td-noline">
+                                        <colgroup>
+                                            <col>
+                                            <col>
+                                            <col>
+                                            <col>
+                                            <col style="width:100px">
+                                            <col style="width:5%">
+                                            <col style="width:80px">
+                                        </colgroup>
+                                        <thead>
+                                        <tr>
+                                            <th scope="col">구분</th>
+                                            <th scope="col">설치변경 전</th>
+                                            <th scope="col">설치변경 후</th>
+                                            <th scope="col">변경사유</th>
+                                            <th scope="col">감리검토의견</th>
+                                            <th scope="col">비고</th>
+                                            <th scope="col"><span class="sr-only">추가버튼</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>자체 제시 의견사항</td>
+                                            <td>창고감지기 미설치</td>
+                                            <td>창고감지기 설치</td>
+                                            <td>현관문 옆 창고감지기 미적용</td>
+                                            <td>적합</td>
+                                            <td>-</td>
+                                            <td><button type="button" class="btn btn-dark addbtn"><i class="ico bi-plus-w mr_5"></i>추가</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>자체 제시 의견사항</td>
+                                            <td>창고감지기 미설치</td>
+                                            <td>창고감지기 설치</td>
+                                            <td>현관문 옆 창고감지기 미적용</td>
+                                            <td>적합</td>
+                                            <td>-</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>자체 제시 의견사항</td>
+                                            <td>창고감지기 미설치</td>
+                                            <td>창고감지기 설치</td>
+                                            <td>현관문 옆 창고감지기 미적용</td>
+                                            <td>적합</td>
+                                            <td>-</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>자체 제시 의견사항</td>
+                                            <td>창고감지기 미설치</td>
+                                            <td>창고감지기 설치</td>
+                                            <td>현관문 옆 창고감지기 미적용</td>
+                                            <td>적합</td>
+                                            <td>-</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>자체 제시 의견사항</td>
+                                            <td>창고감지기 미설치</td>
+                                            <td>창고감지기 설치</td>
+                                            <td>현관문 옆 창고감지기 미적용</td>
+                                            <td>적합</td>
+                                            <td>-</td>
+                                            <td></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="input_row f_align_a_top">
+                                    <label for="input65_1" class="bar_title">종합의견</label>
+                                    <textarea id="input65_1"  class="boxarea w100p"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        
+                       
+                    </div>
+                    <!-- content -->
+                    <!-- btnwrap bottom -->
+                    <div class="btnwrap lg bott">
+                        <button type="button" class="btn btn-primary btn-lg">통보</button>
+                        <button type="button" class="btn btn-outline-primary btn-lg">등록/수정</button>
+                        <button type="button" class="btn btn-secondary btn-lg">취소</button>
+                    </div>
+                    
+                    <!-- //btnwrap bottom -->
+               </div>
+                
+            </div>   
+        </div>     
+
+
+
+
+
+
+
+    </section>
+
+    <!-- [include] fooer -->
+    <div id="footer"></div>
+    <!-- //[include] fooer -->
+</div>
+<!-- //content 영역입니다. -->
+</body>
+</html>

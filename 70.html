@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>70 allscape</title>
+<link rel="stylesheet" href="./css/common.css" />
+<link rel="stylesheet" href="./css/layout.css" />
+<link rel="stylesheet" href="./css/component.css" />
+<link rel="stylesheet" href="./css/contents.css" />
+<script src="./font/webfont.js"></script>
+<script src="./js/jquery-3.3.1.min.js"></script>
+<script src="./js/jquery-migrate-1.4.1.min.js" defer="defer"></script>
+<script type="text/javascript">
+    WebFont.load({custom: {families: ["Spoqa Han Sans"],urls: ["./font/font_spoqahansans.css"],}, });
+</script>
+ <!-- include -->
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+ <script src="./js/include.js"></script> 
+ <script src="./js/tmpl.js"></script>
+ <!-- //include -->
+<!--[if lt IE 9]>
+    <script src="./js/html5/html5shiv.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<!-- content 영역입니다. -->
+<div class="wrapper">
+    <!-- [include] header -->
+    <div id="header"></div>
+    <!-- //[include] header -->
+
+    <section class="container">
+       <!-- [include] lnb -->
+       <div id="lnb"></div>
+       <!-- //[include] lnb -->
+        <div class="content_wrap">
+            <div id="location" class="title_wrap">
+                <h2 class="page__title">기술검토서</h2>
+                <!-- 로케이션 시작 -->
+                <ul class="location_wrap">
+                    <li class="n1 home"><a href="#">HOME</a></li>
+                    <li class="n2"><a href="#">1차메뉴</a></li>
+                    <li class="n3"><a href="#">2차메뉴</a></li>
+                    <li class="n4"><a href="#" class="navi_ov">신규등록</a></li>
+                </ul>
+                <!-- 로케이션 끝 -->
+            </div>
+            <div id="txt">
+               <div class="view linebox">
+                    <!-- btnwrap top -->
+                    <div class="btnwrap top">
+                        <button type="button" class="btn btn-primary">최종제출</button>
+                        <button type="button" class="btn btn-outline-primary">저장</button>
+                        <button type="button" class="btn btn-secondary">취소</button>
+                    </div>
+                    <!-- //btnwrap top -->
+                    <!-- content -->
+
+                    <div class="mid">
+                        <div class="mid_top">
+                            <h3 class="contit">기술검토서</h3>
+                            <!-- [include] sign -->
+                            <div id="signwrap2" class="sign"></div>
+                            <!-- //[include] sign -->
+                        </div>
+                        <div class="mid_content">
+                            <div class="colwrap con_top col2 padd_v bott_line f_align_j_wide">
+                                <div class="input_row info_w_auto">
+                                    <b class="bar_title ">공사명</b>
+                                    <span>도안 3지구 아파트 공사</span>
+                                </div>
+                                <div class="input_row info_w_auto">
+                                    <strong class="bar_title ml_10">첨부파일</strong>
+                                    <div class="box_period filewrap">
+                                        <input class="box_input wide">
+                                        <label for="input70_1_1" class="sr-only">첨부파일 삭제</label>
+                                        <button type="button" id="input70_1_1" class="btn btn-outline-secondary ml_5"><i class="ico bi-minus mr_5"></i>삭제</button>
+                                        <label for="input70_1" class="btn btn-outline-primary ml_5"><i class="ico bi-plus mr_5"></i><span class="sr-only">참고자료</span> 첨부</label> 
+                                        <input type="file" id="input70_1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="colwrap padd_v input_form bott_line">
+                                <div class="input_row">
+                                    <label for="input70_2" class="bar_title"><b>시공사</b></label>
+                                    <input type="text" id="input70_2"  class="box_input w100p">
+                                </div>
+                                <div class="input_row">
+                                    <strong class="bar_title"><b>요청구분</b></strong>
+                                    <div class="radiowrap">
+                                        <input type="radio" id="input70_3_1">
+                                        <label for="input70_3_1" class="ml_5 mr_30"><b>발주처</b></label>
+                                        <input type="radio" id="input70_3_2">
+                                        <label for="input70_3_2" class="ml_5 mr_30"><b>시공사</b></label>
+                                        <input type="radio" id="input70_3_3">
+                                        <label for="input70_3_3" class="ml_5 mr_30"><b>자체</b></label>
+                                    </div>
+                                </div>
+                                <div class="input_form row">
+                                    <div class="input_row w100p">
+                                        <label for="input70_4" class="bar_title"><b>공종</b></label>
+                                        <input type="text" id="input70_4"  class="box_input w100p">
+                                    </div>
+                                    <div class="input_row">
+                                        <label for="input70_5" class="bar_title"><b>참고도면</b></label>
+                                        <input type="text" id="input70_5"  class="box_input w200">
+                                    </div>
+                                </div>
+                                <div class="input_row">
+                                    <label for="input70_6" class="bar_title"><b>제목</b></label>
+                                    <input type="text" id="input70_6"  class="box_input w100p">
+                                </div>
+                                <div class="input_row f_align_a_top">
+                                    <label for="input70_7" class="bar_title"><b>의견</b></label>
+                                    <textarea id="input70_7"  class="boxarea w100p"></textarea>
+                                </div>
+                                <div class="input_row">
+                                    <strong class="bar_title">참고자료</strong>
+                                    <div class="box_period filewrap">
+                                        <input class="box_input wide">
+                                        <label for="input70_8_1" class="sr-only">참고자료 삭제</label>
+                                        <button type="button" id="input70_8_1" class="btn btn-outline-secondary ml_5"><i class="ico bi-minus mr_5"></i>삭제</button>
+                                        <label for="input70_8" class="btn btn-outline-primary ml_5"><i class="ico bi-plus mr_5"></i><span class="sr-only">참고자료</span> 첨부</label> 
+                                        <input type="file" id="input70_8">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <ul class="colwrap info_bott">
+                                <li><b>작성날짜</b><span> 2022년 06월 08일</span></li>
+                                <li>
+                                    <b>책임감리원</b><span> 홍길동</span>
+                                    <b>보조감리원</b><span>  이순신 김철수</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    
+                    <!-- content -->
+                    <!-- btnwrap bottom -->
+                    <div class="btnwrap lg bott">
+                        <button type="button" class="btn btn-primary btn-lg">최종제출</button>
+                        <button type="button" class="btn btn-outline-primary btn-lg">저장</button>
+                        <button type="button" class="btn btn-secondary btn-lg">취소</button>
+                    </div>
+                    
+                    <!-- //btnwrap bottom -->
+               </div>
+                
+            </div>   
+        </div>     
+
+
+
+
+
+
+
+    </section>
+
+    <!-- [include] fooer -->
+    <div id="footer"></div>
+    <!-- //[include] fooer -->
+</div>
+<!-- //content 영역입니다. -->
+</body>
+</html>

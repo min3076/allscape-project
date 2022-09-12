@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>85 allscape popup</title>
+<link rel="stylesheet" href="./css/common.css" />
+<link rel="stylesheet" href="./css/layout.css" />
+<link rel="stylesheet" href="./css/component.css" />
+<link rel="stylesheet" href="./css/contents.css" />
+<script src="./font/webfont.js"></script>
+<script src="./js/jquery-3.3.1.min.js"></script>
+<script src="./js/jquery-migrate-1.4.1.min.js" defer="defer"></script>
+<script type="text/javascript">
+    WebFont.load({custom: {families: ["Spoqa Han Sans"],urls: ["./font/font_spoqahansans.css"],}, });
+</script>
+ <!-- include -->
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+ <script src="./js/include.js"></script>
+ <!-- //include -->
+<!--[if lt IE 9]>
+    <script src="./js/html5/html5shiv.min.js"></script>
+<![endif]-->
+<!-- 레이어팝업 -->
+<script src="http://code.jquery.com/jquery-latest.js"></script> 
+<script src="./js/tmpl.js"></script>
+<!-- //레이어팝업 -->
+</head>
+<body>
+<!-- content 영역입니다. -->
+
+<div class="wrapper">
+    <!-- [include] header -->
+    <div id="header"></div>
+    <!-- //[include] header -->
+    <section class="container">
+        <!-- [include] lnb -->
+        <div id="lnb"></div>
+        <!-- //[include] lnb -->
+        <div class="content_wrap">
+            <div id="location" class="title_wrap">
+            <h2 class="page__title">시방서/설치계획표/계산서/설계도면 등록</h2>
+            <!-- 로케이션 시작 -->
+            <ul class="location_wrap">
+                <li class="n1 home"><a href="#">HOME</a></li>
+                <li class="n2"><a href="#">1차메뉴</a></li>
+                <li class="n3"><a href="#">2차메뉴</a></li>
+                <li class="n4"><a href="#" class="navi_ov">신규등록</a></li>
+            </ul>
+            <!-- 로케이션 끝 -->
+        </div>
+        <div id="txt">
+            
+            <a href="#" class="openMask">버튼</a> 
+            <!-- 레이어팝업 -->
+            <div id="mask">
+                <div class="wrap"> 
+                    <div class="window p85"> 
+                        <div class="titrap"><h3>시방서/설치계획표/계산서/설계도면 등록</h3></div>
+                        <div class="pop_body">
+                            <div class="form col">
+                                <div class="input_row">
+                                    <label for="input85_1" class="bar_title">작성자</label>
+                                    <input type="text" id="input85_1"  class="box_input w100p">
+                                </div>
+                                <div class="input_row">
+                                    <label for="input85_2" class="bar_title">작성날짜</label>
+                                    <input type="text" id="input85_2"  class="box_input w100p">
+                                </div>
+                                <div class="input_row">
+                                    <label for="input85_3" class="bar_title">버전정보</label>
+                                    <input type="text" id="input85_3"  class="box_input w100p">
+                                </div>
+                                <div class="input_row auto">
+                                    <strong class="bar_title">첨부파일</strong>
+                                    <div class="box_period filewrap">
+                                        <input placeholder="첨부파일" class="box_input wide">
+                                        <label for="input85_4" class="btn btn-outline-primary"><i class="ico bi-plus mr_5"></i><span class="sr-only">등급수첩</span> 첨부</label> 
+                                        <input type="file" id="input85_4">
+                                    </div>
+                                </div>
+                                <div class="btnwrap">
+                                    <button type="button" class="btn btn-primary">등록</button>
+                                    <button type="button" class="btn btn-secondary">취소</button>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="bn_close"><span class="sr-only">닫기</span></button>
+                    </div> 
+                </div>
+            </div>
+            <!-- //레이어팝업 -->
+            
+          </div>
+        </div>
+    </section>
+    <!-- [include] fooer -->
+    <div id="footer"></div>
+    <!-- //[include] fooer -->
+</div>
+<!-- //content 영역입니다. -->
+</body>
+</html>

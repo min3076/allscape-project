@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>136 allscape</title>
+<link rel="stylesheet" href="./css/common.css" />
+<link rel="stylesheet" href="./css/layout.css" />
+<link rel="stylesheet" href="./css/component.css" />
+<link rel="stylesheet" href="./css/contents.css" />
+<script src="./font/webfont.js"></script>
+<script src="./js/jquery-3.3.1.min.js"></script>
+<script src="./js/jquery-migrate-1.4.1.min.js" defer="defer"></script>
+<script type="text/javascript">
+    WebFont.load({custom: {families: ["Spoqa Han Sans"],urls: ["./font/font_spoqahansans.css"],}, });
+</script>
+ <!-- include -->
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+ <script src="./js/include.js"></script> 
+ <script src="./js/tmpl.js"></script>
+ <!-- //include -->
+<!--[if lt IE 9]>
+    <script src="./js/html5/html5shiv.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<!-- content 영역입니다. -->
+<div class="wrapper">
+    <!-- [include] header -->
+    <div id="header"></div>
+    <!-- //[include] header -->
+
+    <section class="container">
+       <!-- [include] lnb -->
+       <div id="lnb"></div>
+       <!-- //[include] lnb -->
+        <div class="content_wrap">
+            <div id="location" class="title_wrap">
+                <h2 class="page__title">발생품(잉여자재) 정리부</h2>
+                <!-- 로케이션 시작 -->
+                <ul class="location_wrap">
+                    <li class="n1 home"><a href="#">HOME</a></li>
+                    <li class="n2"><a href="#">1차메뉴</a></li>
+                    <li class="n3"><a href="#">2차메뉴</a></li>
+                    <li class="n4"><a href="#" class="navi_ov">신규등록</a></li>
+                </ul>
+                <!-- 로케이션 끝 -->
+            </div>
+            <div id="txt">
+               <div class="view linebox">
+                    <!-- btnwrap top -->
+                    <div class="btnwrap top">
+                        <button type="button" class="btn btn-primary">확인</button>
+                        <button type="button" class="btn btn-secondary">취소</button>
+                    </div>
+                    <!-- //btnwrap top -->
+                    <!-- content -->
+                    <div class="mid">
+                        <div class="mid_top">
+                            <h3 class="contit">공사기성부분 내역서</h3>
+                            <!-- [include] sign -->
+                            <div id="signwrap" class="sign"></div>
+                            <!-- //[include] sign -->
+                        </div>
+                        <div class="mid_content">
+                            <div class="colwrap con_top col2 padd_v bott_line f_align_j_wide">
+                                    <div class="input_row info_w_auto">
+                                        <b class="bar_title">공사명</b>
+                                        <span>하남감일 B1BL 아파트 전기공사 7공구</span>
+                                    </div>
+                                    <div class="input_row info_w_auto">
+                                        <b class="bar_title">작성날짜</b>
+                                        <span>2022-06-15 12:34:26</span>
+                                    </div>
+                            </div>
+                            <div class="colwrap padd_v_t">
+                                <div class="input_row">
+                                    <b class="bar_title">도급액 </b>
+                                    <span> 10,195,631,000 </span>
+                                </div>
+                                <div class="input_row info_w_auto mb_20">
+                                    <b class="bar_title">기성부분금액</b>
+                                    <span>10,195,631,000 </span>
+                                </div>
+                                <table class="table dataTable center gray table-td-noline">
+                                    <colgroup>
+                                        <col style="width:18%">
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col style="width:25%">
+                                        <col>
+                                    </colgroup>
+                                    <thead>
+                                    <tr>
+                                        <th scope="col" rowspan="2">공사내역</th>
+                                        <th scope="col" rowspan="2">규격</th>
+                                        <th scope="col" colspan="3">도급액</th>
+                                        <th scope="col" colspan="3">금회 기성액</th>
+                                        <th scope="col" colspan="3">전회까지의 기성액</th>
+                                        <th scope="col" rowspan="2" class="last">적용</th>
+                                        <th scope="col" rowspan="2" class="tbnwrap"><span class="sr-only">추가버튼</span></th>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col">수량</th>
+                                        <th scope="col">단가</th>
+                                        <th scope="col">금액</th>
+                                        <th scope="col">수량</th>
+                                        <th scope="col">단가</th>
+                                        <th scope="col">금액</th>
+                                        <th scope="col">수량</th>
+                                        <th scope="col">단가</th>
+                                        <th scope="col">금액</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td><input type="text" class="box_input w100p"></td>
+                                        <td><input type="text" class="box_input w100p"></td>
+                                        <td><input type="text" class="box_input w100p"></td>
+                                        <td><input type="text" class="box_input w100p"></td>
+                                        <td><input type="text" class="box_input w100p"></td>
+                                        <td><input type="text" class="box_input w100p"></td>
+                                        <td><input type="text" class="box_input w100p"></td>
+                                        <td><input type="text" class="box_input w100p"></td>
+                                        <td><input type="text" class="box_input w100p"></td>
+                                        <td><input type="text" class="box_input w100p"></td>
+                                        <td><input type="text" class="box_input w100p"></td>
+                                        <td><input type="text" class="box_input w100p"></td>
+                                        <td class="text-left"><button type="button" class="btn btn-dark addbtn"><i class="ico bi-plus-w mr_5"></i>추가</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" class="box_input w100p"></td>
+                                        <td><input type="text" class="box_input w100p"></td>
+                                        <td><input type="text" class="box_input w100p"></td>
+                                        <td><input type="text" class="box_input w100p"></td>
+                                        <td><input type="text" class="box_input w100p"></td>
+                                        <td><input type="text" class="box_input w100p"></td>
+                                        <td><input type="text" class="box_input w100p"></td>
+                                        <td><input type="text" class="box_input w100p"></td>
+                                        <td><input type="text" class="box_input w100p"></td>
+                                        <td><input type="text" class="box_input w100p"></td>
+                                        <td><input type="text" class="box_input w100p"></td>
+                                        <td class="last"><input type="text" class="box_input w100p"></td>
+                                        <td class="tbnwrap text-left"><button type="button" class="btn btn-outline-secondary minusbtn"><i class="ico bi-minus"></i><span class="sr-only">삭제</span></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" class="box_input w100p"></td>
+                                        <td><input type="text" class="box_input w100p"></td>
+                                        <td><input type="text" class="box_input w100p"></td>
+                                        <td><input type="text" class="box_input w100p"></td>
+                                        <td><input type="text" class="box_input w100p"></td>
+                                        <td><input type="text" class="box_input w100p"></td>
+                                        <td><input type="text" class="box_input w100p"></td>
+                                        <td><input type="text" class="box_input w100p"></td>
+                                        <td><input type="text" class="box_input w100p"></td>
+                                        <td><input type="text" class="box_input w100p"></td>
+                                        <td><input type="text" class="box_input w100p"></td>
+                                        <td class="last"><input type="text" class="box_input w100p"></td>
+                                        <td class="tbnwrap text-left"><button type="button" class="btn btn-outline-secondary minusbtn"><i class="ico bi-minus"></i><span class="sr-only">삭제</span></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" class="box_input w100p"></td>
+                                        <td><input type="text" class="box_input w100p"></td>
+                                        <td><input type="text" class="box_input w100p"></td>
+                                        <td><input type="text" class="box_input w100p"></td>
+                                        <td><input type="text" class="box_input w100p"></td>
+                                        <td><input type="text" class="box_input w100p"></td>
+                                        <td><input type="text" class="box_input w100p"></td>
+                                        <td><input type="text" class="box_input w100p"></td>
+                                        <td><input type="text" class="box_input w100p"></td>
+                                        <td><input type="text" class="box_input w100p"></td>
+                                        <td><input type="text" class="box_input w100p"></td>
+                                        <td class="last"><input type="text" class="box_input w100p"></td>
+                                        <td class="tbnwrap text-left"><button type="button" class="btn btn-outline-secondary minusbtn"><i class="ico bi-minus"></i><span class="sr-only">삭제</span></button></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        
+                       
+                    </div>
+                    <!-- content -->
+                    <!-- btnwrap bottom -->
+                    <div class="btnwrap lg bott">
+                        <button type="button" class="btn btn-primary btn-lg">최종제출</button>
+                        <button type="button" class="btn btn-outline-primary btn-lg">저장</button>
+                        <button type="button" class="btn btn-secondary btn-lg">취소</button>
+                    </div>
+                    
+                    <!-- //btnwrap bottom -->
+               </div>
+                
+            </div>   
+        </div>     
+
+
+
+
+
+
+
+    </section>
+
+    <!-- [include] fooer -->
+    <div id="footer"></div>
+    <!-- //[include] fooer -->
+</div>
+<!-- //content 영역입니다. -->
+</body>
+</html>

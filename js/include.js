@@ -33,19 +33,19 @@ $(function(){
 
 
 
-$(document).ready( function() 
-{
-    var filter_Offset = $('.container').offset();
+// $(document).ready( function() 
+// {
+//     var filter_Offset = $('.container').offset();
 
-    $(window).scroll(function() 
-    {
-        if ( $(document).scrollTop() > filter_Offset.top ) 
-        {
-            $('.container').addClass('container-fixed');
-        } 
-        else 
-        {
-            $('.container').removeClass('container-fixed');
-        }
-    });
-});
+//     $(window).scroll(function() 
+//     {
+//         if ( $(document).scrollTop() > filter_Offset.top ) 
+//         {
+//             $('.container').addClass('container-fixed');
+//         } 
+//         else 
+//         {
+//             $('.container').removeClass('container-fixed');
+//         }
+//     });
+// });

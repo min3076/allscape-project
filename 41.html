@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>41 allscape</title>
+<link rel="stylesheet" href="./css/common.css" />
+<link rel="stylesheet" href="./css/layout.css" />
+<link rel="stylesheet" href="./css/component.css" />
+<link rel="stylesheet" href="./css/contents.css" />
+<script src="./font/webfont.js"></script>
+<script src="./js/jquery-3.3.1.min.js"></script>
+<script src="./js/jquery-migrate-1.4.1.min.js" defer="defer"></script>
+<script type="text/javascript">
+    WebFont.load({custom: {families: ["Spoqa Han Sans"],urls: ["./font/font_spoqahansans.css"],}, });
+</script>
+ <!-- include -->
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+ <script src="./js/include.js"></script> 
+ <script src="./js/tmpl.js"></script>
+ <!-- //include -->
+<!--[if lt IE 9]>
+    <script src="./js/html5/html5shiv.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<!-- content 영역입니다. -->
+<div class="wrapper">
+    <!-- [include] header -->
+    <div id="header"></div>
+    <!-- //[include] header -->
+
+    <section class="container">
+       <!-- [include] lnb -->
+       <div id="lnb"></div>
+       <!-- //[include] lnb -->
+        <div class="content_wrap">
+            <div id="location" class="title_wrap">
+                <h2 class="page__title">작업일지 작성</h2>
+                <!-- 로케이션 시작 -->
+                <ul class="location_wrap">
+                    <li class="n1 home"><a href="#">HOME</a></li>
+                    <li class="n2"><a href="#">1차메뉴</a></li>
+                    <li class="n3"><a href="#">2차메뉴</a></li>
+                    <li class="n4"><a href="#" class="navi_ov">신규등록</a></li>
+                </ul>
+                <!-- 로케이션 끝 -->
+            </div>
+            <div id="txt">
+                
+                <table class="table center">
+                    <colgroup>
+                        <col style="width:250px">
+                        <col style="width:80px">
+                        <col style="width:200px">
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th scope="col" rowspan="2">공종</th>
+                        <th scope="col" rowspan="2">구분</th>
+                        <th scope="col" rowspan="2">자재명</th>
+                        <th scope="col" rowspan="2">규격</th>
+                        <th scope="col" rowspan="2">단위</th>
+                        <th scope="col" rowspan="2">전체수량</th>
+                        <th scope="col" colspan="2">재료비</th>
+                        <th scope="col" colspan="2">노무비</th>
+                        <th scope="col" colspan="2">경비</th>
+                        <th scope="col" colspan="2">합계</th>
+                        <th scope="col" rowspan="2" class="last">비고</th>
+                        <th scope="col" rowspan="2" class="last">총<br>사용수량</th>
+                    </tr>
+                    <tr>
+                        <th scope="col">단가</th>
+                        <th scope="col">금액</th>
+                        <th scope="col">단가</th>
+                        <th scope="col">금액</th>
+                        <th scope="col">단가</th>
+                        <th scope="col">금액</th>
+                        <th scope="col">단가</th>
+                        <th scope="col">금액</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <!-- 1depth -->
+                    <tr class="depth1">
+                        <td class="text-left">
+                            <button type="button" class="btn btn-outline-primary openbn"><span class="sr-only">상세보기</span><i class="ico bi-arr"></i></button>
+                            제연덕트설치공사
+                        </td>
+                        <td>기계</td>
+                        <td colspan="5"></td>
+                        <td>5.94</td>
+                        <td></td>
+                        <td>3.15</td>
+                        <td></td>
+                        <td>0</td>
+                        <td></td>
+                        <td>3.15</td>
+                        <td colspan="2"></td>
+                    </tr>
+                    <!-- //1depth -->
+                    <!-- 2depth -->
+                    <tr>
+                        <td class="depth2" colspan="16" >
+                        <table class="table table-noline center">
+                            <colgroup>
+                                <col style="width:250px">
+                                <col style="width:80px">
+                                <col style="width:200px">
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                            </colgroup>
+                            <thead class="sr-only">
+                            <tr>
+                                <th scope="col" rowspan="2">공종</th>
+                                <th scope="col" rowspan="2">구분</th>
+                                <th scope="col" rowspan="2">자재명</th>
+                                <th scope="col" rowspan="2">규격</th>
+                                <th scope="col" rowspan="2">단위</th>
+                                <th scope="col" rowspan="2">전체수량</th>
+                                <th scope="col" colspan="2">재료비</th>
+                                <th scope="col" colspan="2">노무비</th>
+                                <th scope="col" colspan="2">경비</th>
+                                <th scope="col" colspan="2">합계</th>
+                                <th scope="col" rowspan="2">비고</th>
+                                <th scope="col" rowspan="2">총<br>사용수량</th>
+                            </tr>
+                            <tr>
+                                <th scope="col">단가</th>
+                                <th scope="col">금액</th>
+                                <th scope="col">단가</th>
+                                <th scope="col">금액</th>
+                                <th scope="col">단가</th>
+                                <th scope="col">금액</th>
+                                <th scope="col">단가</th>
+                                <th scope="col">금액</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td class="text-left" colspan="3">
+                                <div class="title">
+                                    각형덕트제작및설치
+                                </div>
+                                </td>
+                                <td>(0.6T)</td>
+                                <td>㎡</td>
+                                <td>317.0</td>
+                                <td>10,065.0</td>
+                                <td>3,190,605</td>
+                                <td>30,438.0</td>
+                                <td>9,648,846</td>
+                                <td>0.0</td>
+                                <td>0</td>
+                                <td>40,503.0</td>
+                                <td>12,839,451</td>
+                                <td>제 51호</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td class="text-left" colspan="3">
+                                <div class="title">각형덕트제작및설치</div>
+                                </td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        </td>
+                    </tr>
+                    <!-- //2depth -->
+                    
+                    <!-- 1depth -->
+                    <tr class="depth1">
+                        <td class="text-left">
+                            <button type="button" class="btn btn-outline-primary"><span class="sr-only">상세보기</span><i class="ico bi-arr"></i></button>
+                            제연덕트설치공사
+                        </td>
+                        <td>기계</td>
+                        <td colspan="5"></td>
+                        <td>5.94</td>
+                        <td></td>
+                        <td>3.15</td>
+                        <td></td>
+                        <td>0</td>
+                        <td></td>
+                        <td>3.15</td>
+                        <td colspan="2"></td>
+                    </tr>
+                    <!-- //1depth -->
+                    <!-- 1depth -->
+                    <tr class="depth1">
+                        <td class="text-left">
+                            <button type="button" class="btn btn-outline-primary"><span class="sr-only">상세보기</span><i class="ico bi-arr"></i></button>
+                            제연덕트설치공사
+                        </td>
+                        <td>기계</td>
+                        <td colspan="5"></td>
+                        <td>5.94</td>
+                        <td></td>
+                        <td>3.15</td>
+                        <td></td>
+                        <td>0</td>
+                        <td></td>
+                        <td>3.15</td>
+                        <td colspan="2"></td>
+                    </tr>
+                    <!-- //1depth -->
+                    </tbody>
+                </table>
+                
+            </div>   
+        </div>     
+
+
+
+
+
+
+
+    </section>
+
+    <!-- [include] fooer -->
+    <div id="footer"></div>
+    <!-- //[include] fooer -->
+</div>
+<!-- //content 영역입니다. -->
+</body>
+</html>

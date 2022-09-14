@@ -91,7 +91,7 @@ textarea.boxarea{height:120px;padding:10px;border: 1px solid #E4EAFC; box-sizing
 .mr5{margin-right:5px;}
 .ico.bi-out{width:20px;height:20px;line-height:20px;background:url(../images/common/ico_out.svg) no-repeat;}
 .ico.bi-plus_big{width:15px;height:16px;line-height:20px;background:url(../images/common/ico_plus.svg) no-repeat;}
-.ico.bi-plus{width:13px;height:13px;line-height:20px;background:url(../images/common/ico_plus_sm.svg) no-repeat;}
+.ico.bi-plus{width:13px;height:13px;line-height:20px;padding:11px 0;background:url(../images/common/ico_plus_sm.svg) no-repeat 50% 50%;}
 .ico.bi-plus-w{width:15px;height:15px;line-height:20px;background:url(../images/common/ico_plus_w.svg) no-repeat;}
 
 .ico.bi-blank_w{width:24px;height:24px;line-height:20px;background:url(../images/common/ico_blank.svg) no-repeat;}
@@ -256,7 +256,6 @@ textarea.boxarea{height:120px;padding:10px;border: 1px solid #E4EAFC; box-sizing
 .table td:last-child,
 .table th:last-child,
 .table .last{border-right:none}
-.table .table{background-color:#fff}
 .table-sm td,
 .table-sm th{padding:.3rem}
 .table th.lf_line{border-right:1px solid #747EA5}

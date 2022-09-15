@@ -533,7 +533,7 @@
 
 
 
-#mask.con86 .pop_body .listwrap{width:340px;height:90%;padding:100px 50px;overflow:auto;}
+#mask.con86 .pop_body .listwrap{width:340px;height:90%;padding:100px 50px 80px;overflow:auto;}
 #mask.con86 .pop_body .list{display:flex;flex-direction:column;gap:20px;}
 #mask.con86 .pop_body .list .select{border:6px solid #0057FF}
 

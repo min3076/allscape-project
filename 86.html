@@ -55,64 +55,78 @@
             <!-- 레이어팝업 -->
             <div id="mask" class="con86">
                 <div class="wrap"> 
-                        <div class="titrap"><h3>검측점검표 작성/수정</h3></div>
+                        <div class="topwrap">
+                            <div class="tool"> 
+                                <button type="button" class="btn bn_point on"><i class="ico"></i><span class="sr-only">포인트 찍기</span></button>
+                                <div class="bnlinewrap">
+                                    <button type="button" class="btn bn_area_square"><i class="ico"></i><span class="sr-only">사각형 영역 그리기</span></button>
+                                    <button type="button" class="btn bn_area_circle"><i class="ico"></i><span class="sr-only">원형 영역 그리기</span></button>
+                                </div>
+                            </div>
+                            
+                            <div class="viewsize"> 
+                                <button type="button" class="btn bn_size_plus"><i class="ico"></i><span class="sr-only">축소</span></button>
+                                <button type="button" class="sizetext">100%</button>
+                                <button type="button" class="btn bn_size_minus"><i class="ico"></i><span class="sr-only">확대</span></button>
+                            </div>
+                        </div>
                         <div class="pop_body">
+                            
+                            <div class="ctrl">
+                                <button type="button" class="btn btn-outline-secondary bn_prev"><i class="ico bi-arr-g mr_5"></i>이전</button>
+                                <span class="pagenum">1 page</span>
+                                <button type="button" class="btn btn-outline-secondary">다음<i class="ico bi-arr-g ml_5"></i></button>
+                            </div>
                             <div class="lcon">
-                                <div class="con_top">
-                                    <div class="ctrl">
-                                        <button type="button" class="btn btn-outline-secondary bn_prev"><i class="ico bi-arr-g mr_5"></i>이전</button>
-                                        <span class="pagenum">1 page</span>
-                                        <button type="button" class="btn btn-outline-secondary">다음<i class="ico bi-arr-g ml_5"></i></button>
+                                <div class="btnwrap">
+                                    <button type="button" class="btn btn-outline-secondary">취소</button>                                        
+                                    <button type="button" class="btn btn-primary">저장</button>
+                                </div>
+                                <div class="imgwrap">
+                                    <img src="./images/content/img_86_view.png" alt="" />
+                                    <div class="area area_square" style="top:230px;left:430px;width:200px;height:300px;">
+                                        <button class="bn_close"><i class="ico ico_"></i><span class="sr-only">닫기</span></button>
                                     </div>
-                                    <div class="btnwrap">
-                                        <button type="button" class="btn btn-outline-secondary">취소</button>                                        
-                                        <button type="button" class="btn btn-primary">저장</button>
+                                    <div class="area area_circle" style="top:130px;left:230px;width:300px;height:300px;">
+                                        <button class="bn_close"><i class="ico ico_"></i><span class="sr-only">닫기</span></button>
+                                    </div>
+                                    <div class="area point" style="top:130px;left:530px;">
+                                        <span class="ico_point"></span>
+                                        <div class="boxtext">
+                                            <div class="input_row">
+                                                <label for="input86_1" class="bar_title"><b>문제점</b></label>
+                                                <input type="text" id="input86_1"  class="box_input">
+                                            </div>
+                                            <div class="input_row">
+                                                <label for="input86_2" class="bar_title"><b>감리의견</b></label>
+                                                <input type="text" id="input86_2"  class="box_input">
+                                            </div>
+                                            <div class="input_row">
+                                                <label for="input86_3" class="bar_title"><b>법적근거</b></label>
+                                                <input type="text" id="input86_3"  class="box_input">
+                                            </div>
+                                        </div>
+                                        <button class="bn_close_gray"><i class="ico ico_"></i><span class="sr-only">닫기</span></button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="rcon">
-                                <div class="boxinfo">
-                                    <strong><b>공사명</b>도안 3지구 아파트 공사</strong>
-                                    <ul class="info">
-                                        <li><b>작성일자</b><p>2022-06-02 15:23:11</p></li>
-                                        <li><b>공종</b><p>슬리브 공사</p></li>
-                                        <li><b>검측일자</b><p>2022-06-02 15:23:11</p></li>
-                                        <li><b>세부공종</b><p>관통 슬리브 및 인서트</p></li>
-                                        <li><b>위치부위</b><p>지상2층 벽체/지상3층 바닥</p></li>
-                                    </ul>
-                                </div>
-                                <ul class="info_bott info">
-                                    <li><b>시공자 점검</b><span> 책임시공기술자 강병우</span></li>
-                                    <li><b>감리원 검측</b><span> 이종하</span></li>
-                                </ul>
-                                
-                                <div class="inputwrap">
-                                    <div class="input_row auto">
-                                        <strong class="bar_title">시공자 재점검</strong>
-                                        <div class="box_period filewrap">
-                                            <input class="box_input">
-                                            <label for="input127_r_1" class="btn btn-outline-primary">찾기</label> 
-                                            <input type="file" id="input127_r_1">
-                                        </div>
-                                    </div>
-                                    <div class="input_row auto">
-                                        <strong class="bar_title">감리원 재검측</strong>
-                                        <div class="box_period filewrap">
-                                            <input class="box_input">
-                                            <label for="input127_r_2" class="btn btn-outline-primary">찾기</label> 
-                                            <input type="file" id="input127_r_2">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="btnwrap lg">
-                                    <button type="button" class="btn btn-primary btn-lg">등록/수정</button>
-                                    <button type="button" class="btn btn-secondary btn-lg">취소</button>
-                                </div>
+                            <div class="listwrap">
+                            <ul class="list">
+                                <li class="select"><a href="#"><img src="./images/content/img_86_view.png" alt="" /></a></li>
+                                <li><a href="#"><img src="./images/content/img_86_view.png" alt="" /></a></li>
+                                <li><a href="#"><img src="./images/content/img_86_view.png" alt="" /></a></li>
+                                <li><a href="#"><img src="./images/content/img_86_view.png" alt="" /></a></li>
+                                <li><a href="#"><img src="./images/content/img_86_view.png" alt="" /></a></li>
+                                <li><a href="#"><img src="./images/content/img_86_view.png" alt="" /></a></li>
+                            </ul>
                             </div>
                         </div>
                         <button type="button" class="bn_close"><span class="sr-only">닫기</span></button>
+
+                        
                 </div> 
             </div>
+            
             <!-- //레이어팝업 -->
             
           </div>

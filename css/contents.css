@@ -443,21 +443,32 @@
 
 .con84 .con_l .con_l_bott{position:relative;}
 .con84 .con_l .con_l_bott h3{width:100%;padding:0 0 20px;border-bottom:1px solid #182869;color:#0F2248;font-weight:bold}
-
 .con84 .con_l .con_l_bott .addbtn{right:40px;color:#0057FF;}
+.con84 .con_l .con_l_bott .wrap{height:397px;overflow:auto;color:#747EA5}
 
-.con84 .con_r .wrap{display:flex;flex-direction:column;gap:20px;height:520px;overflow:auto;}
+.ul_depth1 .lcon b{padding-right:10px;font-weight:bold;color:#182869}
+.ul_depth2 .lcon b,
+.ul_depth3 b{font-weight:normal;}
 
-.con84 .row{display:flex;align-items:center;justify-content:space-between;}
-.con84 .input_row{align-items:center;padding:4px 0;}
-.con84 .input_row .bar_title{min-width:80px;padding-top:0;}
-.con84 .input_row textarea.boxarea{height:100px;}
-
-.ul_depth1 .lcon button{width:28px;height:28px;padding:0 4px;margin-right:10px;justify-content: center;border:2px solid #E2E8FB}
+.ul_depth1 .lcon button{width:28px;height:28px;padding:0 4px;margin-right:10px;justify-content: center;border:2px solid #E2E8FB;background:#fff;}
 .ul_depth1 .lcon button .ico.bi-arr{width:8px;height:11px;background-image:url(../images/main/ico_arr_b.svg);transform:rotate(-90deg);}
 
 .ul_depth1 .open .lcon button.openbn{background:#0057FF;border-color:#0057FF}
 .ul_depth1 .open .lcon button.openbn .ico.bi-arr{background-image:url(../images/main/ico_arr_w.svg);transform:rotate(90deg);}
 
 .ul_depth1 .group{display:flex;justify-content:space-between;align-items:center;padding:10px;border-bottom:1px solid #D9D9D9}
-.ul_depth2{}
+.ul_depth2 .group{position:relative;padding-left:70px;background:#FCFCFC}
+.ul_depth2 .group::before{content:"";position:absolute;left:30px;top:4px;display:block;width:40px;height:24px;border:1px solid #cacaca;border-width:0 0 1px 1px;}
+.ul_depth3 .group{padding-left:142px;background:#F6F6F6}
+.ul_depth3 .group::before{left:100px;width:35px;height:24px;}
+
+
+
+.con84 .con_r .wrap{display:flex;flex-direction:column;gap:20px;height:443px;overflow:auto;}
+.con84 .con_r .imgwrap{text-align:center;}
+.con84 .con_r .imgwrap img{width:auto;height:462px;}
+.con84 .row{display:flex;align-items:center;justify-content:space-between;}
+.con84 .input_row{width:100%;align-items:center;padding:4px 0;}
+.con84 .input_row .bar_title{min-width:80px;padding-top:0;}
+.con84 .input_row textarea.boxarea{height:100px;}
+.con84 .input_row .box_input{width:calc(100% - 80px);}

@@ -127,6 +127,7 @@ h1.logo a {display:block;width:127px;height:34px;background: url(../images/commo
 
 /* 로그인 */
 .wrapper.login .container{display:flex;height:100vh;background:transparent}
+.wrapper.login .container:before{display:none;}
 .wrapper.login .container .lcon,
 .wrapper.login .container .visual{width:50%;height:100vh}
 .wrapper.login .container .lcon{display:flex;flex-direction:column;align-items:center;justify-content:center;}

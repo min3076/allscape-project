@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
 
-<title>4 allscape</title>
+<title>3_2 allscape</title>
 <link rel="stylesheet" href="./css/common.css" />
 <link rel="stylesheet" href="./css/layout.css" />
 <link rel="stylesheet" href="./css/component.css" />
@@ -26,70 +26,75 @@
 </head>
 <body>
 <!-- content 영역입니다. -->
-<div class="wrapper join">
+<div class="wrapper join colwidewrap">
+    <!-- [include] header -->
+    <div id="header"></div>
+    <!-- //[include] header -->
     <section class="container">
-        <h1>기본정보</h1>
-        <div class="linebox_bott">
-            <div class="input_row">
-                <label for="input4_1" class="bar_title tx_left"><b><span class="point">필수</span>ID</b></label>
-                <div class="box_period filewrap">
-                    <input type="text" id="input4_1"  class="box_input">
-                    <button class="btn btn-outline-dark ml_10">중복확인</button>
-                </div>
-            </div>
-            <div class="input_row">
-                <label for="input4_3" class="bar_title tx_left"><b><span class="point">필수</span>패스워드</b></label>
-                <input type="password" id="input4_3"  class="box_input w100p">
-            </div>
-            <div class="input_row">
-                <label for="input4_4" class="bar_title tx_left"><b><span class="point">필수</span>패스워드확인</b></label>
-                <input type="password" id="input4_4"  class="box_input w100p">
-            </div>
-        </div>
-        <h1>개인정보</h1>
-        <div class="input_row">
-            <label for="input4_2" class="bar_title tx_left"><b><span class="point">필수</span>이름</b></label>
-            <input type="text" id="input4_2"  class="box_input w70">
-        </div>
-        <div class="input_row">
-            <label for="input4_5" class="bar_title tx_left"><b><span class="point">필수</span>연락처</b></label>
-            <input type="text" id="input4_5"  class="box_input w140">
-        </div>
-        <div class="input_row">
-            <label for="input4_6" class="bar_title tx_left"><b><span class="point">필수</span>E-Mail</b></label>
-            <input type="email" id="input4_6"  class="box_input w100p">
-        </div>
-        <div class="input_row">
-            <label for="input4_8" class="bar_title tx_left"><b><span class="point">필수</span>주민등록번호</b></label>
-            <input type="text" id="input4_8"  class="box_input w150">
-        </div>
-        <div class="input_col">
-            <strong class="bar_title">
-                <label for="input4_9"><b>분야</b></label> 
-                <span>/</span> 
-                <label for="input4_9"><b>등급</b></label>
-            </strong>
-            <div class="box_period addwrap f_col">
-                <div class="f_row mb_10">
-                    <div>
-                        <label for="select5_2_9_1" class="sr-only">분야선택</label> 
-                        <select id="select5_2_9_1" class="input_select">
-                                <option>전기</option>
-                        </select>
-                        <span class="space"> / </span>
-                        <label for="select5_2_9_2" class="sr-only">등급선택</label> 
-                        <select id="select5_2_9_2" class="input_select">
-                                <option>특급기술자</option>
-                    </select>
+        <div class="con">
+            <h1>기본정보</h1>
+            <div class="linebox_bott">
+                <div class="input_row">
+                    <label for="input4_1" class="bar_title tx_left"><b><span class="point">필수</span>ID</b></label>
+                    <div class="box_period filewrap">
+                        <input type="text" id="input4_1"  class="box_input">
+                        <button class="btn btn-outline-dark ml_10">중복확인</button>
                     </div>
-                    <button type="button" class="btn btn-outline-primary"><i class="ico bi-plus mr5"></i>첨부</button>
                 </div>
-                <div class="linebox sm gray">
-                    <ul>
-                        <li>전기/특급기술자
-                            <button type="button" class="btn btn-outline-secondary"><i class="ico bi-minus mr5"></i>삭제</button>
-                        </li>
-                    </ul>
+                <div class="input_row">
+                    <label for="input4_3" class="bar_title tx_left"><b><span class="point">필수</span>패스워드</b></label>
+                    <input type="password" id="input4_3"  class="box_input w100p">
+                </div>
+                <div class="input_row">
+                    <label for="input4_4" class="bar_title tx_left"><b><span class="point">필수</span>패스워드확인</b></label>
+                    <input type="password" id="input4_4"  class="box_input w100p">
+                </div>
+            </div>
+            <h1>개인정보</h1>
+            <div class="input_row">
+                <label for="input4_2" class="bar_title tx_left"><b><span class="point">필수</span>이름</b></label>
+                <input type="text" id="input4_2"  class="box_input w70">
+            </div>
+            <div class="input_row">
+                <label for="input4_5" class="bar_title tx_left"><b><span class="point">필수</span>연락처</b></label>
+                <input type="text" id="input4_5"  class="box_input w140">
+            </div>
+            <div class="input_row">
+                <label for="input4_6" class="bar_title tx_left"><b><span class="point">필수</span>E-Mail</b></label>
+                <input type="email" id="input4_6"  class="box_input w100p">
+            </div>
+            <div class="input_row">
+                <label for="input4_8" class="bar_title tx_left"><b><span class="point">필수</span>주민등록번호</b></label>
+                <input type="text" id="input4_8"  class="box_input w150">
+            </div>
+            <div class="input_col">
+                <strong class="bar_title">
+                    <label for="input4_9"><b>분야</b></label> 
+                    <span>/</span> 
+                    <label for="input4_9"><b>등급</b></label>
+                </strong>
+                <div class="box_period addwrap f_col">
+                    <div class="f_row mb_10">
+                        <div>
+                            <label for="select5_2_9_1" class="sr-only">분야선택</label> 
+                            <select id="select5_2_9_1" class="input_select">
+                                    <option>전기</option>
+                            </select>
+                            <span class="space"> / </span>
+                            <label for="select5_2_9_2" class="sr-only">등급선택</label> 
+                            <select id="select5_2_9_2" class="input_select">
+                                    <option>특급기술자</option>
+                        </select>
+                        </div>
+                        <button type="button" class="btn btn-outline-primary"><i class="ico bi-plus mr5"></i>첨부</button>
+                    </div>
+                    <div class="linebox sm gray">
+                        <ul>
+                            <li>전기/특급기술자
+                                <button type="button" class="btn btn-outline-secondary"><i class="ico bi-minus mr5"></i>삭제</button>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>

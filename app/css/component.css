@@ -139,7 +139,7 @@ textarea.boxarea{height:120px;padding:10px;border: 1px solid #E4EAFC; box-sizing
 .btnwrap.lg {margin-top:40px;}
 .btnwrap button{display:flex;justify-content:center;gap:10px;}
 .btnwrap.sm button{margin:0 1px;}/* fileico wrap  */
-.btnwrap.lg button{flex-basis:130px;justify-content:center;font-weight:bold}
+.btnwrap.lg button{flex-grow:1;justify-content:center;font-weight:bold}
 .btnwrap.lg button.w100p{flex-basis:100%;}
 
 
@@ -568,12 +568,13 @@ input[type="date"]::-webkit-calendar-picker-indicator {background: transparent;z
 .tabwrap .tab-body{display:none;width:100%;height:100%;margin-top: 0;position:relative;overflow:auto;margin:6px 0 20px;}
 .tabwrap .tab-body.active{display:block}
 
+.col4 *{flex-basis:25%;}
 
 /* 앱 */
-.input_radio {display:flex;width:100%;}
+.input_radio {display:flex;flex-wrap:wrap;width:100%;}
 .input_radio input[type=radio]{display:none;;}
-.input_radio input[type=radio]+label{display: inline-block;padding:0 20px;cursor: pointer;height:36px;width:100%;margin-left:-1px;border: 1px solid #333;line-height:36px;text-align: center;font-size:13px; border:1px solid #A5AECA;background-color: #fff;color: #747EA5;}
-.input_radio input[type=radio]+label.inline{width:auto}
+.input_radio input[type=radio]+label{flex-grow:1;display:inline-flex;align-items:center;justify-content:center;padding:6px 20px;cursor: pointer;margin-left:-1px;margin-top:-1px;border: 1px solid #333;text-align: center;font-size:13px; border:1px solid #A5AECA;background-color: #fff;color: #747EA5;}
+.input_radio input[type=radio]+label.inline{flex-grow:0}
 .input_radio input[type=radio]:checked+label{color: #0057FF;background-color: #F5F8FF; border-color:#0057FF;z-index:1}
 
 .input_row {display:flex;color:#747EA5;/*flex-grow:1;align-items:center;*/}
@@ -585,7 +586,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {background: transparent;z
 .input_row .box_period .box_input{width:100%;}
 
 .input_col {display:flex;width:100%;color:#747EA5;flex-direction:column;}
-.input_col .bar_title{min-width:60px;padding:6px 10px 0 0;}
+.input_col .bar_title{min-width:60px;padding:6px 10px 6px 0;}
 .input_col .bar_title b{position:relative;font-weight:normal}
 .input_col .bar_title .point{position:absolute;left:-10px;top:0;display:inline-block;width:8px;height:10px;font-size:0;text-indent:-999px;overflow:hidden;background:url(../images/join/point.svg) no-repeat}
 

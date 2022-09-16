@@ -1,10 +1,12 @@
 /* layout */
-html, body, .wrapper{min-height:100%;}
-.container{padding:24px;}
+html, body, .wrapper{height:100%;}
+.colwidewrap{display:flex;flex-direction:column;justify-content:space-between;}
+.container{height:100%;display:flex;flex-direction:column;justify-content:space-between;padding:24px;}
+
 /* header */
-#header{display:block;padding:0 1.4%;background: #162252;}
+#header{display:block;padding:20px 24px;border-bottom:1px solid #E2E8FB}
 h1.logo{display:flex;align-items:center;}
-h1.logo a {display:block;width:127px;height:34px;background: url(../images/common/logo.svg) no-repeat;}
+h1.logo a {display:block;width:125.3px;height:41px;background: url(../images/common/logo_b.svg) no-repeat 0 100% / 100% auto;}
 
 #header .inner{width:100%;display:flex;justify-content:space-between;align-items:center;padding-left:200px;}
 

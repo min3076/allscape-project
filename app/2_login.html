@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+
+<title>3 allscape</title>
+<link rel="stylesheet" href="./css/common.css" />
+<link rel="stylesheet" href="./css/layout.css" />
+<link rel="stylesheet" href="./css/component.css" />
+<script src="./font/webfont.js"></script>
+<script src="./js/jquery-3.3.1.min.js"></script>
+<script src="./js/jquery-migrate-1.4.1.min.js" defer="defer"></script>
+<script type="text/javascript">
+    WebFont.load({custom: {families: ["Spoqa Han Sans"],urls: ["./font/font_spoqahansans.css"],}, });
+</script>
+ <!-- include -->
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+ <script src="./js/include.js"></script>
+ <!-- //include -->
+<!--[if lt IE 9]>
+<script src="./js/html5/html5shiv.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<!-- content 영역입니다. -->
+<div class="wrapper login">
+
+    <section class="container">
+        <h1 class="logo">
+            <b><span class="sr-only">소방대장</span></b>
+        </h1>
+        <div class="input_row">
+            <label for="input3_1" class="bar_title">ID</label>
+            <input type="text" id="input3_1" placeholder="아이디를 입력하세요" class="box_input w100p">
+        </div>
+        <div class="input_row">
+            <label for="input3_2" class="bar_title">Password</label>
+            <input type="text" id="input3_2" placeholder="비밀번호를 입력하세요"  class="box_input w100p">
+        </div>
+        <div class="check_row">
+            <input type="checkbox" id="input3_3">
+            <label for="input3_3" class="bar_title">아이디 기억하기</label>
+        </div>
+        <button type="button" class="btn btn-primary btn-lg btn-block bold">LOGIN</button>
+        <div class="btnwrap">
+            <button type="button" class="btn btn-link">회원가입</button>
+            <button type="button" class="btn btn-link">ID 찾기</button>
+            <button type="button" class="btn btn-link">Password 찾기</button>
+        </div>
+    </section>
+
+    <!-- [include] fooer -->
+    <div id="footer"></div>
+    <!-- //[include] fooer -->
+</div>
+<!-- //content 영역입니다. -->
+</body>
+</html>

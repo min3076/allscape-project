@@ -1,0 +1,50 @@
+/* layout */
+html, body, .wrapper{min-height:100%;}
+.container{padding:24px;}
+/* header */
+#header{display:block;padding:0 1.4%;background: #162252;}
+h1.logo{display:flex;align-items:center;}
+h1.logo a {display:block;width:127px;height:34px;background: url(../images/common/logo.svg) no-repeat;}
+
+#header .inner{width:100%;display:flex;justify-content:space-between;align-items:center;padding-left:200px;}
+
+.wrapper{position: relative;}
+
+
+
+#footer{position:absolute;bottom:20px;z-index:999;}
+#footer p{display:flex;align-items:flex-end;padding:0 24px 14px;font-family: 'GmarketSansM';font-size:11px;color:#182869;justify-content:center;}
+#footer .logo_ca{display:inline-block;width:94px;height:23px;margin-left:10px;background:url(../images/common/logo_ca.svg);text-indent: -999px;overflow:hidden;}
+
+
+
+/* 로그인 */
+.wrapper.login{display:flex;height:100vh;align-items:center;justify-content:center;background:transparent}
+.wrapper.login .container{display:flex;flex-direction:column;width:300px;}
+.wrapper.login .container .wrap{position:relative;width:380px;}
+.wrapper.login .container h1 b{margin-top:-100px;margin-bottom:50px;width:152px;height:42px;background:url(../images/common/logo_b.svg)}
+.wrapper.login .container .input_row {flex-direction:column;align-items:flex-start;width:100%;margin-bottom:10px;}
+.wrapper.login .container .input_row .bar_title{display:block;text-align:left;padding:0;}
+.wrapper.login .container .input_row input{height:44px;color:#747EA5;background:#F5F8FF}
+.wrapper.login .container .input_row input::placeholder{color:#747EA5;}
+.wrapper.login .container .check_row{margin-bottom:20px;color:#747EA5;font-size:15px;}
+.wrapper.login .container .btnwrap{margin-top:20px;}
+.wrapper.login .container .btnwrap button{position:relative;padding:0 20px}
+.wrapper.login .container .btnwrap button:after{content:"";display:block;position:absolute;left:0;width:1px;height:16px;background:#DDDFE8}
+.wrapper.login .container .btnwrap button:first-child::after{display:none}
+
+
+.wrapper.join #footer{position:static;}
+.wrapper.join #footer p{justify-content: flex-start;}
+
+/* wide layout */
+.wrapper.wide{background:#F6F6F6}
+.wrapper.wide .container{flex-direction:column;align-items: center;}
+.wrapper.wide .container #location{display:flex;flex-direction:column;align-items:center;padding:60px 0 30px;}
+.wrapper.wide .container #location .location_wrap{margin-left:0;}
+.wrapper.wide .container #txt{width:1420px;padding:100px 70px;margin:0 auto 60px;background:#fff;border-radius:10px;}
+.wrapper.wide #footer{position:static;}
+.wrapper.wide #footer p{justify-content: flex-start;}
+
+
+.wrapper.wide.content14 .container #txt{width:1800px;}

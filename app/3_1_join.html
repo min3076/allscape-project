@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="./css/common.css" />
 <link rel="stylesheet" href="./css/layout.css" />
 <link rel="stylesheet" href="./css/component.css" />
+<link rel="stylesheet" href="./css/contents.css" />
 <script src="./font/webfont.js"></script>
 <script src="./js/jquery-3.3.1.min.js"></script>
 <script src="./js/jquery-migrate-1.4.1.min.js" defer="defer"></script>
@@ -31,7 +32,16 @@
     <!-- //[include] header -->
     <section class="container">
         <div class="con">
-            <div class="input_col">
+            <div class="contop icotit join1">
+                <p>소방대장에서 사용할<br> 
+                    회원님의 세부정보를 등록해주세요.</p>
+                <div class="step">
+                    <b class="current">STEP.1<span class="sr-only">현재 1단계입니다.</span></b>
+                    <b>STEP.2</b>
+                    <b>STEP.3</b>
+                </div>
+            </div>
+            <div class="input_col mb_20">
                 <strong class="bar_title"><b><span class="point">필수</span>회원구분</b></strong>
                 <div class="input_radio">
                     <input type="radio" id="input3_1_1" name="input3_1"><label for="input3_1_1">개인</label>
@@ -42,15 +52,14 @@
                 <strong class="bar_title"><b><span class="point">필수</span>회원구분</b></strong>
                 <div class="input_radio col4">
                     <input type="radio" id="input3_2_1" name="input3_2"><label for="input3_2_1">감리원</label>
-                    <input type="radio" id="input3_2_2" name="input3_2"><label for="input3_2_2">감리원감리원</label>
-                    <input type="radio" id="input3_2_2" name="input3_2"><label for="input3_2_2">감리원감리원</label>
-                    <input type="radio" id="input3_2_2" name="input3_2"><label for="input3_2_2">감리원감리원</label>
+                    <input type="radio" id="input3_2_2" name="input3_2"><label for="input3_2_2">감리원</label>
+                    <input type="radio" id="input3_2_3" name="input3_2"><label for="input3_2_3">감리원</label>
+                    <input type="radio" id="input3_2_4" name="input3_2"><label for="input3_2_4">감리원</label>
                 </div>
             </div>
         </div>
-        <div class="btnwrap lg wrap">
-            <button type="button" class="btn btn-primary btn-lg">저장</button>
-            <button type="button" class="btn btn-secondary btn-lg">취소</button>
+        <div class="btnwrap lg">
+            <button type="button" class="btn btn-primary btn-lg w100p">다음으로<i class="ico bi-arr-w"></i></button>
         </div>
     </section>
 </div>

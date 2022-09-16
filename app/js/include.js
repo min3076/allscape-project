@@ -5,17 +5,21 @@ $(function(){
     $("#header").load("./include/header.html"); 
     });
 $(function(){
+    $("#header_tmp").load("./include/header_tmp.html"); 
+    });
+$(function(){
     $("#footer").load("./include/footer.html"); 
     });
 $(function(){
     $("#lnb").load("./include/lnb.html"); 
     });
-
 $(function(){
-    $("#pagenate").load("./include/pagenate.html"); 
+    $("#list_top").load("./include/list_top.html"); 
     });
+    
 
-$(function(){
+
+    $(function(){
     $("#calendar").load("./include/calendar.html"); 
     });
 $(function(){
@@ -23,12 +27,6 @@ $(function(){
     });
  $(function(){
     $("#calendar_commute").load("./include/calendar_commute.html"); 
-    });
-$(function(){
-    $("#signwrap").load("./include/sign.html"); 
-    });
-$(function(){
-    $("#signwrap2").load("./include/sign.html"); 
     });
 
 

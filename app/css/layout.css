@@ -1,11 +1,16 @@
 /* layout */
-html, body, .wrapper{height:100%;}
+html, body, .wrapper{min-height:100%;box-sizing: border-box;}
 .colwidewrap{display:flex;flex-direction:column;justify-content:space-between;}
+.colwidewrap.con_align_top{justify-content:flex-start;}
 .container{height:100%;display:flex;flex-direction:column;justify-content:space-between;padding:0 24px;}
+/* .con{height:100%;} */
 
 /* header */
-#header{display:block;padding:20px 24px;border-bottom:1px solid #E2E8FB}
-#header .inner{width:100%;display:flex;justify-content:space-between;align-items:center;padding-left:200px;}
+#header{display:block;padding:20px 24px;}
+#header .inner{width:100%;display:flex;justify-content:space-between;align-items:center;}
+#header .inner .utill .btn{display:block;width:30px;height:30px;background-repeat:no-repeat;background-position:50% 50%;text-indent:-999px;overflow:hidden;}
+#header .inner .utill .btn.btn_menu{background-image:url(../images/common/ico_menu_b.svg)}
+
 
 #header_tmp{display:block;padding:14px 24px 21px;background:#182869;color:#fff;}
 #header_tmp .inner{width:100%;display:flex;justify-content:space-between;align-items:center;}
@@ -30,12 +35,12 @@ h1.logo b {display:block;width:125.3px;height:41px;background: url(../images/com
 
 
 /* 2차 tab */
-#snb {display:flex;padding:12px 24px 0;border-bottom:2px solid #F6F6F6}
-#snb li{padding:16px 8px;color:#AFAFAF;font-weight:bold;}
+#snb {display:flex;padding:12px 24px 0;border-bottom:8px solid #F6F6F6;gap:10px;}
+#snb li{padding:16px 0;color:#AFAFAF;font-weight:bold;}
 #snb li a{color:#AFAFAF}
 #snb li.current{position:relative;}
 #snb li.current a{color:#0F2248}
-#snb li.current:after{content:"";display:block;position:absolute;bottom:0;left:0;width:100%;height:3px;background:#0057FF}
+#snb li.current:after{content:"";display:block;position:absolute;bottom:0;left:0;width:100%;height:4px;background:#0057FF}
 
 
 

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<title>45 allscape</title>
+<link rel="stylesheet" href="./css/common.css" />
+<link rel="stylesheet" href="./css/layout.css" />
+<link rel="stylesheet" href="./css/component.css" />
+<link rel="stylesheet" href="./css/contents.css" />
+<script src="./font/webfont.js"></script>
+<script src="./js/jquery-3.3.1.min.js"></script>
+<script src="./js/jquery-migrate-1.4.1.min.js" defer="defer"></script>
+<script type="text/javascript">
+    WebFont.load({custom: {families: ["Spoqa Han Sans"],urls: ["./font/font_spoqahansans.css"],}, });
+</script>
+ <!-- include -->
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+ <script src="./js/include.js"></script>
+ <!-- //include -->
+<!--[if lt IE 9]>
+    <script src="./js/html5/html5shiv.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<!-- content 영역입니다. -->
+<div class="wrapper join colwidewrap">
+    <!-- [include] header -->
+    <div id="header_tmp"></div>
+    <!-- //[include] header -->
+    <!-- [include] tab -->
+    <div id="lnb"></div>
+    <!-- //[include] tab -->
+    <section class="container">
+        <div class="con">
+            <div class="viewtit">
+                <h1>
+                    <b>현장점검</b>
+                    대전 도안 2-1지구 A41구역 공동주택
+                </h1>
+                <span>2022-06-08</span>
+            </div>
+            <div class="mt_20 row">
+                <h1>사진대지</h1>
+                <button type="button" class="btn btn-dark"><i class="ico bi-plus-w mr5"></i>추가</button>
+            </div>
+            <!-- 항목1 -->
+            <div class="linebox sm gray">
+                <div class="input_row w40 wide">
+                    <label for="input45_1_1" class="bar_title"><b>위치</b></label>
+                    <input type="text" id="input45_1_1"  class="box_input w100p">
+                    <label for="input45_1_2" class="bar_title ml_10"><b>부위</b></label>
+                    <input type="text" id="input45_1_2"  class="box_input w100p">
+                </div>
+                <div class="input_row w40 wide">
+                    <label for="input45_1_3" class="bar_title"><b>내용</b></label>
+                    <input type="text" id="input45_1_3"  class="box_input w100p">
+                </div>
+                <div class="input_row w40 wide">
+                    <strong class="bar_title"><b>사진</b></strong>
+                    <div class="box_period filewrap">
+                        <input placeholder="사진 첨부파일1" class="box_input wide">
+                        <label for="input45_1_4_1" class="sr-only">첨부파일1 삭제</label>
+                        <button type="button" id="input45_1_4_1" class="btn btn-outline-secondary ml_5"><i class="ico bi-minus mr_5"></i>삭제</button>
+                        <label for="input45_1_4" class="btn btn-outline-primary ml_5"><i class="ico bi-plus mr_5"></i><span class="sr-only">사진</span>첨부</label> 
+                        <input type="file" id="input45_1_4" class="w100p">
+                    </div>
+                </div>
+                <div class="btn_minus">
+                    <button type="button" class="btn btn-outline-secondary minusbtn"><i class="ico bi-minus"></i><span class="sr-only">삭제</span></button>
+                </div>
+            </div>
+            <!-- //항목1 -->
+            <!-- 항목1 -->
+            <div class="linebox sm gray">
+                <div class="input_row w40 wide">
+                    <label for="input45_2_1" class="bar_title"><b>위치</b></label>
+                    <input type="text" id="input45_2_1"  class="box_input w100p">
+                    <label for="input45_2_2" class="bar_title ml_10"><b>부위</b></label>
+                    <input type="text" id="input45_2_2"  class="box_input w100p">
+                </div>
+                <div class="input_row w40 wide">
+                    <label for="input45_2_3" class="bar_title"><b>내용</b></label>
+                    <input type="text" id="input45_2_3"  class="box_input w100p">
+                </div>
+                <div class="input_row w40 wide">
+                    <strong class="bar_title"><b>사진</b></strong>
+                    <div class="box_period filewrap">
+                        <input placeholder="사진 첨부파일1" class="box_input wide">
+                        <label for="input45_2_4_1" class="sr-only">첨부파일1 삭제</label>
+                        <button type="button" id="input45_2_4_1" class="btn btn-outline-secondary ml_5"><i class="ico bi-minus mr_5"></i>삭제</button>
+                        <label for="input45_2_4" class="btn btn-outline-primary ml_5"><i class="ico bi-plus mr_5"></i><span class="sr-only">사진</span>첨부</label> 
+                        <input type="file" id="input45_2_4" class="w100p">
+                    </div>
+                </div>
+                <div class="btn_minus">
+                    <button type="button" class="btn btn-outline-secondary minusbtn"><i class="ico bi-minus"></i><span class="sr-only">삭제</span></button>
+                </div>
+            </div>
+            <!-- //항목1 -->
+        </div>
+        <div class="btnwrap lg">
+            <button type="button" class="btn btn-secondary btn-lg">취소</button>
+            <button type="button" class="btn btn-primary btn-lg">결재</button>
+        </div>
+
+    </section>
+</div>
+<!-- //content 영역입니다. -->
+</body>
+</html>

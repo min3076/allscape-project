@@ -230,6 +230,7 @@ h1.logo a {display:block;width:127px;height:34px;background: url(../images/commo
 /* wide layout */
 .wrapper.wide{background:#F6F6F6}
 .wrapper.wide .container{flex-direction:column;align-items: center;}
+.wrapper.wide .container::before{display:none;}
 .wrapper.wide .container #location{display:flex;flex-direction:column;align-items:center;padding:60px 0 30px;}
 .wrapper.wide .container #location .location_wrap{margin-left:0;}
 .wrapper.wide .container #txt{width:1420px;padding:100px 70px;margin:0 auto 60px;background:#fff;border-radius:10px;}

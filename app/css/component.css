@@ -215,7 +215,6 @@ textarea.boxarea{height:70px;padding:10px;border: 1px solid #E4EAFC; box-sizing:
 .mr_40{margin-right:40px}
 .mr_45{margin-right:45px}
 .mr_50{margin-right:50px}
-.mb_0{margin-bottom:0}
 .mb_5{margin-bottom:5px}
 .mb_10{margin-bottom:10px}
 .mb_15{margin-bottom:15px}
@@ -226,6 +225,9 @@ textarea.boxarea{height:70px;padding:10px;border: 1px solid #E4EAFC; box-sizing:
 .mb_40{margin-bottom:40px}
 .mb_45{margin-bottom:45px}
 .mb_50{margin-bottom:50px!important;}
+
+
+.padd_b_0{padding-bottom:0!important;}
 
 .text-left{text-align:left!important}
 .text-right{text-align:right!important}

@@ -5,6 +5,7 @@
 /* 공통 */
 .con{display:flex;flex-direction:column;padding:2.8rem 2rem;width:100%;}
 .con .box{height:100%;border-radius:10px;background:#fff;}
+.con.wrap{overflow:hidden;}
 
 .mico{position:relative;display:inline-block;width:44px;height:44px;border-radius:10px;}
 .mico:before{content: "";display:block;position:absolute;top:50%;left:50%;}
@@ -112,6 +113,48 @@
 .personinfo .txtwrap table thead th:first-child{background:#F6F6F6;}
 
 
+/* 프로젝트별결제요청문서 */
+.worklist {display:flex;gap:10px;width:100%;margin:20px 0;}
+.worklist li{width:140px;border: 1px solid #E2E8FB;border-radius:10px;}
+.worklist strong{display:block;width:100%;padding:10px 16px 10px 44px;color:#182869;background:#FCFCFC url(../images/main/ico_company.svg) no-repeat 14px 10px;border-bottom:1px solid #E2E8FB;line-height:1.5;border-top-left-radius:10px;border-top-right-radius: 10px;}
+.worklist div{width:100%;padding:13px 13px 16px;color:#182869;}
+.worklist div .company{display:inline-block;padding:3px 4px;border:1px solid #A9C7FF;border-radius:3px;color:#5C88FD;font-size:14px;line-height:1;}
+.worklist div .person{position:relative;display:block;padding:4px 0;}
+.worklist div .person span{position:relative;display:inline-block;padding-left:6px;margin-left:6px}
+.worklist div .person span:after{content:"";display:block;position:absolute;left:0;top:50%;width:1px;height:14px;margin-top:-7px;background:#A9C7FF }
+.worklist div .person.block span{display:block;padding:0;margin:0;}
+.worklist div .person.block span:after{display:none;}
+
+.worklist div ul li{width:100%;border:0;color:#A6A6A6;line-height:1.4}
+
+.cate{position:relative;display:inline-block;width:100px;padding-left:20px;margin-right:4px;color:#4470F3;font-size:14px;background:url(../images/main/ico_file.svg) no-repeat 0 50%;}
+.date{color: #AAB3C4;}
+
+
+/* 아이콘타이틀 */
+.icotit{position:relative;padding-top:58px;}
+.icotit:before{content:"";display:block;position:absolute;left:0;top:0;width:48px;height:48px;border-radius:10px;background-repeat:no-repeat;}
+.icotit.ico1:before{background-image:url(../images/main/ico_titico1.svg);}
+.icotit.ico2:before{background-image:url(../images/main/ico_titico2.svg);}
+.icotit.ico3:before{background-image:url(../images/main/ico_titico3.svg);}
+.icotit.ico4:before{background-image:url(../images/main/ico_titico4.svg);}
+.icotit.ico5:before{background-image:url(../images/main/ico_titico5.svg);}
+.icotit.ico6:before{background-image:url(../images/main/ico_titico6.svg);}
+
+.icotit h3{color:#5C88FD;font-weight:normal;font-size:15px;}
+
+.iconews{display:flex;flex-direction:column;align-items:flex-start;position:relative;}
+.iconews .icotit {padding:10px 10px 10px 60px;margin-bottom:10px;}
+.iconews .icotit h3{font-weight:bold;color:#182869}
+.iconews .news {width:100%;}
+.iconews .news li{display:flex;justify-content:space-between;position:relative;width:100%;padding-left:12px;margin-bottom:4px;color:#182869;}
+.iconews .news li:before{content:"";position:absolute;left:0;top:50%;display:block;width:3px;height:3px;margin-top:-1px;background:#0057FF;border-radius:10px;}
+.iconews .news li .date{color:#A5AECA}
+
+.bn_more{position:absolute;right:30px;top:54px;display:flex;align-items:center;}
+.bn_more:before{content:"";display:block;width:10px;height:10px;margin-right:4px;background:url(../images/main/ico_plus.svg);}
+
+
 
 
 
@@ -170,33 +213,11 @@
 .completionwrap ul li b span{display:inline-block;padding:2px 3px;margin-left:2px;border:1px solid #8B94B4;color:#182869;font-size:11px;border-radius:2px;line-height:1;}
 .completionwrap ul li .num{display:inline-block;padding:4px 7px;border-radius:5px;color:#fff;background:#1A3B97;font-family: 'GmarketsansB';font-size:12px;line-height:1}
 
-/* 아이콘타이틀 */
-.icotit{position:relative;padding-top:58px;}
-.icotit:before{content:"";display:block;position:absolute;left:0;top:0;width:48px;height:48px;border-radius:10px;background-repeat:no-repeat;}
-.icotit.ico1:before{background-image:url(../images/main/ico_titico1.svg);}
-.icotit.ico2:before{background-image:url(../images/main/ico_titico2.svg);}
-.icotit.ico3:before{background-image:url(../images/main/ico_titico3.svg);}
-.icotit.ico4:before{background-image:url(../images/main/ico_titico4.svg);}
-.icotit.ico5:before{background-image:url(../images/main/ico_titico5.svg);}
-.icotit.ico6:before{background-image:url(../images/main/ico_titico6.svg);}
-
-.icotit h3{color:#5C88FD;font-weight:normal;font-size:15px;}
-
-.iconews{display:flex;flex-direction:row;align-items:flex-start!important;position:relative;padding:36px 30px; }
-.iconews .icotit {width:150px;}
-.iconews .news {width:100%;}
-.iconews .news li{display:flex;justify-content:space-between;position:relative;width:100%;padding-left:12px;margin-bottom:4px;color:#182869;}
-.iconews .news li:before{content:"";position:absolute;left:0;top:50%;display:block;width:3px;height:3px;margin-top:-1px;background:#0057FF;border-radius:10px;}
-.iconews .news li .date{color:#A5AECA}
-
-.bn_more{position:absolute;left:30px;bottom:35px;display:flex;align-items:center;}
-.bn_more:before{content:"";display:block;width:10px;height:10px;margin-right:4px;background:url(../images/main/ico_plus.svg);}
 
 /* 서류결제 */
 .settlement {margin:0 30px}
 .settlement dt{margin:30px 0 10px;padding-left:30px;color:#182869;font-weight:bold;background:url(../images/main/ico_company.svg) no-repeat}
 .settlement dd{display:flex;justify-content:space-between;width:100%;color:#182869;}
-.settlement dd .cate{position:relative;display:inline-block;width:100px;padding-left:20px;margin-right:4px;color:#4470F3;font-size:14px;background:url(../images/main/ico_file.svg) no-repeat 0 50%;}
 /* .settlement dd .cate:after{content:"";display:block;position:absolute;right:0;top:50%;width:1px;height:14px;margin-top:-7px;background:#A9C7FF } */
 .settlement dd .date{color:#AAB3C4}
 /* 공통 end */
@@ -348,16 +369,6 @@
 .main35 .con_bottom .con_bottom_1wrap{position:relative;align-items:flex-start;}
 .main35 .con_bottom .con_bottom_1wrap .titwrap{flex-direction:column;align-items:flex-start;width:250px;padding-right:0;}
 .main35 .con_bottom .con_bottom_1wrap .titwrap .input_row{width:100%;padding-top:10px;flex-grow:0;}
-.worklist {display:flex;gap:20px;width:100%;margin:30px 30px;}
-.worklist li{width:25%;border: 1px solid #E2E8FB;border-radius:10px;}
-.worklist strong{display:block;width:100%;padding:10px 16px 10px 44px;color:#182869;background:url(../images/main/ico_company.svg) no-repeat 14px 50%;border-bottom:1px solid #E2E8FB}
-.worklist div{width:100%;padding:13px 16px;color:#182869;}
-.worklist div .company{display:inline-block;padding:3px 4px;border:1px solid #A9C7FF;border-radius:3px;color:#5C88FD;font-size:14px;line-height:1;}
-.worklist div .person{position:relative;display:block;padding:4px;}
-.worklist div .person span{position:relative;display:inline-block;padding-left:10px;margin-left:10px}
-.worklist div .person span:after{content:"";display:block;position:absolute;left:0;top:50%;width:1px;height:14px;margin-top:-7px;background:#A9C7FF }
-.worklist div ul li{width:100%;padding-left:4px;border:0;color:#A6A6A6;line-height:1.4}
-
 
 /* 서브메인 */
 .submain{display:flex;padding:60px 40px 60px 60px;gap:20px;}

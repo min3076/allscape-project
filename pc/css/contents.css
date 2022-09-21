@@ -234,7 +234,7 @@
     .view .colwrap.col2 h4,
     .view .mid .colwrap.col2 .rcon,
     .view .mid .colwrap.col2 .table{width:100%;}
-    .view .mid .colwrap.col2 .table{margin-top:20px;}
+    .view .mid .colwrap.col2 .table{margin: top 2G 493px;}
     .view .mid_wrap_col2 .mid .mid_content .colwrap .col2 li{width:46%}
     .view .mid .mid_top .contit{font-size:30px;line-height:1.3;}
 }
@@ -490,7 +490,7 @@
     .dailywrap .daily_top{flex-wrap: wrap;}
     .dailywrap .daily_top .con:nth-of-type(1){width:100%;}
     .dailywrap .daily_top .con:nth-of-type(2){width:40%;}
-    .dailywrap .daily_top .con:nth-of-type(3){width:50%;}
+    .dailywrap .daily_top .con:nth-of-type(3){width:56%;}
 }
 
 

@@ -262,7 +262,7 @@
 
 .view .additem .item.minus_item .minusbtn{margin-left:8px;}
 
-.radiowrap{display:flex;align-items:center;width:100%;}
+.radiowrap{display:flex;align-items:center;width:calc(100% - 98px);}
 
 /* flex 정렬 */
 .f_align_a_top{align-items:flex-start!important;}
@@ -303,7 +303,7 @@
 .view .input_row .bar_title{width:102px;padding-top:0;padding-right:20px;color:#182869;}
 .view .input_row .bar_title.sm{color: #747EA5;}
 
-.view .input_row .filewrap{width:calc(100% - 60px);max-width:100%;}
+.view .input_row .filewrap{width:calc(100% - 98px);max-width:100%;}
 .view .input_form .w100p{width:calc(100% - 100px)}
 .view .input_form.info_w_auto .w100p{width:calc(100% - 60px)}
 

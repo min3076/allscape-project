@@ -46,6 +46,17 @@
 .commutewrap .calendar-table .table-condensed td.holyday {border:1px solid #FDDCDC;background:#FFF8F8}
 .commutewrap .calendar-table .table-condensed td.holyday p{position:absolute;top:40px;color:#F66D6D}
 
+@media screen and (max-width:1280px){
+    .commutewrap{flex-direction:column;}
+    .commutewrap .check{margin-bottom: 0;}
+    .commutewrap .check .daywrap ul{padding: 15px 0 0;}
+    .commutewrap .check .btnwrap{padding-bottom: 0;}
+    .commutewrap .check{display:flex;width:100%;}
+    .commutewrap .check .holydaywrap{width:340px;padding:95px 60px 0 60px;border-left:1px solid #D9D9D9;border-top:0;}
+    .commutewrap #calendar_commute{width:100%;}
+}
+
+
 
 /* 공지사항 작성 */
 .writewrap .wraptop{width:100%;border-top:1px solid #182869 }
@@ -187,6 +198,11 @@
 .view .input_row {padding:8px 0;color:#747EA5}
 .view .input_row .bar_title{padding-top:0;}
 
+@media screen and (max-width:1400px){
+    .view .mid .mid_top .contit{font-size:30px;line-height:1.3;}
+}
+
+
 /* mid 컬럼2일때 */
 .view .mid_wrap_col2{display:flex;}
 .view .mid_wrap_col2 .mid{width:50%;}
@@ -287,7 +303,7 @@
 .view .input_row .bar_title{width:102px;padding-top:0;padding-right:20px;color:#182869;}
 .view .input_row .bar_title.sm{color: #747EA5;}
 
-.view .input_row .filewrap{width:calc(100% - 60px)}
+.view .input_row .filewrap{width:calc(100% - 60px);max-width:100%;}
 .view .input_form .w100p{width:calc(100% - 100px)}
 .view .input_form.info_w_auto .w100p{width:calc(100% - 60px)}
 
@@ -343,6 +359,14 @@
 .view .mid .tabwrap .tab-nav_link.active,
 .view .mid .tabwrap .tab-nav_link:nth-of-type(1).active{border:1px solid #0057FF;background:#0057FF}
 .view .mid .tabwrap .tab-nav_link span{width:30px;height:30px;line-height:30px;padding:0;text-align:center;font-size:14px;}
+
+
+@media screen and (max-width:1720px){
+    .view .colwrap .boxul{display:block;}
+    .view .mid .infobox{display:flex;flex-wrap:wrap;margin-bottom:20px;}
+    .view .mid .infobox li{width:50%;}
+}
+
 
 
 .con108.view .mid .mid_content .col1box{position:relative;padding-bottom:80px;}
@@ -546,5 +570,5 @@
 #mask.con86 .pop_body .list .select{border:6px solid #0057FF}
 
 
+.con93 .input_row{margin-right:10px;}
 
-.con93 .input_row{}

@@ -221,6 +221,7 @@
 .main25 .container .con .titwrap{padding:30px 30px 20px;}
 
 .main25 .con_l_2wrap .grap{height:178px;overflow:auto;margin:0 30px 30px;padding:0;}
+.main25 .con_l_2wrap .grap .table{width:99%;}
 .main25 .list_condition {display:flex;align-items:center;min-height:36px;}
 .main25 .list_condition input{margin:0 10px;}
 .main25 .list_condition label{display:flex;align-items:center;margin-right:10px;color:#A6A6A6}

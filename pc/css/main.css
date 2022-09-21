@@ -363,8 +363,9 @@
 .worklist div ul li{width:100%;padding-left:4px;border:0;color:#A6A6A6;line-height:1.4}
 .main35 .con_bottom .con_bottom_1wrap .bn_more{left:30px;bottom:35px;top:auto;right:auto;}
 @media screen and (max-width:1600px){
+    .submain .con_l .projectlist .wrap .list .date{width:130px;line-height:1.4}
     .worklist li{width:33.3%}
-    .worklist li:last-child{display:none;}
+    .main35 .worklist > li:last-child{display:none;}
     .main35 .con_top .con_top_r{flex-direction:row;align-items:center;}
 
 }
@@ -378,7 +379,7 @@
 .submain .con_l .projectlist{justify-content:flex-start;width:100%;height:517px;padding:30px 0;}
 .submain .con_l .projectlist .wrap{width:100%;height:100%;overflow:auto;}
 .submain .con_l .projectlist .wrap .list li{padding:17px 26px}
-.submain .con_l .projectlist .wrap .list .date{padding:0 30px;color:#182869;background:url(../images/main/ico_calendar.svg) no-repeat 0 50%;}
+.submain .con_l .projectlist .wrap .list .date{padding:0 10px 0 30px;color:#182869;background:url(../images/main/ico_calendar.svg) no-repeat 0 3px;}
 .submain .con_l .projectlist .wrap .list .cate{padding:0 30px;color:#182869;}
 
 .submain .con_l .projectlist .titlist{width:93%;padding:0;margin:0 auto; border: 1px solid #D9D9D9;}
@@ -424,6 +425,16 @@
 .submain .con_r .con_r_3wrap .worklist{flex-direction: column;width:auto;margin:0 30px;gap:10px;}
 .submain .con_r .con_r_3wrap .worklist li {position:relative;width:100%;}
 .submain .con_r .con_r_3wrap .worklist li .company{position:absolute;right:20px;top:20px;}
+.submain .con_r .con_r_3wrap .worklist div{height:auto;}
+
+@media screen and (max-width:1500px){
+    .submain .con_r .con_r_4wrap li{flex-wrap:wrap;}
+    .submain .con_r .con_r_4wrap li .position{text-align:right;}
+    .submain .con_r .con_r_4wrap li .num{width:100%;text-align:right;}
+    .submain .con_r .con_r_5wrap{flex-direction:column;}
+    .submain .con_r .con_r_5wrap .news li:nth-last-child(2),
+    .submain .con_r .con_r_5wrap .news li:last-child{display:none;}
+}
 
 .submain.main52 .con{flex-direction:column;justify-content:flex-start;gap:20px;}
 .submain.main52 .con .box{flex-direction:column;justify-content:flex-start;align-items:flex-start;position:relative;}

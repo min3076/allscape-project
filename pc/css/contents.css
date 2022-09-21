@@ -269,6 +269,7 @@
 @media screen and (max-width:1720px){
     .view .additem .item, 
     .view .additem .item.box_period{flex-wrap:wrap;margin-bottom:30px;} 
+    .view .additem .item.minus_item{padding-right:81px}
 }
 
 
@@ -296,7 +297,7 @@
 .info_w200{width:200px!important;}
 .all_w100p{width:100%!important;}
 
-.w130_w100p{width:calc(100% - 130px)}
+.w130_w100p{width:calc(100% - 130px);max-width:100%;}
 .w140_w100p{width:calc(100% - 140px)}
 .w140_w100p{width:calc(100% - 140px)}
 
@@ -432,6 +433,8 @@
 .dailywrap .daily_top .con:nth-of-type(2){width:20%}
 .dailywrap .daily_top .con:nth-of-type(3){width:30%}
 
+
+
 .dailywrap .daily_mid .con{width:50%;}
 .view .dailywrap .daily_mid .additem .item{padding-right:50px;}
 
@@ -447,6 +450,16 @@
 .table .depth2 .title{position:relative;padding-left:50%;}
 .table .depth2 .title:before{content:"";position:absolute;left:30px;top:-10px;display:block;width:35%;height:22px;border:1px solid #cacaca;border-width:0 0 1px 1px;}
 .table .depth2 .table{border-bottom:0;margin-bottom:0;}
+
+@media screen and (max-width:1720px){
+    .dailywrap .daily_top{flex-wrap: wrap;}
+    .dailywrap .daily_top .con:nth-of-type(1){width:100%;}
+    .dailywrap .daily_top .con:nth-of-type(2){width:40%;}
+    .dailywrap .daily_top .con:nth-of-type(3){width:50%;}
+}
+
+
+
 
 /* 41공정상세내역서 */
 .con41 .table button{width:28px;height:28px;padding:0 4px;margin-right:10px;justify-content: center;border:2px solid #E2E8FB}
@@ -579,5 +592,5 @@
 #mask.con86 .pop_body .list .select{border:6px solid #0057FF}
 
 
-.con93 .input_row{margin-right:10px;}
+.con93 .input_row{margin-right:10px;margin-bottom:5px;}
 

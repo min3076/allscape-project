@@ -264,6 +264,15 @@
 
 .radiowrap{display:flex;align-items:center;width:calc(100% - 98px);}
 
+
+
+@media screen and (max-width:1720px){
+    .view .additem .item, 
+    .view .additem .item.box_period{flex-wrap:wrap;margin-bottom:30px;} 
+}
+
+
+
 /* flex 정렬 */
 .f_align_a_top{align-items:flex-start!important;}
 .f_align_a_mid{align-items:center!important;}

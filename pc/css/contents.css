@@ -201,7 +201,7 @@
 .view .colwrap.con_top{width:calc(100%);margin:0;padding:2% 4%;background:#fff;}
 .view .input_row {padding:8px 0;color:#747EA5}
 .view .input_row .bar_title{padding-top:0;}
-
+.view .colwrap.col2 table{width:calc(100% - 20%)}
 
 
 /* mid 컬럼2일때 */

@@ -239,17 +239,22 @@ h1.logo a {display:block;width:127px;height:34px;background: url(../images/commo
 
 .wrapper.wide.content14 .container #txt{max-width:1800px;}
 
-body::-webkit-scrollbar {
-    width: 8px;  /* 스크롤바의 너비 */
-}
 
-body::-webkit-scrollbar-thumb {
-    height: 30%; /* 스크롤바의 길이 */
-    background: #217af4; /* 스크롤바의 색상 */
-    
-    border-radius: 10px;
-}
 
-body::-webkit-scrollbar-track {
-    background: rgba(33, 122, 244, .1);  /*스크롤바 뒷 배경 색상*/
-}
+
+/* ie 용 스크롤 바 *********************************************/
+html { scrollbar-arrow-color: #535353;
+    scrollbar-Track-Color: #535353;
+    scrollbar-base-color: #D9D9D9;
+    scrollbar-Face-Color: #D9D9D9;
+    scrollbar-3dLight-Color: #D9D9D9;       
+    scrollbar-DarkShadow-Color: #D9D9D9;
+    scrollbar-Highlight-Color: #D9D9D9;
+    scrollbar-Shadow-Color: #D9D9D9}
+/* Chrome, Safari용 스크롤 바 */
+::-webkit-scrollbar {width: 6px; height: 5px;  }
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment {display: block; width: 6px;height: 0px; background: url() rgba(217,217,217,1);}
+::-webkit-scrollbar-track {background: rgba(217,217,217,1); }
+::-webkit-scrollbar-thumb {background: rgba(83,83,83,1);  }
+/* ------------------------------------------------------------ */

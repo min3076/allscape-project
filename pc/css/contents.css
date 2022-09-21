@@ -11,7 +11,7 @@
 .commutewrap .check{width:28%}
 .commutewrap #calendar_commute{width:72%;padding:0;}
 
-.commutewrap .check{padding:60px 0;background:#FCFCFC}
+.commutewrap .check{padding:4% 0;background:#FCFCFC}
 .commutewrap .check .btnwrap{padding:20px 0 60px;}
 .commutewrap .check .btnwrap button{width:100%;justify-content:center;font-weight:bold}
 .commutewrap .check .daywrap,
@@ -29,6 +29,7 @@
 .commutewrap .check .holydaywrap{padding-top:60px;border-top:1px solid #D9D9D9}
 .commutewrap .check .holydaywrap strong{position:relative;display:inline-block;padding-left:30px;padding-bottom:10px;color:#182869}
 .commutewrap .check .holydaywrap strong:before{content:"";position:absolute;left:0;top:50%;display:block;width:22px;height:22px;margin-top:-11px;background:url(../images/common/ico_holyday.svg)}
+.commutewrap .check .holydaywrap .box_period{max-width:calc(100% - 52%)}
 .commutewrap .check .holydaywrap .expect_date{width:100%;}
 .commutewrap .calendar-table .table-condensed td {height:110px;}
 .commutewrap .calendar-table .table-condensed td ul{overflow: visible;}
@@ -46,13 +47,16 @@
 .commutewrap .calendar-table .table-condensed td.holyday {border:1px solid #FDDCDC;background:#FFF8F8}
 .commutewrap .calendar-table .table-condensed td.holyday p{position:absolute;top:40px;color:#F66D6D}
 
-@media screen and (max-width:1280px){
+@media screen and (max-width:1730px){
     .commutewrap{flex-direction:column;}
-    .commutewrap .check{margin-bottom: 0;}
+    .commutewrap .check{margin-bottom: 0;padding:2% 0 4%}
+    .commutewrap .check .daywrap{padding:0 40px 0 400px;}
     .commutewrap .check .daywrap ul{padding: 15px 0 0;}
     .commutewrap .check .btnwrap{padding-bottom: 0;}
-    .commutewrap .check{display:flex;width:100%;}
-    .commutewrap .check .holydaywrap{width:340px;padding:95px 60px 0 60px;border-left:1px solid #D9D9D9;border-top:0;}
+    .commutewrap .check{display:flex;position:relative;width:100%;}
+    .commutewrap .check .daywrap strong{position:absolute;left:120px;top:80px;}
+    .commutewrap .check .daywrap .day{position:absolute;left:80px;top:120px;}
+    .commutewrap .check .holydaywrap{width:340px;padding:20px 40px 0 40px;border-left:1px solid #D9D9D9;border-top:0;}
     .commutewrap #calendar_commute{width:100%;}
 }
 
@@ -198,9 +202,6 @@
 .view .input_row {padding:8px 0;color:#747EA5}
 .view .input_row .bar_title{padding-top:0;}
 
-@media screen and (max-width:1400px){
-    .view .mid .mid_top .contit{font-size:30px;line-height:1.3;}
-}
 
 
 /* mid 컬럼2일때 */
@@ -213,7 +214,7 @@
 .view .mid_wrap_col2 .mid .mid_content .colwrap{margin-left:8%;margin-right:8%;width:calc(100% - 16%)}
 
 
-.view .mid_wrap_col2 .mid .mid_content .colwrap.con_top{width:100%;margin:0;padding:40px 8% 40px;}
+.view .mid_wrap_col2 .mid .mid_content .colwrap.con_top{width:100%;margin:0;padding:5% 8% 4%;}
 .view .mid_wrap_col2 .mid .mid_content .colwrap .col2 li{width:50%;}
 .view .mid_wrap_col2 .mid .mid_content .colwrap .col2 li.wide{width:100%;}
 .view .mid .sc_group{padding:10px 0;border-top:1px solid #D9D9D9;}
@@ -226,6 +227,14 @@
 .view .mid_wrap_col2 .mid .mid_content .colwrap .additem .addbtn{top:4px;}
 
 .view .mid_wrap_col2 .mid .mid_content .linebox{width:100%;height:170px;overflow:auto;background:#fff;}
+
+@media screen and (max-width:1400px){
+    .view .colwrap.col2{flex-direction: column;}
+    .view .mid .colwrap.col2 .rcon{width:100%;}
+    .view .mid_wrap_col2 .mid .mid_content .colwrap .col2 li{width:46%}
+    .view .mid .mid_top .contit{font-size:30px;line-height:1.3;}
+}
+
 
 /* mid_contnet 제일상단 영역 col 기본형 */
 .view .colwrap.con_top.col2 .input_row{width:50%;}
@@ -250,26 +259,36 @@
 .view .col2 li{width:50%;}
 .view .col2 li.wide{width:100%;}
 
+
+
 .view .additem{position:relative;display:flex;flex-direction:column;flex-grow:1}
 .view .additem .addbtn{position:absolute;top:4px;right:0;}
 .view .additem .input_row{padding:3px 0;}
 
 .view .additem .item,
 .view .additem .item.box_period{display:flex;flex-direction:row;align-items:center;padding-right:80px;}
-.view .additem .item.minus_item{padding-right:34px;}
+.view .additem .item.minus_item{padding-right:35px;}
 .view .additem .item.minus_item2{padding-right:79px;}
-.view .additem .box_period{width:100%;flex-grow:1;padding:0}
+.view .additem .box_period{width:100%;flex-grow:1;}
 
 .view .additem .item.minus_item .minusbtn{margin-left:8px;}
 
 .radiowrap{display:flex;align-items:center;width:calc(100% - 98px);}
 
-
+.con129 .view .additem .item .input_row:nth-child(2){margin-left:20px;}
 
 @media screen and (max-width:1720px){
-    .view .additem .item, 
-    .view .additem .item.box_period{flex-wrap:wrap;margin-bottom:30px;} 
-    .view .additem .item.minus_item{padding-right:81px}
+    .con79 .view .additem .item, 
+    .con79 .view .additem .item.box_period{flex-wrap:wrap;margin-bottom:30px;} 
+    .con79 .view .additem .item.minus_item{padding-right:81px}
+
+}
+@media screen and (max-width:1600px){ 
+    .con129 .view .additem .item, 
+    .con129 .view .additem .item.box_period{flex-wrap:wrap;margin-bottom:30px;} 
+    .con129 .view .additem .item.minus_item{padding-right:81px}
+    .con129 .view .additem .item .input_row:nth-child(2){margin-left:0;}
+    .con129 .view .additem .item .input_row:nth-child(3){flex-grow:0;}
 }
 
 
@@ -295,7 +314,7 @@
 .info_w120{width:120px!important;}
 .info_w140{width:140px!important;}
 .info_w200{width:200px!important;}
-.all_w100p{width:100%!important;}
+.all_w100p{width:100%!important;max-width:100%;}
 
 .w130_w100p{width:calc(100% - 130px);max-width:100%;}
 .w140_w100p{width:calc(100% - 140px)}
@@ -324,7 +343,7 @@
 .padd{padding:5%}
 .padd_h{padding:0 5%}
 .padd_v{padding:5% 0}
-.padd_v_t{padding-top:40px;}
+.padd_v_t{padding-top:4%;}
 
 .view .colwrap .boxul{display:flex;gap:20px;}
 .view .colwrap .boxul li{display:flex;flex-direction:column;gap:10px;}
@@ -358,7 +377,7 @@
 .view .mid table tbody th,
 .view .mid table tfoot th{border-right:0;border-top:0;color:#182869}
 
-.view .mid .info_bott{padding:50px 0;}
+.view .mid .info_bott{padding:8% 0;}
 .view .mid .info_bott li{display:flex;justify-content:flex-end;gap:10px;padding:5px 0;color:#747EA5}
 .view .mid .info_bott li b{color:#0F2248}
 
@@ -390,6 +409,18 @@
 .sign .sign_item .item .r_con{display:flex;flex-direction:column;width:100%;border-left:1px solid #E2E8FB}
 .sign .sign_item .item .r_con span{display:block;width:100%;min-width:90px;padding:4px;text-align:center;font-size:13px;}
 .sign .sign_item .item .r_con .sign{height:76px;border-top:1px solid #E2E8FB;border-bottom:1px solid #E2E8FB}
+
+
+@media screen and (max-width:1769px){
+    .sign{position:relative;padding-bottom: 122px;}
+    .sign .sign_item{position:absolute;transform: scale(0.8);right:-56px}
+}
+
+@media screen and (max-width:1473px){
+    .sign{padding-bottom: 113px;}
+    .sign .sign_item{transform: scale(0.67);right: -95px;}
+}
+
 
 /* 감리일지 */
 .mid_day .linebox{display:flex;justify-content:space-between;margin-bottom:20px;color:#747EA5}
@@ -474,6 +505,10 @@
     .con41 .table td table td{padding:8px 4px;}
 }
 
+#calendar_txt.borderbox{padding:4%}
+#calendar_txt.borderbox #caltab{padding:0;height:auto;}
+
+
 
 /* 설계검토 */
 .con84{display:flex;gap:50px}
@@ -526,6 +561,21 @@
 .con84 .input_row .bar_title{min-width:80px;padding-top:0;}
 .con84 .input_row textarea.boxarea{height:100px;}
 .con84 .input_row .box_input{width:calc(100% - 80px);}
+
+
+
+@media screen and (max-width:1500px){
+    .con84{flex-direction:column;gap:20px;}
+    .con84 .con{flex-direction:row;width:100%}
+    .con84 .con.con_l{flex-direction:column;}
+    .con84 .con_l .con_l_top,
+    .con84 .con_l .con_l_bott{width:100%}
+    .con84 .con_r .imgwrap{width:40%;}
+    .con84 .con_r .imgwrap img{width:100%;height:auto}
+    .con84 .con_r .wrap{width:60%;height:353px}
+    .con84 .linebox{padding:4% 3%}
+    .con84 .con_l .addbtn{top:44px;right:3%}
+}
 
 
 
@@ -594,3 +644,33 @@
 
 .con93 .input_row{margin-right:10px;margin-bottom:5px;}
 
+.con115 .view .colwrap.col2 h4{width:120px}
+.con115 .view .mid .rcon{width:calc(100% - 120px)}
+.con115 .view .input_row .bar_title{width:75px;}
+.con115 .view .input_row:last-child{flex-grow:0;}
+.con115 .view .input_form .w100p{width: calc(100% - 75px);}
+@media screen and (max-width:1700px){
+    .con115 .view .additem .item, 
+    .con115 .view .additem .item.box_period{flex-wrap:wrap;margin-bottom:30px;}
+    .con115 .view .additem.no_mar .item{margin-bottom:0;}
+    
+}
+
+@media screen and (max-width:1700px){
+    .con108 .view .colwrap.col2,
+    .con113 .view .colwrap.col2{flex-direction: column;}
+    .con108 .view .mid .rcon,
+    .con113 .view .mid .rcon{width:100%;margin-top:10px;}
+}
+
+.con96 .view .row,
+.con106 .view .row{flex-wrap:wrap;}
+
+.con124 .view .mid_wrap_col2 .mid .btn_input .w100p{width:calc(100% - 195px);}
+.con124 .free_row .bar_title{width:140px;}
+.con124 .view .mid .sc_group li{float:none;width:100%}
+@media screen and (max-width:1500px){
+    .con124 .view .free_row .input_row:last-child{flex-direction: column;}
+    .con124 .view .free_row .input_row:last-child .w130_w100p{width:100%;}
+    .con124 .free_row .bar_title{width:auto;text-align:left;}
+}

@@ -657,6 +657,7 @@
     .con115 .view .additem .item, 
     .con115 .view .additem .item.box_period{flex-wrap:wrap;margin-bottom:30px;}
     .con115 .view .additem.no_mar .item{margin-bottom:0;}
+    .con115 .view .input_row:last-child{width:auto!important;}
     
 }
 

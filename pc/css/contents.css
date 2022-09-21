@@ -230,7 +230,11 @@
 
 @media screen and (max-width:1400px){
     .view .colwrap.col2{flex-direction: column;}
-    .view .mid .colwrap.col2 .rcon{width:100%;}
+    .view .colwrap.col2 h4 span{display: inline;}
+    .view .colwrap.col2 h4,
+    .view .mid .colwrap.col2 .rcon,
+    .view .mid .colwrap.col2 .table{width:100%;}
+    .view .mid .colwrap.col2 .table{margin-top:20px;}
     .view .mid_wrap_col2 .mid .mid_content .colwrap .col2 li{width:46%}
     .view .mid .mid_top .contit{font-size:30px;line-height:1.3;}
 }

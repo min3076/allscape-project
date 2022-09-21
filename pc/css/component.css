@@ -450,7 +450,7 @@ textarea.boxarea{height:120px;padding:10px;border: 1px solid #E4EAFC; box-sizing
 .formwrap .grow2{flex-grow:2}
 
 .input_row {display:flex;color:#747EA5;/*flex-grow:1;align-items:center;*/}
-.input_row .bar_title{display:inline-block;min-width:60px;padding:6px 10px 0 0;text-align:right;}
+.input_row .bar_title{display:inline-block;min-width:65px;padding:6px 10px 0 0;text-align:right;}
 .input_row .bar_title b{position:relative;font-weight:normal}
 .input_row .bar_title .point{position:absolute;left:-10px;top:0;display:inline-block;width:8px;height:10px;font-size:0;text-indent:-999px;overflow:hidden;background:url(../images/join/point.svg) no-repeat}
 
@@ -461,13 +461,13 @@ textarea.boxarea{height:120px;padding:10px;border: 1px solid #E4EAFC; box-sizing
 .nobtn{padding-right:151px;}/* 버튼1개일때 */
 .nobtn2{padding-right:75px;}/* 버튼2개일때 */
 
-.space{display:inline-block;padding:4px;}
+.space{display:inline-block;padding:0 4px;line-height:40px;}
 
 .search_result_tit{display:flex;justify-content:space-between;margin-bottom:20px;}
 .search_result_tit .lcon{display:flex;align-items:center;}
 .search_result_tit .lcon .num_total{height:26px;margin-left:4px;padding:0 10px;color:#3267CE;background:#E4EAFC;border-radius:100px;}
 
-.box_period{display:flex;align-items:center;flex-grow: 1;position:relative;width:100px;padding-top:4px;color:#747EA5}
+.box_period{display:flex;align-items:center;flex-grow: 1;position:relative;max-width:100px;padding-top:4px;color:#747EA5}
 .box_period.calbox{width:auto;flex-grow:0;}
 .box_period.grow0{flex-grow:0;}
 input[type=date]::-webkit-datetime-edit-text {-webkit-appearance: none;display: none;} 

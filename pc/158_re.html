@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>158 allscape</title>
+<link rel="stylesheet" href="./css/common.css" />
+<link rel="stylesheet" href="./css/layout.css" />
+<link rel="stylesheet" href="./css/component.css" />
+<link rel="stylesheet" href="./css/contents.css" />
+<script src="./font/webfont.js"></script>
+<script src="./js/jquery-3.3.1.min.js"></script>
+<script src="./js/jquery-migrate-1.4.1.min.js" defer="defer"></script>
+<script type="text/javascript">
+    WebFont.load({custom: {families: ["Spoqa Han Sans"],urls: ["./font/font_spoqahansans.css"],}, });
+</script>
+ <!-- include -->
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+ <script src="./js/include.js"></script> 
+ <script src="./js/tmpl.js"></script>
+ <!-- //include -->
+<!--[if lt IE 9]>
+    <script src="./js/html5/html5shiv.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<!-- content 영역입니다. -->
+<div class="wrapper">
+    <!-- [include] header -->
+    <div id="header"></div>
+    <!-- //[include] header -->
+
+    <section class="container">
+       <!-- [include] lnb -->
+       <div id="lnb"></div>
+       <!-- //[include] lnb -->
+        <div class="content_wrap">
+            <div id="location" class="title_wrap">
+                <h2 class="page__title">부진공정 만회대책(안)</h2>
+                <!-- 로케이션 시작 -->
+                <ul class="location_wrap">
+                    <li class="n1 home"><a href="#">HOME</a></li>
+                    <li class="n2"><a href="#">1차메뉴</a></li>
+                    <li class="n3"><a href="#">2차메뉴</a></li>
+                    <li class="n4"><a href="#" class="navi_ov">신규등록</a></li>
+                </ul>
+                <!-- 로케이션 끝 -->
+            </div>
+            <div id="txt" class="con158">
+               <div class="view linebox">
+                    <!-- btnwrap top -->
+                    <div class="btnwrap top">
+                        <button type="button" class="btn btn-primary">등록/수정</button>
+                        <button type="button" class="btn btn-secondary">취소</button>
+                    </div>
+                    <!-- //btnwrap top -->
+                    <!-- content -->
+                    <div class="mid">
+                        <div class="mid_top">
+                            <h3 class="contit">부진공정사유 및 대책 등록</h3>
+                            <!-- [include] sign -->
+                            <div id="signwrap" class="sign"></div>
+                            <!-- //[include] sign -->
+                        </div>
+                        <div class="mid_content">
+                            <div class="colwrap con_top col2 padd_v bott_line f_align_j_wide">
+                                <div class="input_row info_w_auto">
+                                    <label for="input158_1" class="bar_title"><b>공종명</b></label>
+                                    <input type="text" id="input158_1"  class="box_input">
+                                </div>
+                                <div class="input_row info_w_auto">
+                                    <b class="bar_title">작성날짜</b>
+                                    <span>2022-06-15 12:34:26</span>
+                                </div>
+                            </div>
+                            <div class="colwrap padd_v input_form">                                  
+                                <div class="additem">
+                                    <div class="item col">
+                                        <div class="row">
+                                            <div class="input_row w100p">
+                                                <label for="input158_1_1" class="bar_title"><b>공종</b></label>
+                                                <input type="text" id="input158_1_1" class="box_input w100p">
+                                            </div>
+                                            <div class="input_row">
+                                                <label for="input158_1_2" class="bar_title"><b>보할</b></label>
+                                                <input type="text" id="input158_1_2" class="box_input w60">
+                                            </div>
+                                            <div class="input_row">
+                                                <label for="input158_1_3" class="bar_title"><b>전회공정률</b></label>
+                                                <input type="text" id="input158_1_3" class="box_input w60">
+                                            </div>
+                                            <div class="input_row">
+                                                <label for="input158_1_4" class="bar_title"><b>금회공정률</b></label>
+                                                <input type="text" id="input158_1_4" class="box_input w60">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="input_row w100p">
+                                                <label for="input158_1_5" class="bar_title"><b>공사추진내용 요점</b></label>
+                                                <input type="text" id="input158_1_5" class="box_input w100p">
+                                            </div>
+                                            <div class="input_row">
+                                                <label for="input158_1_6" class="bar_title"><b>누계공정률</b></label>
+                                                <input type="text" id="input158_1_6" class="box_input w60">
+                                            </div>
+                                            <div class="input_row">
+                                                <label for="input158_1_7" class="bar_title"><b>예정율</b></label>
+                                                <input type="text" id="input158_1_7" class="box_input w60">
+                                            </div>
+                                            <div class="input_row">
+                                                <label for="input158_1_8" class="bar_title"><b>예정율대비</b></label>
+                                                <input type="text" id="input158_1_8" class="box_input w60">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item col minus_item">
+
+                                        <div class="row">
+                                            <div class="input_row w100p">
+                                                <label for="input158_2_1" class="bar_title"><b>공종</b></label>
+                                                <input type="text" id="input158_2_1" class="box_input w100p">
+                                            </div>
+                                            <div class="input_row">
+                                                <label for="input158_2_2" class="bar_title"><b>보할</b></label>
+                                                <input type="text" id="input158_2_2" class="box_input w60">
+                                            </div>
+                                            <div class="input_row">
+                                                <label for="input158_2_3" class="bar_title"><b>전회공정률</b></label>
+                                                <input type="text" id="input158_2_3" class="box_input w60">
+                                            </div>
+                                            <div class="input_row">
+                                                <label for="input158_2_4" class="bar_title"><b>금회공정률</b></label>
+                                                <input type="text" id="input158_2_4" class="box_input w60">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="input_row w100p">
+                                                <label for="input158_2_5" class="bar_title"><b>공사추진내용 요점</b></label>
+                                                <input type="text" id="input158_2_5" class="box_input w100p">
+                                            </div>
+                                            <div class="input_row">
+                                                <label for="input158_2_6" class="bar_title"><b>누계공정률</b></label>
+                                                <input type="text" id="input158_2_6" class="box_input w60">
+                                            </div>
+                                            <div class="input_row">
+                                                <label for="input158_2_7" class="bar_title"><b>예정율</b></label>
+                                                <input type="text" id="input158_2_7" class="box_input w60">
+                                            </div>
+                                            <div class="input_row">
+                                                <label for="input158_2_8" class="bar_title"><b>예정율대비</b></label>
+                                                <input type="text" id="input158_2_8" class="box_input w60">
+                                            </div>
+                                        </div>
+                                        <button type="button" class="btn btn-outline-secondary minusbtn"><i class="ico bi-minus"></i><span class="sr-only">삭제</span></button>
+                                    </div>
+                                    <button type="button" class="btn btn-dark addbtn"><i class="ico bi-plus-w mr_5"></i>추가</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- content -->
+                    <!-- btnwrap bottom -->
+                    <div class="btnwrap lg bott">
+                        <button type="button" class="btn btn-primary btn-lg">등록/수정</button>
+                        <button type="button" class="btn btn-secondary btn-lg">취소</button>
+                    </div>
+                    
+                    <!-- //btnwrap bottom -->
+               </div>
+                
+            </div>   
+        </div>     
+
+
+
+
+
+
+
+    </section>
+
+    <!-- [include] fooer -->
+    <div id="footer"></div>
+    <!-- //[include] fooer -->
+</div>
+<!-- //content 영역입니다. -->
+</body>
+</html>

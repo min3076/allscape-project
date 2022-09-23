@@ -1,6 +1,5 @@
 /* layout */
 html, body, .wrapper{min-height:100%;}
-/* .container{display:flex;justify-content: space-between;} */
 .container::after{content:"";display:block;clear:both;}
 /* header */
 #header{display:block;padding:0 1.4%;background: #162252;}
@@ -16,8 +15,15 @@ h1.logo a {display:block;width:127px;height:34px;background: url(../images/commo
 .utill .weather .day{display:flex;align-items:center;padding:0 10px;font-family: 'GmarketSansM';}
 .utill .weather .day span{font-family: 'GmarketSansL';}
 .utill .weather b{display:inline-block;padding:5px 8px;background:#fff;color:#162252;border-radius:100px;font-size:11px;line-height:1;font-family: 'GmarketSansB'}
-.utill .weather .weather_ico{display:block;width:35px;height:30px;margin:0 4px 8px 8px;background: url(../images/common/weather_ir.svg); text-indent:-999px;overflow:hidden;}
-.utill .weather .weather_ico.ico1{background-position:0 0;}
+.utill .weather .weather_ico{display:block;width:30px;height:30px;margin:0 4px 5px 4px;background: url(../images/common/weather_ir.svg); text-indent:-999px;overflow:hidden;}
+.utill .weather .weather_ico.ico1{background-position:0 0;} /* 맑음 */
+.utill .weather .weather_ico.ico2{background-position:-30px 0;} /* 구름 조금 */
+.utill .weather .weather_ico.ico3{background-position:-60px 0;} /* 구름 많음 */
+.utill .weather .weather_ico.ico4{background-position:-90px 0;} /* 흐림 */
+.utill .weather .weather_ico.ico5{background-position:-120px 0;} /* 비 */
+.utill .weather .weather_ico.ico6{background-position:-150px 0;} /* 눈/비 */
+.utill .weather .weather_ico.ico7{background-position:-180px 0;} /* 눈 */
+
 .utill .mainsearch{position:relative;padding:0 1.4%;}
 .utill .mainsearch input{-webkit-appearance: none;-moz-appearance: none;appearance: none;border-radius: 100px;}
 .utill .mainsearch input[type="text"]{width:100%; height:34px; padding:8px 16px;border:1px solid #D9D9D9;color:#fff;background:none;}
@@ -238,9 +244,6 @@ h1.logo a {display:block;width:127px;height:34px;background: url(../images/commo
 .wrapper.wide #footer p{justify-content: flex-start;}
 
 .wrapper.wide.content14 .container #txt{max-width:1800px;}
-
-
-
 
 /* ie 용 스크롤 바 *********************************************/
 html { scrollbar-arrow-color: #535353;

@@ -2,6 +2,7 @@
 .main {background:#F6F6F6}
 .main .container{display:flex;flex-direction:column;;gap:20px;padding:20px 25px;}
 .main .container::before{display:none;}
+
 /* 공통 */
 .con{display:flex;width:100%;}
 .con .box{height:100%;border-radius:10px;background:#fff;}
@@ -89,9 +90,6 @@
     .settlement dd .cate{flex-grow:2}
     .settlement dd .date{width:100%;text-align:right;} 
 }
-
-
-
 
 .con_top{height:130px;gap:20px;}
 .maintitwrap{width:75%;padding:30px;border:5px solid #fff;background: transparent!important;color:#182869}

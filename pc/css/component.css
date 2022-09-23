@@ -109,9 +109,7 @@ textarea.boxarea{height:120px;padding:10px;border: 1px solid #E4EAFC; box-sizing
 
 .ico.bi-del-g_sm{width:13px;height:13px;line-height:20px;background:url(../images/common/ico_del_g_sm.svg) no-repeat 0 50%;}
 .ico.bi-del-red_sm{width:20px;height:23px;line-height:20px;background:url(../images/common/ico_del_red_sm.svg) no-repeat 0 50%;}
-
 .ico.bi-qs{width:24px;height:24px;line-height:20px;background:url(../images/common/ico_qs.svg) no-repeat 0 50%;}
-
 
 .ico.bi-print{width:33px;height:32px;background:url(../images/common/ico_print.svg) no-repeat;}
 .ico.bi-hwp{width:33px;height:32px;background:url(../images/common/ico_file_hwp.svg) no-repeat;}
@@ -125,7 +123,7 @@ textarea.boxarea{height:120px;padding:10px;border: 1px solid #E4EAFC; box-sizing
 .ico.refreshify{width:16px;height:16px;line-height:20px;background:url(../images/common/ico_refreshify.svg) no-repeat 0 50%;}
 
 
-.btnwrap{display:flex;justify-content:center;}
+.btnwrap{display:flex;justify-content:center;width:100%;}
 .btnwrap button{margin:0 0 0 4px;}
 .btnwrap.sm button{margin:0 1px;}/* fileico wrap  */
 .btnwrap.lg button{flex-basis:130px;justify-content:center;font-weight:bold}
@@ -393,6 +391,26 @@ textarea.boxarea{height:120px;padding:10px;border: 1px solid #E4EAFC; box-sizing
 .gray.dataTable thead tr:first-child th.tbnwrap,
 .gray.table thead th.tbnwrap,
 .gray.table td.tbnwrap{background: #FCFCFC;}
+
+/* input 추가버튼 */
+.additem{position:relative;display:flex;flex-direction:column;flex-grow:1}
+.additem .addbtn{position:absolute;top:4px;right:0;}
+.additem .input_row{padding:3px 0;}
+
+.additem .item,
+.additem .item.box_period{display:flex;flex-direction:row;align-items:center;padding-right:80px;}
+.additem .item.minus_item{padding-right:35px;}
+.additem .item.minus_item2{padding-right:79px;}
+.additem .box_period{width:100%;flex-grow:1;}
+.additem .item.minus_item .minusbtn{margin-left:8px;}
+
+.additem .item.col{display:flex;flex-direction:column;}
+.additem .item.col .row{width:100%}
+.additem .item.col.minus_item{position:relative;padding-right:80px;}
+.additem .item.col.minus_item .minusbtn{position:absolute;right:35px;top:4px;}
+.additem .item.col .row:last-child{margin-bottom:40px;}
+.additem .item.col .row .input_row .bar_title{padding-right:10px;}
+
 
 
 /* calendar wrapper */

@@ -43,8 +43,8 @@ h1.logo a {display:block;width:127px;height:34px;background: url(../images/commo
 
 
 /* lnb */
-.container{position:relative;min-height:100%;/*background:#F1F6FF*/}
-.container:before{content:"";display:block;position:absolute;left:0;top:110px;width:260px;height:100%;background:#F1F6FF;z-index:0;}
+.container{position:relative;min-height:100%;background:url(../images/common/bg_con.png) repeat-y 0 0;}
+/* .container:before{content:"";display:block;position:absolute;left:0;top:0;width:260px;height:100%;background:#F1F6FF;z-index:0;} */
 
 .container-fixed .lnb_wrap{position:fixed;top:0;}
 #lnb{float:left;display:block;z-index: 11;width:260px;background:#F1F6FF;}

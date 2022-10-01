@@ -44,12 +44,12 @@ h1.logo a {display:block;width:127px;height:34px;background: url(../images/commo
 
 /* lnb */
 .container{position:relative;min-height:100%;/*background:#F1F6FF*/}
-.container:before{content:"";display:block;position:absolute;left:0;top:0;width:260px;height:100%;background:#F1F6FF;z-index:0;}
+.container:before{content:"";display:block;position:absolute;left:0;top:110px;width:260px;height:100%;background:#F1F6FF;z-index:0;}
 
 .container-fixed .lnb_wrap{position:fixed;top:0;}
 #lnb{float:left;display:block;z-index: 11;width:260px;background:#F1F6FF;}
 /* .lnb_wrap{float:left;display:block;z-index: 11;width:260px;height:100%;background:#F1F6FF;} */
-.lnb__title {width:100%;padding:50px 24px 30px;color:#0E224A;background:rgba(255, 255, 255, 0.5) ;}
+.lnb__title {width:100%;padding:50px 24px 30px;color:#0E224A;background:#F8FBFF;}
 .lnb__title strong{position: relative;display:block;padding:0 24px 0 40px;font-size:16px;font-weight:bold;}
 .lnb__title strong:after{content:"";display:block;position:absolute;left:0;top:-2px;width:30px;height:30px;background:url(../images/common/ico_home.svg);}
 .lnb_depth2__list *{font-family: 'gmarket';}

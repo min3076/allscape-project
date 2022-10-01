@@ -62,25 +62,33 @@ h1.logo a {display:block;width:127px;height:34px;background: url(../images/commo
 .lnb_depth2__list > li > a:after {display:block;position:absolute;right: 10px;top:9px;content:'';width: 25px;height:25px;border-radius: 50%;background:#E4EAFC}
 .lnb_depth2__list > li > a > span{position:relative;display: inline-block;padding-left:25px;line-height:1.2;word-wrap:break-word;word-break:keep-all;font-size: 15px;font-weight: bold;color: #0F2248;}
 .lnb_depth2__list > li > a > span:before {display:block;position:absolute;z-index: 1;left:0;top:-2px;content:'';width:20px;height:20px;background:url(../images/common/ir_menuico.svg)}
-.lnb_depth2__list > li:nth-child(2) > a > span:before{background-position:-30px 0;}
-.lnb_depth2__list > li:nth-child(3) > a > span:before{background-position:-60px 0;}
-.lnb_depth2__list > li:nth-child(4) > a > span:before{background-position:-90px 0;}
-.lnb_depth2__list > li:nth-child(5) > a > span:before{background-position:-120px 0;}
-.lnb_depth2__list > li:nth-child(6) > a > span:before{background-position:-150px 0;}
-.lnb_depth2__list > li:nth-child(7) > a > span:before{background-position:-180px 0;}
-.lnb_depth2__list > li:nth-child(8) > a > span:before{background-position:-210px 0;}
+.lnb_depth2__list > li:nth-child(2) > a > span:before{background-position:-20px 0;}
+.lnb_depth2__list > li:nth-child(3) > a > span:before{background-position:-40px 0;}
+.lnb_depth2__list > li:nth-child(4) > a > span:before{background-position:-60px 0;}
+.lnb_depth2__list > li:nth-child(5) > a > span:before{background-position:-80px 0;}
+.lnb_depth2__list > li:nth-child(6) > a > span:before{background-position:-100px 0;}
+.lnb_depth2__list > li:nth-child(7) > a > span:before{background-position:-120px 0;}
+.lnb_depth2__list > li:nth-child(8) > a > span:before{background-position:-140px 0;}
+.lnb_depth2__list > li:nth-child(9) > a > span:before{background-position:-160px 0;}
+.lnb_depth2__list > li:nth-child(10) > a > span:before{background-position:-180px 0;}
+.lnb_depth2__list > li:nth-child(11) > a > span:before{background-position:-200px 0;}
+.lnb_depth2__list > li:nth-child(12) > a > span:before{background-position:-220px 0;}
 .lnb_depth2__list > li.on{padding: 0;margin-bottom:-2px;border-top: 0px;border-bottom: 0px;}
 .lnb_depth2__list > li.on > a {padding-left:20px;background: #3A78F2; border-radius: 10px 10px 0 0;}
 .lnb_depth2__list > li.on > a:before {top:18px;border-color:#fff;border-width: 0 2px 2px 0;transform: rotate(45deg);-webkit-transform: rotate(45deg);}
 .lnb_depth2__list > li.on > a:after{background:#0E224A}
 .lnb_depth2__list > li.on > a > span { color:#fff;}
-.lnb_depth2__list > li.on:nth-child(2) > a > span:before{background-position:-30px -30px;}
-.lnb_depth2__list > li.on:nth-child(3) > a > span:before{background-position:-60px -30px;}
-.lnb_depth2__list > li.on:nth-child(4) > a > span:before{background-position:-90px -30px;}
-.lnb_depth2__list > li.on:nth-child(5) > a > span:before{background-position:-120px -30px;}
-.lnb_depth2__list > li.on:nth-child(6) > a > span:before{background-position:-150px -30px;}
-.lnb_depth2__list > li.on:nth-child(7) > a > span:before{background-position:-180px -30px;}
-.lnb_depth2__list > li.on:nth-child(8) > a > span:before{background-position:-210px -30px;}
+.lnb_depth2__list > li.on:nth-child(2) > a > span:before{background-position:-20px -30px;}
+.lnb_depth2__list > li.on:nth-child(3) > a > span:before{background-position:-40px -30px;}
+.lnb_depth2__list > li.on:nth-child(4) > a > span:before{background-position:-60px -30px;}
+.lnb_depth2__list > li.on:nth-child(5) > a > span:before{background-position:-80px -30px;}
+.lnb_depth2__list > li.on:nth-child(6) > a > span:before{background-position:-100px -30px;}
+.lnb_depth2__list > li.on:nth-child(7) > a > span:before{background-position:-120px -30px;}
+.lnb_depth2__list > li.on:nth-child(8) > a > span:before{background-position:-140px -30px;}
+.lnb_depth2__list > li.on:nth-child(9) > a > span:before{background-position:-160px -30px;}
+.lnb_depth2__list > li.on:nth-child(10) > a > span:before{background-position:-180px -30px;}
+.lnb_depth2__list > li.on:nth-child(11) > a > span:before{background-position:-200px -30px;}
+.lnb_depth2__list > li.on:nth-child(12) > a > span:before{background-position:-220px -30px;}
 .lnb_depth2__list .lnb_depth3__list{display:none;overflow: hidden;height:0;margin: 0 10px 13px;padding:0;text-align: left;border-radius: 10px;background: #fff;}
 .lnb_depth2__list .lnb_depth3__list > li {position:relative;border-bottom:1px solid #E2E8FB;}
 .lnb_depth2__list .lnb_depth3__list > li:last-child {background:none;}
